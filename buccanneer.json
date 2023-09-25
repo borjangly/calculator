@@ -1,0 +1,77 @@
+{
+    "first_job": {
+        "shadow_heart": {
+            "critical_damage": 5,
+            "critical_rate": 20
+        }
+    },
+    "second_job": {
+        "agile_knuckles": {
+            "str": 20
+        },
+        "dark_clarity": {
+            "attack": 30
+        },
+        "hp_boost": {
+            "hp%": 20
+        },
+        "physical_training": {
+            "str": 30,
+            "dex": 30
+        }
+    },
+    "third_job": {
+        "precision_strikes": {
+            "attack": 30,
+            "critical_rate": 35,
+            "critical_damage": 10
+        },
+        "groggy_mastery": {
+            "critical_rate": 60,
+            "critical_damage": 15
+        }
+    },
+    "fourth_job": {
+        "decent_combat_orders": {
+            "crossbones": {
+                "attack%": 15,
+                "final_damage": 13
+            },
+            "aggressive_stance": {
+                "damage": 27
+            },
+            "typhoon_crush": {
+                "attack": 32,
+                "ignore_enemy_defense": 44,
+                "final_damage": 10
+            }
+        },
+        "no_decent_combat_orders": {
+            "crossbones": {
+                "attack%": 15,
+                "final_damage": 13
+            },
+            "aggressive_stance": {
+                "damage": 25
+            },
+            "typhoon_crush": {
+                "attack": 30,
+                "ignore_enemy_defense": 40,
+                "final_damage": 10
+            }
+        }
+    },
+    "hyper_skills": {
+        "serpent_spirit": {
+            "critical_damage": 15
+        },
+        "stimulating_conversation": {
+            "boss_damage": 20
+        }
+    },
+    "fifth_job": {
+        "blink": {
+            "attack": 30
+        }
+    }
+}

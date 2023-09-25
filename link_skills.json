@@ -1,0 +1,10 @@
+{
+    "demon_slayer": {
+        "skill_name": "Fury Unleashed",
+        "skill_values": [
+            {"level": 1, "stat": "boss_damage", "value": 10},
+            {"level": 2, "stat": "boss_damage", "value": 15},
+            {"level": 3, "stat": "boss_damage", "value": 20}
+        ]
+    }
+}

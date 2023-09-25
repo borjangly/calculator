@@ -1,0 +1,160 @@
+{
+    "Starter Badge": {
+        "hp": 5
+    },
+    "Snowflake Badge": {
+        "hp": 5
+    },
+    "Opressor Badge": {
+        "hp": 5
+    },
+    "Shadow Badge": {
+        "luk": 2
+    },
+    "Magical Badge": {
+        "int": 2
+    },
+    "Secret Badge": {
+        "attack": 1,
+        "defense": 5
+    },
+    "Mesa Badge": {
+        "str": 2
+    },
+    "Peaceful Badge": {
+        "dex": 2
+    },
+    "Beach Badge": {
+        "speed": 1,
+        "magic_attack%": 1
+    },
+    "Rebel Badge": {
+        "critical_rate": 1
+    },
+    "Mineral Badge": {
+        "defense": 5,
+        "ignore_enemy_defense": 3
+    },
+    "Sandy Badge": {
+        "damage": 1,
+        "defense": 5
+    },
+    "Machine Badge": {
+        "int": 2,
+        "magic_attack": 1
+    },
+    "Toy Badge": {
+        "hp": 10,
+        "ignore_enemy_defense": 3
+    },
+    "Clockwork Badge": {
+        "hp%": 1,
+        "defense": 5
+    },
+    "Forest Badge": {
+        "hp": 5,
+        "defense": 5
+    },
+    "Wave Badge": {
+        "magic_attack%": 5,
+        "defense": 20
+    },
+    "Wings Badge": {
+        "speed": 1,
+        "all_stat%": 1
+    },
+    "Snow Badge": {
+        "attack": 1,
+        "dex": 1
+    },
+    "Depths Badge": {
+        "attack%": 1,
+        "magic_attack": 2
+    },
+    "Cloud Badge": {
+        "all_stat": 1,
+        "ignore_enemy_defense": 3
+    },
+    "Hatching Badge": {
+        "skill_level": 1
+    },
+    "Time Badge": {
+        "ignore_enemy_defense": 3
+    },
+    "Shrine Badge": {
+        "damage": 1
+    },
+    "Shuriken Badge": {
+        "dex": 1,
+        "damage": 1
+    },
+    "Showa Badge": {
+        "all_stat": 1,
+        "damage": 1
+    },
+    "City Badge": {
+        "attack": 1,
+        "magic_attack": 1
+    },
+    "Mighty Badge": {
+        "str": 2,
+        "attack": 2
+    },
+    "Exorcism Badge": {
+        "all_stat%": 1
+    },
+    "Tyrant Badge": {
+        "all_stat%": 1
+    },
+    "Lion Badge": {
+        "attack%": 1,
+        "hp%": 1
+    },
+    "Future Badge": {
+        "attack%": 1,
+        "magic_attack%": 1
+    },
+    "Mariner Badge": {
+        "jump": 1,
+        "luk": 2
+    },
+    "Cursed Badge": {
+        "def%": 2,
+        "critical_rate": 1
+    },
+    "Commerci Badge": {
+        "def%": 2,
+        "critical_rate": 1
+    },
+    "Mushking Badge": {
+        "attack": 2,
+        "magic_attack": 2
+    },
+    "Darkness Badge": {
+        "damage": 1
+    },
+    "Dragon Badge": {
+        "hp": 5,
+        "ignore_enemy_defense": 3
+    },
+    "Void Badge": {
+        "magic_attack%": 1,
+        "magic_attck": 2
+    },
+    "Labyrinth Badge": {
+        "all_stat%": 1,
+        "damage": 1
+    },
+    "Apocalypse Badge": {
+        "attack%": 1,
+        "attack": 2
+    },
+    "Ocean Badge": {
+        "critical_rate": 1,
+        "damage": 1
+    },
+    "Swamp Badge": {
+        "all_stat%": 1,
+        "attack": 2
+    }
+}

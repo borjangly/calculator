@@ -1,0 +1,616 @@
+{
+    "Root Abyss Set (Pirate)": {
+        "set_equipment": [
+            "hat",
+            "top",
+            "pants",
+            "weapon"
+        ],
+        "set_bonus": [
+            {
+                "str": 0
+            },
+            {
+                "str": 20,
+                "dex": 20,
+                "hp": 1000,
+                "mp": 1000
+            },
+            {
+                "str": 20,
+                "dex": 20,
+                "hp": 1000,
+                "hp%": 10,
+                "mp": 1000,
+                "mp%": 10,
+                "attack": 50
+            },
+            {
+                "str": 20,
+                "dex": 20,
+                "hp": 1000,
+                "hp%": 10,
+                "mp": 1000,
+                "mp%": 10,
+                "attack": 50,
+                "boss_damage": 30
+            }
+        ]
+    },
+    "Eternal Set (Pirate)": {
+        "set_equipment": [
+            "hat",
+            "top",
+            "pants",
+            "shoulder",
+            "weapon"
+        ],
+        "set_bonus": [
+            {
+                "str": 0
+            },
+            {
+                "str": 0,
+                "dex": 0,
+                "int": 0,
+                "luk": 0,
+                "hp": 2500,
+                "mp": 2500,
+                "attack": 40,
+                "magic_attack": 40,
+                "defense": 0,
+                "boss_damage": 10
+            },
+            {
+                "str": 50,
+                "dex": 50,
+                "int": 50,
+                "luk": 50,
+                "hp": 2500,
+                "mp": 2500,
+                "attack": 80,
+                "magic_attack": 80,
+                "defense": 600,
+                "boss_damage": 20
+            },
+            {
+                "str": 50,
+                "dex": 50,
+                "int": 50,
+                "luk": 50,
+                "hp": 2500,
+                "hp%": 15,
+                "mp": 2500,
+                "mp%": 15,
+                "attack": 120,
+                "magic_attack": 120,
+                "defense": 600,
+                "boss_damage": 30
+            },
+            {
+                "str": 50,
+                "dex": 50,
+                "int": 50,
+                "luk": 50,
+                "hp": 2500,
+                "hp%": 15,
+                "mp": 2500,
+                "mp%": 15,
+                "attack": 160,
+                "magic_attack": 160,
+                "defense": 600,
+                "boss_damage": 30,
+                "ignore_enemy_defense": 20
+            }
+        ]
+    },
+    "Dawn Boss Set": {
+        "set_equipment": [
+            "pendant_1",
+            "pendant_2",
+            "ring_1",
+            "ring_2",
+            "ring_3",
+            "ring_4",
+            "earrings",
+            "face_accessory"
+        ],
+        "set_bonus": [
+            {
+                "str": 0
+            },
+            {
+                "str": 10,
+                "dex": 10,
+                "int": 10,
+                "luk": 10,
+                "hp": 250,
+                "attack": 10,
+                "magic_attack": 10,
+                "defense": 0,
+                "boss_damage": 10
+            },
+            {
+                "str": 20,
+                "dex": 20,
+                "int": 20,
+                "luk": 20,
+                "hp": 500,
+                "attack": 20,
+                "magic_attack": 20,
+                "defense": 0,
+                "boss_damage": 10
+            },
+            {
+                "str": 30,
+                "dex": 30,
+                "int": 30,
+                "luk": 30,
+                "hp": 750,
+                "attack": 30,
+                "magic_attack": 30,
+                "defense": 0,
+                "boss_damage": 30,
+                "ignore_enemy_defense": 10
+            }
+        ]
+    },
+    "Superior Gollux Set": {
+        "set_equipment": [
+            "pendant_1",
+            "pendant_2",
+            "ring_1",
+            "ring_2",
+            "ring_3",
+            "ring_4",
+            "earrings",
+            "belt"
+        ],
+        "set_bonus": [
+            {
+                "str": 0
+            },
+            {
+                "str": 20,
+                "dex": 20,
+                "int": 20,
+                "luk": 20,
+                "hp": 1500,
+                "mp": 1500,
+                "attack": 0,
+                "magic_attack": 0,
+                "defense": 0,
+                "boss_damage": 0
+            },
+            {
+                "str": 20,
+                "dex": 20,
+                "int": 20,
+                "luk": 20,
+                "hp": 2500,
+                "hp%": 13,
+                "mp": 2500,
+                "mp%": 13,
+                "attack": 35,
+                "magic_attack": 35,
+                "defense": 0,
+                "boss_damage": 0
+            },
+            {
+               "str": 20,
+                "dex": 20,
+                "int": 20,
+                "luk": 20,
+                "hp": 2500,
+                "hp%": 13,
+                "mp": 2500,
+                "mp%": 13,
+                "attack": 35,
+                "magic_attack": 35,
+                "defense": 0,
+                "boss_damage": 30,
+                "ignore_enemy_defense": 30
+            }
+        ]
+    },
+    "Reinforced Gollux Set": {
+        "set_equipment": [
+            "pendant_1",
+            "pendant_2",
+            "ring_1",
+            "ring_2",
+            "ring_3",
+            "ring_4",
+            "earrings",
+            "belt"
+        ],
+        "set_bonus": [
+            {
+                "str": 0
+            },
+            {
+                "str": 15,
+                "dex": 15,
+                "int": 15,
+                "luk": 15,
+                "hp": 1200,
+                "mp": 1200,
+                "attack": 0,
+                "magic_attack": 0,
+                "defense": 0,
+                "boss_damage": 0
+            },
+            {
+                "str": 15,
+                "dex": 15,
+                "int": 15,
+                "luk": 15,
+                "hp": 1200,
+                "hp%": 10,
+                "mp": 1200,
+                "mp%": 10,
+                "attack": 30,
+                "magic_attack": 30,
+                "defense": 0,
+                "boss_damage": 0
+            },
+            {
+                "str": 15,
+                "dex": 15,
+                "int": 15,
+                "luk": 15,
+                "hp": 1200,
+                "hp%": 10,
+                "mp": 1200,
+                "mp%": 10,
+                "attack": 30,
+                "magic_attack": 30,
+                "defense": 0,
+                "boss_damage": 30,
+                "ignore_enemy_defense": 15
+            }
+        ]
+    },
+    "Pitched Boss Set": {
+        "set_equipment": [
+            "pendant_1",
+            "pendant_2",
+            "ring_1",
+            "ring_2",
+            "ring_3",
+            "ring_4",
+            "earrings",
+            "belt",
+            "face_accessory",
+            "eye_accessory",
+            "pocket",
+            "badge",
+            "emblem",
+            "heart"
+        ],
+        "set_bonus": [
+            {
+                "str": 0
+            },
+            {
+                "str": 10,
+                "dex": 10,
+                "int": 10,
+                "luk": 10,
+                "hp": 250,
+                "mp": 0,
+                "attack": 10,
+                "magic_attack": 10,
+                "defense": 0,
+                "boss_damage": 10
+            },
+            {
+                "str": 20,
+                "dex": 20,
+                "int": 20,
+                "luk": 20,
+                "hp": 500,
+                "mp": 0,
+                "attack": 20,
+                "magic_attack": 20,
+                "defense": 250,
+                "boss_damage": 10,
+                "ignore_enemy_defense": 10
+            },
+            {
+                "str": 35,
+                "dex": 35,
+                "int": 35,
+                "luk": 35,
+                "hp": 875,
+                "mp": 0,
+                "attack": 35,
+                "magic_attack": 35,
+                "defense": 250,
+                "boss_damage": 10,
+                "ignore_enemy_defense": 10,
+                "critical_damage": 5
+            },
+            {
+                "str": 50,
+                "dex": 50,
+                "int": 50,
+                "luk": 50,
+                "hp": 1250,
+                "mp": 0,
+                "attack": 50,
+                "magic_attack": 50,
+                "defense": 250,
+                "boss_damage": 20,
+                "ignore_enemy_defense": 10,
+                "critical_damage": 5
+            },
+            {
+                "str": 65,
+                "dex": 65,
+                "int": 65,
+                "luk": 65,
+                "hp": 1625,
+                "mp": 0,
+                "attack": 65,
+                "magic_attack": 65,
+                "defense": 250,
+                "boss_damage": 20,
+                "ignore_enemy_defense": 19,
+                "critical_damage": 5
+            },
+            {
+                "str": 80,
+                "dex": 80,
+                "int": 80,
+                "luk": 80,
+                "hp": 2000,
+                "mp": 0,
+                "attack": 80,
+                "magic_attack": 80,
+                "defense": 250,
+                "boss_damage": 20,
+                "ignore_enemy_defense": 19,
+                "critical_damage": 10
+            },
+            {
+                "str": 95,
+                "dex": 95,
+                "int": 95,
+                "luk": 95,
+                "hp": 2375,
+                "mp": 0,
+                "attack": 95,
+                "magic_attack": 95,
+                "defense": 250,
+                "boss_damage": 30,
+                "ignore_enemy_defense": 19,
+                "critical_damage": 10
+            },
+            {
+                "str": 110,
+                "dex": 110,
+                "int": 110,
+                "luk": 110,
+                "hp": 2750,
+                "mp": 0,
+                "attack": 110,
+                "magic_attack": 110,
+                "defense": 250,
+                "boss_damage": 30,
+                "ignore_enemy_defense": 19,
+                "critical_damage": 15
+            }
+        ]
+    },
+    "Boss Accessory Set": {
+        "set_equipment": [
+            "pendant_1",
+            "pendant_2",
+            "ring_1",
+            "ring_2",
+            "ring_3",
+            "ring_4",
+            "earrings",
+            "belt",
+            "face_accessory",
+            "eye_accessory",
+            "pocket",
+            "badge"
+        ],
+        "set_bonus": [
+            {
+                "str": 0
+            },
+            {
+                "str": 0
+            },
+            {
+                "str": 10,
+                "dex": 10,
+                "int": 10,
+                "luk": 10,
+                "hp%": 5,
+                "mp%": 5,
+                "attack": 5,
+                "magic_attack": 5,
+                "defense": 60
+            },
+            {
+                "str": 10,
+                "dex": 10,
+                "int": 10,
+                "luk": 10,
+                "hp%": 5,
+                "mp%": 5,
+                "attack": 5,
+                "magic_attack": 5,
+                "defense": 60
+            },
+            {
+                "str": 20,
+                "dex": 20,
+                "int": 20,
+                "luk": 20,
+                "hp%": 10,
+                "mp%": 10,
+                "attack": 10,
+                "magic_attack": 10,
+                "defense": 120
+            },
+            {
+                "str": 20,
+                "dex": 20,
+                "int": 20,
+                "luk": 20,
+                "hp%": 10,
+                "mp%": 10,
+                "attack": 10,
+                "magic_attack": 10,
+                "defense": 120
+            },
+            {
+                "str": 30,
+                "dex": 30,
+                "int": 30,
+                "luk": 30,
+                "hp%": 10,
+                "mp%": 10,
+                "attack": 20,
+                "magic_attack": 20,
+                "defense": 200,
+                "ignore_enemy_defense": 10
+            },
+            {
+                "str": 30,
+                "dex": 30,
+                "int": 30,
+                "luk": 30,
+                "hp%": 10,
+                "mp%": 10,
+                "attack": 20,
+                "magic_attack": 20,
+                "defense": 200,
+                "ignore_enemy_defense": 10
+            },
+            {
+                "str": 45,
+                "dex": 45,
+                "int": 45,
+                "luk": 45,
+                "hp%": 10,
+                "mp%": 10,
+                "attack": 30,
+                "magic_attack": 30,
+                "defense": 300,
+                "boss_damage": 10,
+                "ignore_enemy_defense": 10
+            }
+        ]
+    },
+    "Arcane Umbra Set (Pirate)": {
+        "set_equipment": [
+            "hat",
+            "overall",
+            "shoulder",
+            "cape",
+            "gloves",
+            "shoes",
+            "weapon"
+            ],
+        "set_bonus": [
+            {
+                "str": 0
+            },
+            {
+                "str": 0,
+                "dex": 0,
+                "int": 0,
+                "luk": 0,
+                "attack": 30,
+                "magic_attack": 30,
+                "defense": 0,
+                "boss_damage": 10
+            },
+            {
+                "str": 0,
+                "dex": 0,
+                "int": 0,
+                "luk": 0,
+                "attack": 60,
+                "magic_attack": 60,
+                "defense": 400,
+                "boss_damage": 10,
+                "ignore_enemy_defense": 10
+            },
+            {
+                "str": 50,
+                "dex": 50,
+                "int": 50,
+                "luk": 50,
+                "attack": 95,
+                "magic_attack": 95,
+                "defense": 400,
+                "boss_damage": 20,
+                "ignore_enemy_defense": 10
+            },
+            {
+                "str": 50,
+                "dex": 50,
+                "int": 50,
+                "luk": 50,
+                "hp": 2000,
+                "mp": 2000,
+                "attack": 135,
+                "magic_attack": 135,
+                "defense": 400,
+                "boss_damage": 30,
+                "ignore_enemy_defense": 10
+            },
+            {
+                "str": 50,
+                "dex": 50,
+                "int": 50,
+                "luk": 50,
+                "hp": 2000,
+                "hp%": 30,
+                "mp": 2000,
+                "mp%": 30,
+                "attack": 165,
+                "magic_attack": 165,
+                "defense": 400,
+                "boss_damage": 30,
+                "ignore_enemy_defense": 10
+            },
+            {
+                "str": 50,
+                "dex": 50,
+                "int": 50,
+                "luk": 50,
+                "hp": 2000,
+                "hp%": 30,
+                "mp": 2000,
+                "mp%": 30,
+                "attack": 195,
+                "magic_attack": 195,
+                "defense": 400,
+                "boss_damage": 30,
+                "ignore_enemy_defense": 19
+            }
+        ]
+    },
+    "Seven Days Set": {
+        "set_equipment": [
+            "medal",
+            "badge"
+            ],
+        "set_bonus": [
+            {
+                "str": 0
+            },
+            {
+                "ignore_enemy_defense": 10
+            }
+        ]
+    }
+}

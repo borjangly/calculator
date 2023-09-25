@@ -1,0 +1,38 @@
+{
+    "Boss Damage: +50%": {
+        "boss_damage": 50
+    },
+    "Boss Damage: +45%": {
+        "boss_damage": 45
+    },
+    "Boss Damage: +40%": {
+        "boss_damage": 40
+    },
+    "Boss Damage: +35%": {
+        "boss_damage": 35
+    },
+    "Boss Damage: +30%": {
+        "boss_damage": 30
+    },
+    "Boss Damage: +20%": {
+        "boss_damage": 20
+    },
+    "Attacks ignore 50% Monster DEF": {
+        "ignore_enemy_defense": 50
+    },
+    "Attacks ignore 45% Monster DEF": {
+        "ignore_enemy_defense": 45
+    },
+    "Attacks ignore 40% Monster DEF": {
+        "ignore_enemy_defense": 40
+    },
+    "Attacks ignore 35% Monster DEF": {
+        "ignore_enemy_defense": 35
+    },
+    "Attacks ignore 30% Monster DEF": {
+        "ignore_enemy_defense": 30
+    },
+    "Attacks ignore 20% Monster DEF": {
+        "ignore_enemy_defense": 20
+    }
+}

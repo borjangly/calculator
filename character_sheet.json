@@ -1,0 +1,1522 @@
+{
+    "name": "HoppingFog",
+    "class": "Buccanneer",
+    "level": 281,
+    "base_attack": 3000,
+    "final_attack": 14,
+    "attack%": 108,
+    "base_stat": 5000,
+    "secondary_stat": 1000,
+    "stat%": 682,
+    "final_stat": 20400,
+    "symbols": {
+        "arcane_river": {
+            "vanishing_journey": 20,
+            "chu_chu_island": 20,
+            "lachelein": 20,
+            "arcana": 20,
+            "morass": 20,
+            "esfera": 20
+        },
+        "grandis": {
+            "cernium": 11,
+            "hotel_arcus": 10,
+            "odium": 7,
+            "shangri_la": 0,
+            "arteria": 0,
+            "carcion": 0
+        }
+    },
+    "link_skills": {
+        "skill_1": {
+            "skill_name": "Fury Unleashed",
+            "skill_level": 3
+        },
+        "skill_2": {
+            "skill_name": "",
+            "skill_level": 1
+        },
+        "skill_3": {
+            "skill_name": "",
+            "skill_level": 1
+        },
+        "skill_4": {
+            "skill_name": "",
+            "skill_level": 1
+        },
+        "skill_5": {
+            "skill_name": "",
+            "skill_level": 1
+        },
+        "skill_6": {
+            "skill_name": "",
+            "skill_level": 1
+        },
+        "skill_7": {
+            "skill_name": "",
+            "skill_level": 1
+        },
+        "skill_8": {
+            "skill_name": "",
+            "skill_level": 1
+        },
+        "skill_9": {
+            "skill_name": "",
+            "skill_level": 1
+        },
+        "skill_10": {
+            "skill_name": "",
+            "skill_level": 1
+        },
+        "skill_11": {
+            "skill_name": "",
+            "skill_level": 1
+        },
+        "skill_12": {
+            "skill_name": "",
+            "skill_level": 1
+        }
+    },
+    "equipmenttypestemp": [
+        "hat",
+        "top",
+        "bottom",
+        "shoulder",
+        "gloves",
+        "cape",
+        "shoes",
+        "ring_1",
+        "ring_2",
+        "ring_3",
+        "ring_4",
+        "eye_accessory",
+        "face_accessory",
+        "pendant_1",
+        "pendant_2",
+        "belt",
+        "pocket",
+        "android",
+        "heart",
+        "badge",
+        "medal",
+        "weapon",
+        "secondary",
+        "emblem"
+    ],
+    "equipment": {
+        "hat": {
+            "name": "Royal Wanderer Hat",
+            "set": "Root Abyss Set (Pirate)",
+            "lucky_item": false,
+            "level": "150",
+            "stars": 22,
+            "base_stats": {
+                "str": 40,
+                "dex": 40,
+                "int": 0,
+                "luk": 0,
+                "hp": 360,
+                "mp": 360,
+                "attack": 2,
+                "magic_attack": 0,
+                "ignore_enemy_defense": 10,
+                "boss_damage": 0,
+                "all_stat%": 0
+            },
+            "flame_stats": {
+                "str": 76,
+                "dex": 0,
+                "int": 16,
+                "luk": 20,
+                "hp": 0,
+                "mp": 0,
+                "attack": 0,
+                "magic_attack": 0,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 4
+            },
+            "scroll_stats": {
+                "str": 91,
+                "dex": 0,
+                "int": 0,
+                "luk": 0,
+                "hp": 1560,
+                "mp": 0,
+                "attack": 1,
+                "magic_attack": 0,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 0
+            },
+            "starforce_stats": {
+                "str": 117,
+                "dex": 117,
+                "int": 0,
+                "luk": 0,
+                "hp": 255,
+                "mp": 0,
+                "attack": 85,
+                "magic_attack": 85,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 0
+            },
+            "potential": {
+                "line_1": "STR: +12%",
+                "line_2": "STR: +9%",
+                "line_3": "STR: +9%"
+            },
+            "bonus_potential": {
+                "line_1": "STR: +8%",
+                "line_2": "DEX: +18",
+                "line_3": "DEX: +6%"
+            }
+        },
+        "top": {
+            "name": "Eagle Eye Wanderer Coat",
+            "set": "Root Abyss Set (Pirate)",
+            "lucky_item": false,
+            "level": "150",
+            "stars": 22,
+            "base_stats": {
+                "str": 30,
+                "dex": 30,
+                "int": 0,
+                "luk": 0,
+                "hp": 0,
+                "mp": 0,
+                "attack": 2,
+                "magic_attack": 0,
+                "ignore_enemy_defense": 5,
+                "boss_damage": 0,
+                "all_stat%": 0
+            },
+            "flame_stats": {
+                "str": 60,
+                "dex": 0,
+                "int": 36,
+                "luk": 16,
+                "hp": 0,
+                "mp": 0,
+                "attack": 0,
+                "magic_attack": 0,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 5
+            },
+            "scroll_stats": {
+                "str": 63,
+                "dex": 0,
+                "int": 0,
+                "luk": 0,
+                "hp": 1080,
+                "mp": 0,
+                "attack": 1,
+                "magic_attack": 0,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 0
+            },
+            "starforce_stats": {
+                "str": 117,
+                "dex": 117,
+                "int": 0,
+                "luk": 0,
+                "hp": 255,
+                "mp": 0,
+                "attack": 85,
+                "magic_attack": 85,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 0
+            },
+            "potential": {
+                "line_1": "STR: +12%",
+                "line_2": "All Stats: +9%",
+                "line_3": "All Stats: +6%"
+            },
+            "bonus_potential": {
+                "line_1": "STR: +20",
+                "line_2": "DEX per 9 Character Levels: +1",
+                "line_3": "STR: +6%"
+            }
+        },
+        "pants": {
+            "name": "Trixter Wanderer Pants",
+            "set": "Root Abyss Set (Pirate)",
+            "lucky_item": false,
+            "level": "150",
+            "stars": 22,
+            "base_stats": {
+                "str": 30,
+                "dex": 30,
+                "int": 0,
+                "luk": 0,
+                "hp": 0,
+                "mp": 0,
+                "attack": 2,
+                "magic_attack": 0,
+                "ignore_enemy_defense": 5,
+                "boss_damage": 0,
+                "all_stat%": 0
+            },
+            "flame_stats": {
+                "str": 64,
+                "dex": 16,
+                "int": 0,
+                "luk": 0,
+                "hp": 0,
+                "mp": 0,
+                "attack": 0,
+                "magic_attack": 0,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 4
+            },
+            "scroll_stats": {
+                "str": 63,
+                "dex": 0,
+                "int": 0,
+                "luk": 0,
+                "hp": 1080,
+                "mp": 0,
+                "attack": 1,
+                "magic_attack": 0,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 0
+            },
+            "starforce_stats": {
+                "str": 117,
+                "dex": 117,
+                "int": 0,
+                "luk": 0,
+                "hp": 255,
+                "mp": 0,
+                "attack": 85,
+                "magic_attack": 85,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 0
+            },
+            "potential": {
+                "line_1": "STR: +12%",
+                "line_2": "STR: +9%",
+                "line_3": "STR: +9%"
+            },
+            "bonus_potential": {
+                "line_1": "STR: +8%",
+                "line_2": "STR per 9 Character Levels: +1",
+                "line_3": "Max MP: +6%"
+            }
+        },
+        "weapon": {
+            "name": "Genesis Claw",
+            "set": "Eternal Set (Pirate)",
+            "lucky_item": true,
+            "level": "200",
+            "stars": 22,
+            "base_stats": {
+                "str": 150,
+                "dex": 150,
+                "int": 0,
+                "luk": 0,
+                "hp": 0,
+                "mp": 0,
+                "attack": 255,
+                "magic_attack": 0,
+                "ignore_enemy_defense": 20,
+                "boss_damage": 30,
+                "all_stat%": 0
+            },
+            "flame_stats": {
+                "str": 24,
+                "dex": 0,
+                "int": 24,
+                "luk": 0,
+                "hp": 0,
+                "mp": 0,
+                "attack": 157,
+                "magic_attack": 0,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 12,
+                "all_stat%": 5
+            },
+            "scroll_stats": {
+                "str": 32,
+                "dex": 0,
+                "int": 0,
+                "luk": 0,
+                "hp": 0,
+                "mp": 0,
+                "attack": 72,
+                "magic_attack": 0,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 0
+            },
+            "starforce_stats": {
+                "str": 145,
+                "dex": 145,
+                "int": 0,
+                "luk": 0,
+                "hp": 255,
+                "mp": 255,
+                "attack": 223,
+                "magic_attack": 85,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 0
+            },
+            "soul_stats": {
+                "attack%": 3
+            },
+            "potential": {
+                "line_1": "Boss Monster Damage: +40%",
+                "line_2": "ATT: +10%",
+                "line_3": "ATT: +10%"
+            },
+            "bonus_potential": {
+                "line_1": "ATT: +13%",
+                "line_2": "INT per 9 Character Levels: +1",
+                "line_3": "ATT: +10%"
+            }
+        },
+        "secondary": {
+            "name": "Princess No's Skull Armor",
+            "set": null,
+            "lucky_item": false,
+            "level": "140",
+            "stars": 0,
+            "base_stats": {
+                "str": 14,
+                "dex": 14,
+                "int": 0,
+                "luk": 0,
+                "hp": 0,
+                "mp": 0,
+                "attack": 9,
+                "magic_attack": 0,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 0
+            },
+            "potential": {
+                "line_1": "Boss Monster Damage: +40%",
+                "line_2": "Boss Monster Damage: +30%",
+                "line_3": "Ignore Monster DEF: +30%"
+            },
+            "bonus_potential": {
+                "line_1": "INT: +12%",
+                "line_2": "ATT: +9%",
+                "line_3": "ATT: +9%"
+            }
+        },
+        "emblem": {
+            "name": "Gold Maple Leaf Emblem",
+            "set": null,
+            "lucky_item": false,
+            "level": "100",
+            "stars": 0,
+            "base_stats": {
+                "str": 10,
+                "dex": 10,
+                "int": 10,
+                "luk": 10,
+                "hp": 0,
+                "mp": 0,
+                "attack": 2,
+                "magic_attack": 2,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 0
+            },
+            "potential": {
+                "line_1": "ATT: +12%",
+                "line_2": "ATT: +9%",
+                "line_3": "ATT: +9%"
+            },
+            "bonus_potential": {
+                "line_1": "ATT: +12%",
+                "line_2": "STR: +9%",
+                "line_3": "15% chance to recover 85 MP when attacking."
+            }
+        },
+        "ring_1": {
+            "name": "Dawn Guardian Angel Ring",
+            "set": "Dawn Boss Set",
+            "lucky_item": false,
+            "level": "160",
+            "stars": 22,
+            "base_stats": {
+                "str": 5,
+                "dex": 5,
+                "int": 5,
+                "luk": 5,
+                "hp": 200,
+                "mp": 200,
+                "attack": 2,
+                "magic_attack": 2,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 0
+            },
+            "flame_stats": {},
+            "scroll_stats": {
+                "str": 6,
+                "dex": 0,
+                "int": 6,
+                "luk": 1,
+                "hp": 10,
+                "mp": 20,
+                "attack": 18,
+                "magic_attack": 2,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 0
+            },
+            "starforce_stats": {
+                "str": 131,
+                "dex": 131,
+                "int": 131,
+                "luk": 131,
+                "hp": 255,
+                "mp": 0,
+                "attack": 92,
+                "magic_attack": 92,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 0
+            },
+            "potential": {
+                "line_1": "STR: +13%",
+                "line_2": "ALl Stats: +7%",
+                "line_3": "STR: +10%"
+            },
+            "bonus_potential": {
+                "line_1": "STR: +8%",
+                "line_2": "LUK per 9 Character Levels: +1",
+                "line_3": "STR: +6%"
+            }
+        },
+        "ring_2": {
+            "name": "Superior Gollux Ring",
+            "set": "Superior Gollux Set",
+            "lucky_item": false,
+            "level": "150",
+            "stars": 22,
+            "base_stats": {
+                "str": 10,
+                "dex": 10,
+                "int": 10,
+                "luk": 10,
+                "hp": 250,
+                "mp": 250,
+                "attack": 8,
+                "magic_attack": 8,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 0
+            },
+            "flame_stats": {},
+            "scroll_stats": {
+                "str": 24,
+                "dex": 24,
+                "int": 24,
+                "luk": 24,
+                "hp": 0,
+                "mp": 0,
+                "attack": 32,
+                "magic_attack": 32,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 0
+            },
+            "starforce_stats": {
+                "str": 117,
+                "dex": 117,
+                "int": 117,
+                "luk": 117,
+                "hp": 255,
+                "mp": 0,
+                "attack": 85,
+                "magic_attack": 85,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 0
+            },
+            "potential": {
+                "line_1": "STR: +12%",
+                "line_2": "STR: +9%",
+                "line_3": "STR: +9%"
+            },
+            "bonus_potential": {
+                "line_1": "Item Drop Rate: +5%",
+                "line_2": "STR: +8%",
+                "line_3": "Max HP: +8%"
+            }
+        },
+        "ring_3": {
+            "name": "Reinforced Gollux Ring",
+            "set": "Reinforced Gollux Set",
+            "lucky_item": false,
+            "level": "140",
+            "stars": 22,
+            "base_stats": {
+                "str": 8,
+                "dex": 8,
+                "int": 8,
+                "luk": 8,
+                "hp": 200,
+                "mp": 200,
+                "attack": 5,
+                "magic_attack": 5,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 0
+            },
+            "flame_stats": {},
+            "scroll_stats": {
+                "str": 18,
+                "dex": 18,
+                "int": 18,
+                "luk": 18,
+                "hp": 0,
+                "mp": 0,
+                "attack": 24,
+                "magic_attack": 24,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 0
+            },
+            "starforce_stats": {
+                "str": 103,
+                "dex": 103,
+                "int": 103,
+                "luk": 103,
+                "hp": 255,
+                "mp": 0,
+                "attack": 78,
+                "magic_attack": 78,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 0
+            },
+            "potential": {
+                "line_1": "STR: +12%",
+                "line_2": "STR: +9%",
+                "line_3": "All Stats: +9%"
+            },
+            "bonus_potential": {
+                "line_1": "STR: +8%",
+                "line_2": "LUK: +18",
+                "line_3": "LUK per 9 Character Levels: +1"
+            }
+        },
+        "ring_4": {
+            "name": "Ring of Restraint",
+            "lucky_item": false,
+            "level": "100",
+            "stars": 0,
+            "base_stats": {
+                "str": 4,
+                "dex": 4,
+                "int": 4,
+                "luk": 4,
+                "attack": 4,
+                "magic_attack": 4
+            }
+        },
+        "pendant_1": {
+            "name": "Source of Suffering",
+            "set": "Pitched Boss Set",
+            "lucky_item": false,
+            "level": "160",
+            "stars": 22,
+            "base_stats": {
+                "str": 10,
+                "dex": 10,
+                "int": 10,
+                "luk": 10,
+                "hp": 0,
+                "hp%": 5,
+                "mp": 0,
+                "attack": 3,
+                "magic_attack": 3,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 0
+            },
+            "flame_stats": {
+                "str": 75,
+                "dex": 0,
+                "int": 0,
+                "luk": 75,
+                "hp": 0,
+                "mp": 0,
+                "attack": 0,
+                "magic_attack": 0,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 6
+            },
+            "scroll_stats": {
+                "str": 5,
+                "dex": 1,
+                "int": 7,
+                "luk": 7,
+                "hp": 0,
+                "mp": 0,
+                "attack": 12,
+                "magic_attack": 2,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 0
+            },
+            "starforce_stats": {
+                "str": 131,
+                "dex": 131,
+                "int": 131,
+                "luk": 131,
+                "hp": 255,
+                "mp": 0,
+                "attack": 92,
+                "magic_attack": 92,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 0
+            },
+            "potential": {
+                "line_1": "All Stats: +10%",
+                "line_2": "STR: +10%",
+                "line_3": "STR: +10%"
+            },
+            "bonus_potential": {
+                "line_1": "STR: +8%",
+                "line_2": "All Stats: +5%",
+                "line_3": "INT: +6%"
+            }
+        },
+        "pendant_2": {
+            "name": "Superior Gollux Pendant",
+            "set": "Superior Gollux Set",
+            "lucky_item": false,
+            "level": "150",
+            "stars": 22,
+            "base_stats": {
+                "str": 28,
+                "dex": 28,
+                "int": 28,
+                "luk": 28,
+                "hp": 300,
+                "mp": 300,
+                "attack": 5,
+                "magic_attack": 5,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 0
+            },
+            "flame_stats": {
+                "str": 4,
+                "dex": 0,
+                "int": 0,
+                "luk": 4,
+                "hp": 0,
+                "mp": 0,
+                "attack": 0,
+                "magic_attack": 0,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 2
+            },
+            "scroll_stats": {
+                "str": 24,
+                "dex": 24,
+                "int": 24,
+                "luk": 24,
+                "hp": 0,
+                "mp": 0,
+                "attack": 32,
+                "magic_attack": 32,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 0
+            },
+            "starforce_stats": {
+                "str": 117,
+                "dex": 117,
+                "int": 117,
+                "luk": 117,
+                "hp": 255,
+                "mp": 0,
+                "attack": 85,
+                "magic_attack": 85,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 0
+            },
+            "potential": {
+                "line_1": "STR: +12%",
+                "line_2": "STR: +9%",
+                "line_3": "STR: +9%"
+            },
+            "bonus_potential": {
+                "line_1": "HP Recovery Items and Skills: 30%",
+                "line_2": "STR: +6%",
+                "line_3": "All Stats: +5%"
+            }
+        },
+        "belt": {
+            "name": "Superior Engraved Gollux Belt",
+            "set": "Superior Gollux Set",
+            "lucky_item": false,
+            "level": "150",
+            "stars": 22,
+            "base_stats": {
+                "str": 60,
+                "dex": 60,
+                "int": 60,
+                "luk": 60,
+                "hp": 200,
+                "mp": 200,
+                "attack": 35,
+                "magic_attack": 35,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 0
+            },
+            "flame_stats": {
+                "str": 48,
+                "dex": 16,
+                "int": 0,
+                "luk": 0,
+                "hp": 0,
+                "mp": 0,
+                "attack": 0,
+                "magic_attack": 0,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 3
+            },
+            "scroll_stats": {
+                "str": 15,
+                "dex": 15,
+                "int": 15,
+                "luk": 15,
+                "hp": 0,
+                "mp": 0,
+                "attack": 20,
+                "magic_attack": 20,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 0
+            },
+            "starforce_stats": {
+                "str": 117,
+                "dex": 117,
+                "int": 117,
+                "luk": 117,
+                "hp": 255,
+                "mp": 0,
+                "attack": 85,
+                "magic_attack": 85,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 0
+            },
+            "potential": {
+                "line_1": "STR: +12%",
+                "line_2": "STR: +9%",
+                "line_3": "STR: +9%"
+            },
+            "bonus_potential": {
+                "line_1": "STR: +8%",
+                "line_2": "INT per 9 Character Levels: +1",
+                "line_3": "STR per 9 Character Levels: +1"
+            }
+        },
+        "earrings": {
+            "name": "Superior Engraved Gollux Earrings",
+            "set": "Superior Gollux Set",
+            "lucky_item": false,
+            "level": "150",
+            "stars": 22,
+            "base_stats": {
+                "str": 15,
+                "dex": 15,
+                "int": 15,
+                "luk": 15,
+                "hp": 150,
+                "mp": 150,
+                "attack": 10,
+                "magic_attack": 10,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 0
+            },
+            "flame_stats": {
+                "str": 12,
+                "dex": 0,
+                "int": 36,
+                "luk": 0,
+                "hp": 0,
+                "mp": 0,
+                "attack": 0,
+                "magic_attack": 0,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 4
+            },
+            "scroll_stats": {
+                "str": 27,
+                "dex": 27,
+                "int": 27,
+                "luk": 27,
+                "hp": 0,
+                "mp": 0,
+                "attack": 36,
+                "magic_attack": 36,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 0
+            },
+            "starforce_stats": {
+                "str": 117,
+                "dex": 117,
+                "int": 117,
+                "luk": 117,
+                "hp": 0,
+                "mp": 0,
+                "attack": 85,
+                "magic_attack": 85,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 0
+            },
+            "potential": {
+                "line_1": "STR: +12%",
+                "line_2": "STR: +12%",
+                "line_3": "STR: +12%"
+            },
+            "bonus_potential": {
+                "line_1": "STR: +8%",
+                "line_2": "STR: +6%",
+                "line_3": "Max MP: +8%"
+            }
+        },
+        "face_accessory": {
+            "name": "Twilight Mark",
+            "set": "Dawn Boss Set",
+            "lucky_item": false,
+            "level": "140",
+            "stars": 22,
+            "base_stats": {
+                "str": 5,
+                "dex": 5,
+                "int": 5,
+                "luk": 5,
+                "attack": 5,
+                "magic_attack": 5,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 0
+            },
+            "flame_stats": {
+                "str": 60,
+                "dex": 0,
+                "int": 68,
+                "luk": 0,
+                "hp": 0,
+                "mp": 0,
+                "attack": 0,
+                "magic_attack": 0,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 5
+            },
+            "scroll_stats": {
+                "str": 50,
+                "dex": 50,
+                "int": 50,
+                "luk": 50,
+                "hp": 0,
+                "mp": 0,
+                "attack": 0,
+                "magic_attack": 0,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 0
+            },
+            "starforce_stats": {
+                "str": 103,
+                "dex": 103,
+                "int": 103,
+                "luk": 103,
+                "hp": 0,
+                "mp": 0,
+                "attack": 78,
+                "magic_attack": 78,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 0
+            },
+            "potential": {
+                "line_1": "STR: +12%",
+                "line_2": "STR: +9%",
+                "line_3": "STR: +9%"
+            },
+            "bonus_potential": {
+                "line_1": "STR: +8%",
+                "line_2": "HP Recovery Items and Skills: 20%",
+                "line_3": "STR per 9 Character Levels: +1"
+            }
+        },
+        "eye_accessory": {
+            "name": "Sweetwater Monocle",
+            "set": null,
+            "lucky_item": false,
+            "level": "160",
+            "stars": 17,
+            "base_stats": {
+                "str": 10,
+                "dex": 10,
+                "int": 10,
+                "luk": 10,
+                "hp": 240,
+                "mp": 240,
+                "attack": 0,
+                "magic_attack": 0,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 0
+            },
+            "flame_stats": {
+                "str": 70,
+                "dex": 0,
+                "int": 25,
+                "luk": 50,
+                "hp": 0,
+                "mp": 0,
+                "attack": 0,
+                "magic_attack": 0,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 5
+            },
+            "scroll_stats": {
+                "str": -1,
+                "dex": 9,
+                "int": 4,
+                "luk": -1,
+                "hp": 0,
+                "mp": 0,
+                "attack": 36,
+                "magic_attack": 8,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 0
+            },
+            "starforce_stats": {
+                "str": 66,
+                "dex": 66,
+                "int": 66,
+                "luk": 66,
+                "hp": 0,
+                "mp": 0,
+                "attack": 21,
+                "magic_attack": 21,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 0
+            },
+            "potential": {
+                "line_1": "STR: +10%",
+                "line_2": "STR: +10%",
+                "line_3": "All Stats: +7%"
+            },
+            "bonus_potential": {
+                "line_1": "STR: +8%",
+                "line_2": "Max MP: +8%",
+                "line_3": "STR: +18"
+            }
+        },
+        "pocket": {
+            "name": "Cursed Red Spellbook",
+            "set": "Pitched Boss Set",
+            "lucky_item": false,
+            "level": "160",
+            "stars": 0,
+            "base_stats": {
+                "str": 20,
+                "dex": 10,
+                "int": 10,
+                "luk": 10,
+                "hp": 100,
+                "mp": 100,
+                "attack": 10,
+                "magic_attack": 10,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 0
+            },
+            "flame_stats": {
+                "str": 84,
+                "dex": 54,
+                "int": 30,
+                "luk": 0,
+                "hp": 0,
+                "mp": 0,
+                "attack": 0,
+                "magic_attack": 0,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 6
+            }
+        },
+        "badge": {
+            "name": "Crystal Ventus Badge",
+            "set": "Boss Accessory Set",
+            "lucky_item": false,
+            "level": "130",
+            "stars": 0,
+            "base_stats": {
+                "str": 10,
+                "dex": 10,
+                "int": 10,
+                "luk": 10,
+                "attack": 5,
+                "magic_attack": 5,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 0
+            }
+        },
+        "medal": {
+            "name": "Seven Day Monster Parker",
+            "set": "Seven Days Set",
+            "lucky_item": false,
+            "level": "100",
+            "stars": 0,
+            "base_stats": {
+                "str": 7,
+                "dex": 7,
+                "int": 7,
+                "luk": 7,
+                "attack": 7,
+                "magic_attack": 7,
+                "ignore_enemy_defense": 10,
+                "boss_damage": 0,
+                "all_stat%": 0
+            }
+        },
+        "shoulder": {
+            "name": "Arcane Umbra Pirate Shoulder",
+            "set": "Arcane Umbra Set (Pirate)",
+            "lucky_item": false,
+            "level": "200",
+            "stars": 22,
+            "base_stats": {
+                "str": 35,
+                "dex": 35,
+                "int": 35,
+                "luk": 35,
+                "hp": 0,
+                "mp": 0,
+                "attack": 20,
+                "magic_attack": 20,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 0
+            },
+            "flame_stats": {},
+            "scroll_stats": {
+                "str": 10,
+                "dex": 3,
+                "int": 6,
+                "luk": 9,
+                "hp": 0,
+                "mp": 0,
+                "attack": 16,
+                "magic_attack": 6,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 0
+            },
+            "starforce_stats": {
+                "str": 145,
+                "dex": 145,
+                "int": 105,
+                "luk": 105,
+                "hp": 255,
+                "mp": 0,
+                "attack": 106,
+                "magic_attack": 106,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 0
+            },
+            "potential": {
+                "line_1": "All Stats: +10%",
+                "line_2": "STR: +10%",
+                "line_3": "STR: +10%"
+            },
+            "bonus_potential": {
+                "line_1": "All Stats: +6%",
+                "line_2": "STR per 9 Character Levels: +1",
+                "line_3": "DEX per 9 Character Levels: +1"
+            }
+        },
+        "gloves": {
+            "name": "Arcane Umbra Pirate Gloves",
+            "set": "Arcane Umbra Set (Pirate)",
+            "lucky_item": false,
+            "level": "200",
+            "stars": 22,
+            "base_stats": {
+                "str": 40,
+                "dex": 40,
+                "int": 0,
+                "luk": 0,
+                "hp": 0,
+                "mp": 0,
+                "attack": 9,
+                "magic_attack": 0,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 0
+            },
+            "flame_stats": {
+                "str": 79,
+                "dex": 0,
+                "int": 0,
+                "luk": 24,
+                "hp": 0,
+                "mp": 3000,
+                "attack": 0,
+                "magic_attack": 0,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 6
+            },
+            "scroll_stats": {
+                "attack": 27
+            },
+            "starforce_stats": {
+                "str": 145,
+                "dex": 145,
+                "int": 0,
+                "luk": 0,
+                "hp": 255,
+                "attack": 113,
+                "magic_attack": 106,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 0
+            },
+            "potential": {
+                "line_1": "Critical Damage: +8%",
+                "line_2": "Critical Damage: +8%",
+                "line_3": "Max MP: +9%"
+            },
+            "bonus_potential": {
+                "line_1": "All Stats: +6%",
+                "line_2": "All Stats: +5%",
+                "line_3": "ATT: +14"
+            }
+        },
+        "cape": {
+            "name": "Arcane Umbra Pirate Cape",
+            "set": "Arcane Umbra Set (Pirate)",
+            "lucky_item": false,
+            "level": "200",
+            "stars": 22,
+            "base_stats": {
+                "str": 35,
+                "dex": 35,
+                "int": 35,
+                "luk": 35,
+                "hp": 0,
+                "mp": 0,
+                "attack": 6,
+                "magic_attack": 6,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 0
+            },
+            "flame_stats": {
+                "str": 79,
+                "dex": 30,
+                "int": 0,
+                "luk": 54,
+                "hp": 0,
+                "mp": 3000,
+                "attack": 0,
+                "magic_attack": 0,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 6
+            },
+            "scroll_stats": {
+                "str": 63,
+                "dex": 0,
+                "int": 0,
+                "luk": 0,
+                "hp": 1080,
+                "mp": 0,
+                "attack": 1,
+                "magic_attack": 0,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 0
+            },
+            "starforce_stats": {
+                "str": 145,
+                "dex": 145,
+                "int": 105,
+                "luk": 105,
+                "hp": 255,
+                "attack": 106,
+                "magic_attack": 106,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 0
+            },
+            "potential": {
+                "line_1": "STR: +13%",
+                "line_2": "STR: +10%",
+                "line_3": "All Stats: +7%"
+            },
+            "bonus_potential": {
+                "line_1": "STR per 9 Character Levels: +2",
+                "line_2": "INT: +18",
+                "line_3": "ATT: +14"
+            }
+        },
+        "shoes": {
+            "name": "Arcane Umbra Pirate Shoes",
+            "set": "Arcane Umbra Set (Pirate)",
+            "lucky_item": false,
+            "level": "200",
+            "stars": 22,
+            "base_stats": {
+                "str": 40,
+                "dex": 40,
+                "int": 0,
+                "luk": 0,
+                "hp": 0,
+                "mp": 0,
+                "attack": 9,
+                "magic_attack": 0,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 0
+            },
+            "flame_stats": {
+                "str": 138,
+                "dex": 36,
+                "int": 0,
+                "luk": 36,
+                "hp": 0,
+                "mp": 0,
+                "attack": 0,
+                "magic_attack": 0,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 0
+            },
+            "scroll_stats": {
+                "str": 63,
+                "dex": 0,
+                "int": 0,
+                "luk": 0,
+                "hp": 1080,
+                "mp": 0,
+                "attack": 1,
+                "magic_attack": 0,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 0
+            },
+            "starforce_stats": {
+                "str": 145,
+                "dex": 145,
+                "int": 0,
+                "luk": 0,
+                "hp": 0,
+                "attack": 106,
+                "magic_attack": 106,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 0
+            },
+            "potential": {
+                "line_1": "STR: +13%",
+                "line_2": "STR: +10%",
+                "line_3": "All Stats: +7%"
+            },
+            "bonus_potential": {
+                "line_1": "All Stats: +6%",
+                "line_2": "STR: +6%",
+                "line_3": "Max HP: 11%"
+            }
+        },
+        "heart": {
+            "name": "Glimmering Wondroid Heard",
+            "lucky_item": false,
+            "level": "120",
+            "stars": 15,
+            "base_stats": {
+                "str": 10,
+                "dex": 10,
+                "int": 10,
+                "luk": 10,
+                "hp": 500,
+                "mp": 0,
+                "attack": 1,
+                "magic_attack": 1,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 0
+            },
+            "scroll_stats": {
+                "str": 0,
+                "dex": 0,
+                "int": 0,
+                "luk": 0,
+                "hp": 0,
+                "mp": 0,
+                "attack": 77,
+                "magic_attack": 0,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 0
+            },
+            "starforce_stats": {
+                "str": 40,
+                "dex": 40,
+                "int": 40,
+                "luk": 40,
+                "hp": 0,
+                "attack": 0,
+                "magic_attack": 0,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 0
+            },
+            "potential": {
+                "line_1": "STR: +12%",
+                "line_2": "STR: +12%",
+                "line_3": "Max HP: +9%"
+            },
+            "bonus_potential": {
+                "line_1": "STR: +8%",
+                "line_2": "LUK: +18",
+                "line_3": "INT per 9 Character Levels: +1"
+            }
+        },
+        "totem_1": {
+            "name": "Frenzy Totem",
+            "lucky_item": false,
+            "level": 0,
+            "stars": 0,
+            "base_stats": {
+                "str": 30,
+                "dex": 30,
+                "int": 30,
+                "luk": 30,
+                "hp": 0,
+                "mp": 0,
+                "attack": 10,
+                "magic_attack": 10,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 0
+            }
+        },
+        "totem_2": {
+            "name": "King of Beasts Totem",
+            "lucky_item": false,
+            "level": 30,
+            "stars": 0,
+            "base_stats": {
+                "str": 28,
+                "dex": 28,
+                "int": 28,
+                "luk": 28,
+                "hp": 0,
+                "mp": 0,
+                "attack": 14,
+                "magic_attack": 14,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 0
+            }
+        },
+        "totem_3": {
+            "name": "Ancient Slate Replica",
+            "lucky_item": false,
+            "level": 0,
+            "stars": 0,
+            "base_stats": {
+                "str": 20,
+                "dex": 20,
+                "int": 20,
+                "luk": 20,
+                "hp": 0,
+                "mp": 0,
+                "attack": 5,
+                "magic_attack": 5,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 0
+            },
+            "flame_stats": {
+                "str": 75,
+                "dex": 24,
+                "int": 18,
+                "luk": 0,
+                "hp": 0,
+                "mp": 0,
+                "attack": 0,
+                "magic_attack": 0,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 0
+            }
+        }
+    },
+    "familiar_badges": [
+        "Cursed Badge",
+        "Labyrinth Badge",
+        "Ocean Badge",
+        "Swamp Badge",
+        "Apocalypse Badge",
+        "Mineral Badge",
+        "Lion Badge",
+        "Sandy Badge"
+    ],
+    "familiars": {
+        "familiar_1": {
+            "name": "Deo",
+            "potential": {
+                "line_1": "Boss Damage: +45%",
+                "line_2": "DEF: +5%"
+            }
+        },
+        "familiar_2": {
+            "name": "Crushing Glare",
+            "potential": {
+                "line_1": "Boss Damage: +40%",
+                "line_2": "Increases Speed and Jump by a large amount"
+            }
+        },
+        "familiar_3": {
+            "name": "Ascendion",
+            "potential": {
+                "line_1": "Boss Damage: +40%",
+                "line_2": "Continuously restores MP"
+            }
+        }
+    }
+}
