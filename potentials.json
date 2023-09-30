@@ -119,6 +119,9 @@
     "LUK per 9 Character Levels: +1": {
         "luk": 31
     },
+    "All Stats: +5": {
+        "all_stat": 5
+    },
     "All Stats: +10%": {
         "all_stat%": 10
     },

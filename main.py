@@ -8,7 +8,7 @@ import calcs
 import symbols
 import equipment
 import familiars
-
+import legion
 
 def main(filepath):
     # Opening JSON file
@@ -37,13 +37,15 @@ def main(filepath):
     # print(equipment.equipment_stat(data['equipment']['hat']))
     # print(equipment.equipment_stat(data['equipment']['top']))
     # print(equipment.equipment_stat(data['equipment']['pants']))
-    print(equipment.equipment_total_stats(data['equipment']))
-    print(familiars.badge_stats(data["familiar_badges"]))
-    print(familiars.potential_stats(data["familiars"]))
+    # print(equipment.equipment_total_stats(data['equipment']))
+    # print(familiars.badge_stats(data["familiar_badges"]))
+    # print(familiars.potential_stats(data["familiars"]))
+    print(legion.legion_level(data["legion_characters"]))
+    print(legion.legion_level_bonus(data["legion_characters"]))
 
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    main(r'D:\Projects\maplecalc\character_sheet.json')
+    main(r'C:\repos\calculator\character_sheet.json')
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/

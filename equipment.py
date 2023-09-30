@@ -39,25 +39,24 @@ def equipment_stat(equip):
         stat_adder(stat_object, equip["soul_stats"])
 
     if "potential" in equip:
+        translated_potentials = {}
         for potential_line in equip["potential"]:
             if equip["potential"][potential_line] in potential_data:
-                x = potential_data[equip["potential"][potential_line]]
-                for i in x:
-                    stat_object[i] = stat_getter(stat_object, i) + x[i]
-                    # stat_object[i] = stat_getter(stat_object, i) + x[i]
+                translated_potentials[potential_line] = potential_data[equip["potential"][potential_line]]
+
+        for line in translated_potentials:
+            stat_adder(stat_object, translated_potentials[line])
 
     if "bonus_potential" in equip:
+        translated_potentials = {}
         for potential_line in equip["bonus_potential"]:
             if equip["bonus_potential"][potential_line] in potential_data:
-                x = potential_data[equip["bonus_potential"][potential_line]]
+                translated_potentials[potential_line] = potential_data[equip["bonus_potential"][potential_line]]
 
-                for i in x:
-                    stat_object[i] = stat_getter(stat_object, i) + x[i]
-                    # stat_object[i] += x[i]
+        for line in translated_potentials:
+            stat_adder(stat_object, translated_potentials[line])
 
-    # won't work for multiple ied lines on same item
-
-    print(stat_object)
+    print("{}: {}".format(equip["name"], stat_object))
 
     return stat_object
 
@@ -85,10 +84,10 @@ def stat_getter(obj, stat):
 
 
 def stat_adder(stat_object, dict_object):
-    stat_object["str"] = stat_getter(stat_object, "str") + stat_getter(dict_object, "str")
-    stat_object["dex"] = stat_getter(stat_object, "dex") + stat_getter(dict_object, "dex")
-    stat_object["int"] = stat_getter(stat_object, "int") + stat_getter(dict_object, "int")
-    stat_object["luk"] = stat_getter(stat_object, "luk") + stat_getter(dict_object, "luk")
+    stat_object["str"] = stat_getter(stat_object, "str") + stat_getter(dict_object, "str") + stat_getter(dict_object, "all_stat")
+    stat_object["dex"] = stat_getter(stat_object, "dex") + stat_getter(dict_object, "dex") + stat_getter(dict_object, "all_stat")
+    stat_object["int"] = stat_getter(stat_object, "int") + stat_getter(dict_object, "int") + stat_getter(dict_object, "all_stat")
+    stat_object["luk"] = stat_getter(stat_object, "luk") + stat_getter(dict_object, "luk") + stat_getter(dict_object, "all_stat")
     stat_object["hp"] = stat_getter(stat_object, "hp") + stat_getter(dict_object, "hp")
     stat_object["hp%"] = stat_getter(stat_object, "hp%") + stat_getter(dict_object, "hp%")
     stat_object["mp"] = stat_getter(stat_object, "mp") + stat_getter(dict_object, "mp")
@@ -107,6 +106,10 @@ def stat_adder(stat_object, dict_object):
     stat_object["dex%"] = stat_getter(stat_object, "dex%") + stat_getter(dict_object, "dex%")
     stat_object["int%"] = stat_getter(stat_object, "int%") + stat_getter(dict_object, "int%")
     stat_object["luk%"] = stat_getter(stat_object, "luk%") + stat_getter(dict_object, "luk%")
+    stat_object["final_str"] = stat_getter(stat_object, "final_str") + stat_getter(dict_object, "final_str")
+    stat_object["final_dex"] = stat_getter(stat_object, "final_dex") + stat_getter(dict_object, "final_dex")
+    stat_object["final_int"] = stat_getter(stat_object, "final_int") + stat_getter(dict_object, "final_int")
+    stat_object["final_luk"] = stat_getter(stat_object, "final_luk") + stat_getter(dict_object, "final_luk")
 
 
 # Set bonus counter
