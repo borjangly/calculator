@@ -43,6 +43,17 @@ def main(filepath):
     print(legion.legion_level(data["legion_characters"]))
     print(legion.legion_level_bonus(data["legion_characters"]))
 
+    stat_object = {}
+
+    equipment.stat_adder(stat_object, equipment.equipment_total_stats(data['equipment']))
+    equipment.stat_adder(stat_object, familiars.badge_stats(data["familiar_badges"]))
+    equipment.stat_adder(stat_object, familiars.potential_stats(data["familiars"]))
+    equipment.stat_adder(stat_object, legion.legion_level_bonus(data["legion_characters"]))
+
+    print(stat_object)
+
+    print(calcs.stats(data["level"], stat_object))
+
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
