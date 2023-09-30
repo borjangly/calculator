@@ -1,0 +1,352 @@
+{
+    "dark_knight": [
+        {"hp%": 2},
+        {"hp%": 3},
+        {"hp%": 4},
+        {"hp%": 5},
+        {"hp%": 6}
+    ],
+    "hero": [
+        {"final_str": 10},
+        {"final_str": 20},
+        {"final_str": 40},
+        {"final_str": 80},
+        {"final_str": 100}
+    ],
+    "paladin": [
+        {"final_str": 10},
+        {"final_str": 20},
+        {"final_str": 40},
+        {"final_str": 80},
+        {"final_str": 100}
+    ],
+    "bishop": [
+        {"final_int": 10},
+        {"final_int": 20},
+        {"final_int": 40},
+        {"final_int": 80},
+        {"final_int": 100}
+    ],
+    "fire_poison": [
+        {"mp%": 2},
+        {"mp%": 3},
+        {"mp%": 4},
+        {"mp%": 5},
+        {"mp%": 6}
+    ],
+    "ice_lightning": [
+        {"final_int": 10},
+        {"final_int": 20},
+        {"final_int": 40},
+        {"final_int": 80},
+        {"final_int": 100}
+    ],
+    "bowmaster": [
+        {"final_dex": 10},
+        {"final_dex": 20},
+        {"final_dex": 40},
+        {"final_dex": 80},
+        {"final_dex": 100}
+    ],
+    "crossbowman": [
+        {"critical_rate": 1},
+        {"critical_rate": 2},
+        {"critical_rate": 3},
+        {"critical_rate": 4},
+        {"critical_rate": 5}
+    ],
+    "pathfinder": [
+        {"final_dex": 10},
+        {"final_dex": 20},
+        {"final_dex": 40},
+        {"final_dex": 80},
+        {"final_dex": 100}
+    ],
+    "dual_blade": [
+        {"final_luk": 10},
+        {"final_luk": 20},
+        {"final_luk": 40},
+        {"final_luk": 80},
+        {"final_luk": 100}
+    ],
+    "night_lord": [
+        {"critical_rate": 1},
+        {"critical_rate": 2},
+        {"critical_rate": 3},
+        {"critical_rate": 4},
+        {"critical_rate": 5}
+    ],
+    "shadower": [
+        {"final_luk": 10},
+        {"final_luk": 20},
+        {"final_luk": 40},
+        {"final_luk": 80},
+        {"final_luk": 100}
+    ],
+    "buccaneer": [
+        {"final_str": 10},
+        {"final_str": 20},
+        {"final_str": 40},
+        {"final_str": 80},
+        {"final_str": 100}
+    ],
+    "cannon_master": [
+        {"final_str": 10},
+        {"final_str": 20},
+        {"final_str": 40},
+        {"final_str": 80},
+        {"final_str": 100}
+    ],
+    "corsair": [
+        {"summon_duration": 4},
+        {"summon_duration": 6},
+        {"summon_duration": 8},
+        {"summon_duration": 10},
+        {"summon_duration": 12}
+    ],
+    "mihile": [
+        {"hp": 250},
+        {"hp": 500},
+        {"hp": 1000},
+        {"hp": 2000},
+        {"hp": 2500}
+    ],
+    "dawn_warrior": [
+        {"hp": 250},
+        {"hp": 500},
+        {"hp": 1000},
+        {"hp": 2000},
+        {"hp": 2500}
+    ],
+    "blaze_wizard": [
+        {"final_int": 10},
+        {"final_int": 20},
+        {"final_int": 40},
+        {"final_int": 80},
+        {"final_int": 100}
+    ],
+    "wind_archer": [
+        {"final_dex": 10},
+        {"final_dex": 20},
+        {"final_dex": 40},
+        {"final_dex": 80},
+        {"final_dex": 100}
+    ],
+    "night_walker": [
+        {"final_luk": 10},
+        {"final_luk": 20},
+        {"final_luk": 40},
+        {"final_luk": 80},
+        {"final_luk": 100}
+    ],
+    "thunder_breaker": [
+        {"final_str": 10},
+        {"final_str": 20},
+        {"final_str": 40},
+        {"final_str": 80},
+        {"final_str": 100}
+    ],
+    "aran": [
+        {},
+        {},
+        {},
+        {},
+        {}
+    ],
+    "evan": [
+        {},
+        {},
+        {},
+        {},
+        {}
+    ],
+    "luminous": [
+        {"final_int": 10},
+        {"final_int": 20},
+        {"final_int": 40},
+        {"final_int": 80},
+        {"final_int": 100}
+    ],
+    "mercedes": [
+        {"skill_cooldown": 2},
+        {"skill_cooldown": 3},
+        {"skill_cooldown": 4},
+        {"skill_cooldown": 5},
+        {"skill_cooldown": 6}
+    ],
+    "phantom": [
+        {"mesos": 1},
+        {"mesos": 2},
+        {"mesos": 3},
+        {"mesos": 4},
+        {"mesos": 5}
+    ],
+    "shade": [
+        {"critical_damage": 1},
+        {"critical_damage": 2},
+        {"critical_damage": 3},
+        {"critical_damage": 5},
+        {"critical_damage": 6}
+    ],
+    "demon_slayer": [
+        {"status_resistance": 1},
+        {"status_resistance": 2},
+        {"status_resistance": 3},
+        {"status_resistance": 4},
+        {"status_resistance": 5}
+    ],
+    "demon_avenger": [
+        {"boss_damage": 1},
+        {"boss_damage": 2},
+        {"boss_damage": 3},
+        {"boss_damage": 5},
+        {"boss_damage": 6}
+    ],
+    "blaster": [
+        {"ignore_enemy_defense": 1},
+        {"ignore_enemy_defense": 2},
+        {"ignore_enemy_defense": 3},
+        {"ignore_enemy_defense": 5},
+        {"ignore_enemy_defense": 6}
+    ],
+    "battle_mage": [
+        {"final_int": 10},
+        {"final_int": 20},
+        {"final_int": 40},
+        {"final_int": 80},
+        {"final_int": 100}
+    ],
+    "wild_hunter": [
+        {"damage": 0.8},
+        {"damage": 1.6},
+        {"damage": 2.4},
+        {"damage": 3.2},
+        {"damage": 4}
+    ],
+    "mechanic": [
+        {"buff_duration": 5},
+        {"buff_duration": 10},
+        {"buff_duration": 15},
+        {"buff_duration": 20},
+        {"buff_duration": 25}
+    ],
+    "xenon": [
+        {"final_str": 5, "final_dex": 5, "final_luk": 5},
+        {"final_str": 10, "final_dex": 10, "final_luk": 10},
+        {"final_str": 20, "final_dex": 20, "final_luk": 20},
+        {"final_str": 40, "final_dex": 40, "final_luk": 40},
+        {"final_str": 50, "final_dex": 50, "final_luk": 50}
+    ],
+    "kaiser": [
+        {"final_str": 10},
+        {"final_str": 20},
+        {"final_str": 40},
+        {"final_str": 80},
+        {"final_str": 100}
+    ],
+    "angelic_buster": [
+        {"final_dex": 10},
+        {"final_dex": 20},
+        {"final_dex": 40},
+        {"final_dex": 80},
+        {"final_dex": 100}
+    ],
+    "cadena": [
+        {"final_luk": 10},
+        {"final_luk": 20},
+        {"final_luk": 40},
+        {"final_luk": 80},
+        {"final_luk": 100}
+    ],
+    "kain": [
+        {"final_dex": 10},
+        {"final_dex": 20},
+        {"final_dex": 40},
+        {"final_dex": 80},
+        {"final_dex": 100}
+    ],
+    "ark": [
+        {"final_str": 10},
+        {"final_str": 20},
+        {"final_str": 40},
+        {"final_str": 80},
+        {"final_str": 100}
+    ],
+    "adele": [
+        {"final_str": 10},
+        {"final_str": 20},
+        {"final_str": 40},
+        {"final_str": 80},
+        {"final_str": 100}
+    ],
+    "illium": [
+        {"final_int": 10},
+        {"final_int": 20},
+        {"final_int": 40},
+        {"final_int": 80},
+        {"final_int": 100}
+    ],
+    "khali": [
+        {"final_luk": 10},
+        {"final_luk": 20},
+        {"final_luk": 40},
+        {"final_luk": 80},
+        {"final_luk": 100}
+    ],
+    "hoyoung": [
+        {"final_luk": 10},
+        {"final_luk": 20},
+        {"final_luk": 40},
+        {"final_luk": 80},
+        {"final_luk": 100}
+    ],
+    "lara": [
+        {"final_int": 10},
+        {"final_int": 20},
+        {"final_int": 40},
+        {"final_int": 80},
+        {"final_int": 100}
+    ],
+    "hayato": [
+        {"critical_damage": 1},
+        {"critical_damage": 2},
+        {"critical_damage": 3},
+        {"critical_damage": 5},
+        {"critical_damage": 6}
+    ],
+    "kanna": [
+        {"boss_damage": 1},
+        {"boss_damage": 2},
+        {"boss_damage": 3},
+        {"boss_damage": 5},
+        {"boss_damage": 6}
+    ],
+    "zero": [
+        {"exp": 4},
+        {"exp": 6},
+        {"exp": 8},
+        {"exp": 10},
+        {"exp": 12}
+    ],
+    "kinesis": [
+        {"final_int": 10},
+        {"final_int": 20},
+        {"final_int": 40},
+        {"final_int": 80},
+        {"final_int": 100}
+    ],
+    "beast_tamer": [
+        {"ignore_enemy_defense": 1},
+        {"ignore_enemy_defense": 2},
+        {"ignore_enemy_defense": 3},
+        {"ignore_enemy_defense": 5},
+        {"ignore_enemy_defense": 6}
+    ],
+    "jett": [
+        {"critical_damage": 1},
+        {"critical_damage": 2},
+        {"critical_damage": 3},
+        {"critical_damage": 5},
+        {"critical_damage": 6}
+    ]
+}

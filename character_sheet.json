@@ -491,13 +491,13 @@
             },
             "potential": {
                 "line_1": "STR: +13%",
-                "line_2": "ALl Stats: +7%",
+                "line_2": "All Stats: +7%",
                 "line_3": "STR: +10%"
             },
             "bonus_potential": {
                 "line_1": "STR: +8%",
                 "line_2": "LUK per 9 Character Levels: +1",
-                "line_3": "STR: +6%"
+                "line_3": "STR: +18"
             }
         },
         "ring_2": {
@@ -548,13 +548,13 @@
             },
             "potential": {
                 "line_1": "STR: +12%",
-                "line_2": "STR: +9%",
+                "line_2": "STR: +12%",
                 "line_3": "STR: +9%"
             },
             "bonus_potential": {
-                "line_1": "Item Drop Rate: +5%",
-                "line_2": "STR: +8%",
-                "line_3": "Max HP: +8%"
+                "line_1": "HP Recovery Items and Skills: 30%",
+                "line_2": "All Stats: +5%",
+                "line_3": "STR: +6%"
             }
         },
         "ring_3": {
@@ -606,7 +606,7 @@
             "potential": {
                 "line_1": "STR: +12%",
                 "line_2": "STR: +9%",
-                "line_3": "All Stats: +9%"
+                "line_3": "All Stats: +6%"
             },
             "bonus_potential": {
                 "line_1": "STR: +8%",
@@ -1518,5 +1518,56 @@
                 "line_2": "Continuously restores MP"
             }
         }
-    }
+    },
+    "legion_characters": [
+        {"class": "buccaneer", "level": 281, "active": true},
+        {"class": "paladin", "level": 263, "active": true},
+        {"class": "thunder_breaker", "level": 252, "active": true},
+        {"class": "ark", "level": 250, "active": true},
+        {"class": "shade", "level": 250, "active": true},
+        {"class": "kanna", "level": 241, "active": true},
+        {"class": "adele", "level": 225, "active": true},
+        {"class": "lara", "level": 222, "active": true},
+        {"class": "hoyoung", "level": 220, "active": true},
+        {"class": "dawn_warrior", "level": 216, "active": true},
+        {"class": "mechanic", "level": 214, "active": true},
+        {"class": "kanna", "level": 212, "active": false},
+        {"class": "pathfinder", "level": 212, "active": true},
+        {"class": "wind_archer", "level": 211, "active": true},
+        {"class": "mercedes", "level": 210, "active": true},
+        {"class": "aran", "level": 210, "active": true},
+        {"class": "zero", "level": 210, "active": true},
+        {"class": "phantom", "level": 210, "active": true},
+        {"class": "demon_slayer", "level": 210, "active": true},
+        {"class": "evan", "level": 210, "active": true},
+        {"class": "dark_knight", "level": 210, "active": false},
+        {"class": "bishop", "level": 210, "active": true},
+        {"class": "night_lord", "level": 210, "active": true},
+        {"class": "hayato", "level": 210, "active": true},
+        {"class": "crossbowman", "level": 210, "active": true},
+        {"class": "demon_avenger", "level": 210, "active": true},
+        {"class": "jett", "level": 210, "active": true},
+        {"class": "beast_tamer", "level": 210, "active": true},
+        {"class": "luminous", "level": 210, "active": true},
+        {"class": "angelic_buster", "level": 210, "active": true},
+        {"class": "bowmaster", "level": 210, "active": true},
+        {"class": "corsair", "level": 210, "active": true},
+        {"class": "cannon_master", "level": 210, "active": true},
+        {"class": "kaiser", "level": 210, "active": true},
+        {"class": "cadena", "level": 210, "active": false},
+        {"class": "hero", "level": 210, "active": true},
+        {"class": "kain", "level": 210, "active": true},
+        {"class": "blaster", "level": 210, "active": true},
+        {"class": "wild_hunter", "level": 210, "active": true},
+        {"class": "battle_mage", "level": 210, "active": false},
+        {"class": "night_walker", "level": 210, "active": true},
+        {"class": "mihile", "level": 210, "active": true},
+        {"class": "shadower", "level": 210, "active": true},
+        {"class": "dual_blade", "level": 210, "active": false},
+        {"class": "ice_lightning", "level": 210, "active": false},
+        {"class": "kinesis", "level": 210, "active": false},
+        {"class": "fire_poison", "level": 210, "active": false},
+        {"class": "blaze_wizard", "level": 210, "active": false},
+        {"class": "illium", "level": 200, "active": false}
+    ]
 }
