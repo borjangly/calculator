@@ -4,7 +4,7 @@ import re
 import math
 
 file_directory = os.path.dirname(__file__)
-filename = os.path.join(file_directory, 'potentials.json')
+filename = os.path.join(file_directory, r'data_sheets\potentials.json')
 
 print(filename)
 level = 281

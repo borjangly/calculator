@@ -1,0 +1,86 @@
+{
+    "passive": {
+        "guild_on_fire_1": [
+            {"attack": 6, "magic_attack": 6}
+        ],
+        "guild_on_fire_2": [
+            {"attack": 4, "magic_attack": 4}
+        ],
+        "guild_on_fire_3": [
+            {"attack": 5, "magic_attack": 5}
+        ],
+        "well_rounded": [
+            {"str": 40, "dex": 40, "int": 40, "luk": 40, "hp": 2000}
+        ]
+    },
+    "active": {
+        "boss_slayers": [
+            {"boss_damage": 2},
+            {"boss_damage": 4},
+            {"boss_damage": 6},
+            {"boss_damage": 8},
+            {"boss_damage": 10},
+            {"boss_damage": 12},
+            {"boss_damage": 14},
+            {"boss_damage": 16},
+            {"boss_damage": 18},
+            {"boss_damage": 20},
+            {"boss_damage": 22},
+            {"boss_damage": 24},
+            {"boss_damage": 26},
+            {"boss_damage": 28},
+            {"boss_damage": 30}
+        ],
+        "undeterred": [
+            {"ignore_enemy_defense": 2},
+            {"ignore_enemy_defense": 4},
+            {"ignore_enemy_defense": 6},
+            {"ignore_enemy_defense": 8},
+            {"ignore_enemy_defense": 10},
+            {"ignore_enemy_defense": 12},
+            {"ignore_enemy_defense": 14},
+            {"ignore_enemy_defense": 16},
+            {"ignore_enemy_defense": 18},
+            {"ignore_enemy_defense": 20},
+            {"ignore_enemy_defense": 22},
+            {"ignore_enemy_defense": 24},
+            {"ignore_enemy_defense": 26},
+            {"ignore_enemy_defense": 28},
+            {"ignore_enemy_defense": 30}
+        ],
+        "for_the_guild": [
+            {"damage": 2},
+            {"damage": 4},
+            {"damage": 6},
+            {"damage": 8},
+            {"damage": 10},
+            {"damage": 12},
+            {"damage": 14},
+            {"damage": 16},
+            {"damage": 18},
+            {"damage": 20},
+            {"damage": 22},
+            {"damage": 24},
+            {"damage": 26},
+            {"damage": 28},
+            {"damage": 30}
+        ],
+        "hard_hitter": [
+            {"critical_damage": 2},
+            {"critical_damage": 4},
+            {"critical_damage": 6},
+            {"critical_damage": 8},
+            {"critical_damage": 10},
+            {"critical_damage": 12},
+            {"critical_damage": 14},
+            {"critical_damage": 16},
+            {"critical_damage": 18},
+            {"critical_damage": 20},
+            {"critical_damage": 22},
+            {"critical_damage": 24},
+            {"critical_damage": 26},
+            {"critical_damage": 28},
+            {"critical_damage": 30}
+        ]
+    }
+}

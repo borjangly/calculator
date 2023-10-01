@@ -9,6 +9,7 @@ import symbols
 import equipment
 import familiars
 import legion
+import stat_functions
 
 def main(filepath):
     # Opening JSON file
@@ -45,10 +46,10 @@ def main(filepath):
 
     stat_object = {}
 
-    equipment.stat_adder(stat_object, equipment.equipment_total_stats(data['equipment']))
-    equipment.stat_adder(stat_object, familiars.badge_stats(data["familiar_badges"]))
-    equipment.stat_adder(stat_object, familiars.potential_stats(data["familiars"]))
-    equipment.stat_adder(stat_object, legion.legion_level_bonus(data["legion_characters"]))
+    stat_functions.stat_adder(stat_object, equipment.equipment_total_stats(data['equipment']))
+    stat_functions.stat_adder(stat_object, familiars.badge_stats(data["familiar_badges"]))
+    stat_functions.stat_adder(stat_object, familiars.potential_stats(data["familiars"]))
+    stat_functions.stat_adder(stat_object, legion.legion_level_bonus(data["legion_characters"]))
 
     print(stat_object)
 
