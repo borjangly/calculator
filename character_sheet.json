@@ -370,7 +370,8 @@
                 "all_stat%": 0
             },
             "soul_stats": {
-                "attack%": 3
+                "attack%": 3,
+                "attack": 0
             },
             "potential": {
                 "line_1": "Boss Monster Damage: +40%",
@@ -1487,13 +1488,13 @@
         }
     },
     "familiar_badges": [
-        "Cursed Badge",
+        "Apocalypse Badge",
+        "Lion Badge",
+        "Depths Badge",
+        "Mineral Badge",
         "Labyrinth Badge",
         "Ocean Badge",
         "Swamp Badge",
-        "Apocalypse Badge",
-        "Mineral Badge",
-        "Lion Badge",
         "Sandy Badge"
     ],
     "familiars": {
