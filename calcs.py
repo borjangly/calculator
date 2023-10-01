@@ -27,19 +27,21 @@ def stat_value(base_stat, secondary_stat):
 
 def stats(character_level, stat_object):
     ap = level.ability_points(character_level)
-    print(ap)
     # see below
     # 50 2nd job skills
     # 98 monster life
     # 28 from v skills rope + dse
-    # 25 from legion grid
     # 70 from link skill
     # 20 pb title
     # 5 from beginner alliance skill
     # 40 from lvl 20 passive guild skill
-    base_stat = math.floor(ap * 1) + stat_object["str"] + 50 + (20 + 20 + 6 + 5 + 10 + 5 + 5 + 6 + 14 + 7) + (23 + 5) + 25 + 70 + 20 + 5 + 40
-    print(base_stat)
+    base_stat = math.floor(ap * 1) + stat_object["str"] + 50 + (20 + 20 + 6 + 5 + 10 + 5 + 5 + 6 + 14 + 7) + (23 + 5) + 70 + 20 + 5 + 40
     # hardcoding in some extra stats that i'm too lazy to calculate for now
-    total_stat = math.floor(base_stat * (1 + (stat_object["str%"] + stat_object["all_stat%"])/100)) + stat_object["final_str"] + 13200 + 6500 + 120
+    # 120 from hyper stat
+    total_stat = math.floor(base_stat * (1 + (stat_object["str%"] + stat_object["all_stat%"])/100)) + stat_object["final_str"] + 120
+
+    print("AP: {}".format(ap))
+    print("Base stat: {}".format(base_stat))
+    print("Total stat: {}".format(total_stat))
 
     return total_stat

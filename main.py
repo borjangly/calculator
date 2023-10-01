@@ -41,15 +41,19 @@ def main(filepath):
     # print(equipment.equipment_total_stats(data['equipment']))
     # print(familiars.badge_stats(data["familiar_badges"]))
     # print(familiars.potential_stats(data["familiars"]))
-    print(legion.legion_level(data["legion_characters"]))
-    print(legion.legion_level_bonus(data["legion_characters"]))
+    # print(legion.legion_level(data["legion_characters"]))
+    # print(legion.legion_level_bonus(data["legion_characters"]))
 
+    new_symbol = symbols.Symbol(data["class"], data['symbols']['arcane_river'], data['symbols']['grandis'])
     stat_object = {}
 
     stat_functions.stat_adder(stat_object, equipment.equipment_total_stats(data['equipment']))
     stat_functions.stat_adder(stat_object, familiars.badge_stats(data["familiar_badges"]))
     stat_functions.stat_adder(stat_object, familiars.potential_stats(data["familiars"]))
     stat_functions.stat_adder(stat_object, legion.legion_level_bonus(data["legion_characters"]))
+    stat_functions.stat_adder(stat_object, data["legion_grid"])
+    stat_functions.stat_adder(stat_object, new_symbol.total_arcane_symbol_stat())
+    stat_functions.stat_adder(stat_object, new_symbol.total_grandis_symbol_stat())
 
     print(stat_object)
 

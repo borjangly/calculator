@@ -1,34 +1,54 @@
 # Some symbol calcs
-
-# Arcane Symbols
-def arcane_symbol_stat(level):
-    if level == 0:
-        return 0
-    else:
-        return 200 + level * 100
+import os
+import json
+import stat_functions
 
 
-# Grandis Authentic/Sacred Symbols
-def grandis_symbol_stat(level):
-    if level == 0:
-        return 0
-    else:
-        return 300 + level * 200
+class Symbol:
+    def __init__(self, character_class, arcane_symbols, grandis_symbols):
+        self.character_class = character_class
+        self.arcane_symbols = arcane_symbols
+        self.grandis_symbols = grandis_symbols
 
+    # Grab class main stat
+    def main_stat(self):
+        file_directory = os.path.dirname(__file__)
+        character_sheet = os.path.join(file_directory, r"data_sheets\{}.json".format(self.character_class))
 
-# Calculate total final stat from Arcane Symbols
-def total_arcane_symbol_stat(arcane_symbols):
-    total = 0
-    for symbol in arcane_symbols:
-        total += arcane_symbol_stat(arcane_symbols[symbol])
+        f = open(character_sheet)
+        data = json.load(f)
+        f.close()
 
-    return total
+        return "final_{}".format(data["primary_stat"])
 
+    # Arcane Symbols
+    def arcane_symbol_stat(self, level):
+        stat_object = {}
+        if level != 0:
+            stat_object[self.main_stat()] = 200 + level * 100
 
-# Calculate total final stat from Grandis Symbols
-def total_grandis_symbol_stat(grandis_symbols):
-    total = 0
-    for symbol in grandis_symbols:
-        total += grandis_symbol_stat(grandis_symbols[symbol])
+        return stat_object
 
-    return total
+    # Grandis Authentic/Sacred Symbols
+    def grandis_symbol_stat(self, level):
+        stat_object = {}
+        if level != 0:
+            stat_object[self.main_stat()] = 300 + level * 200
+
+        return stat_object
+
+    # Calculate total final stat from Arcane Symbols
+    def total_arcane_symbol_stat(self):
+        stat_object = {}
+        for symbol in self.arcane_symbols:
+            stat_functions.stat_adder(stat_object, self.arcane_symbol_stat(self.arcane_symbols[symbol]))
+
+        return stat_object
+
+    # Calculate total final stat from Grandis Symbols
+    def total_grandis_symbol_stat(self):
+        stat_object = {}
+        for symbol in self.grandis_symbols:
+            stat_functions.stat_adder(stat_object, self.grandis_symbol_stat(self.grandis_symbols[symbol]))
+
+        return stat_object

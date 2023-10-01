@@ -57,7 +57,7 @@ def equipment_stat(equip):
         for line in translated_potentials:
             stat_functions.stat_adder(stat_object, translated_potentials[line])
 
-    print("{}: {}".format(equip["name"], stat_object))
+    # print("{}: {}".format(equip["name"], stat_object))
 
     return stat_object
 
@@ -72,6 +72,8 @@ def equipment_total_stats(equipment_list):
         stat_functions.stat_adder(stat_object, aggregated_equip_stats)
 
     stat_functions.stat_adder(stat_object, set_bonus(count_set(equipment_list)))
+
+    print("Equipment stats: {}".format(stat_object))
 
     return stat_object
 
@@ -103,7 +105,7 @@ def count_set(equipment_list):
             if m["type"] in set_bonus_data[n]["set_equipment"] and m["equip_set"] != n and counts[n] > 2:
                 counts[n] += 1
 
-    print(counts)
+    # print(counts)
 
     return counts
 

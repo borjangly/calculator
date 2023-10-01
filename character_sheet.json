@@ -1,6 +1,6 @@
 {
     "name": "HoppingFog",
-    "class": "Buccaneer",
+    "class": "buccaneer",
     "level": 281,
     "base_attack": 3000,
     "final_attack": 14,
@@ -364,7 +364,7 @@
                 "hp": 255,
                 "mp": 255,
                 "attack": 223,
-                "magic_attack": 85,
+                "magic_attack": 0,
                 "ignore_enemy_defense": 0,
                 "boss_damage": 0,
                 "all_stat%": 0
@@ -1570,5 +1570,23 @@
         {"class": "fire_poison", "level": 210, "active": false},
         {"class": "blaze_wizard", "level": 210, "active": false},
         {"class": "illium", "level": 200, "active": false}
-    ]
+    ],
+    "legion_grid": {
+        "str": 75,
+        "dex": 5,
+        "int": 5,
+        "luk": 0,
+        "hp": 0,
+        "mp": 0,
+        "attack": 15,
+        "magic_attack": 0,
+        "boss_damage": 40,
+        "ignore_enemy_defense": 40,
+        "critical_damage": 20,
+        "buff_duration": 5,
+        "normal_monster_damage": 0,
+        "status_resistance": 0,
+        "exp": 0,
+        "critical_rate": 0
+    }
 }
