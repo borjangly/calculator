@@ -1,17 +1,6 @@
 # Some calcs involving legion
-import os
-import json
 import stat_functions
-
-# Create potential dict
-file_directory = os.path.dirname(__file__)
-legion_filename = os.path.join(file_directory, r"data_sheets\legion_characters.json")
-
-f = open(legion_filename)
-
-legion_data = json.load(f)
-
-f.close()
+from data import legion_data
 
 
 def legion_level(legion):

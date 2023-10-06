@@ -1,24 +1,6 @@
 # Some calcs involving equipment
-import os
-import json
 import stat_functions
-
-# Create potential dict
-file_directory = os.path.dirname(__file__)
-potential_filename = os.path.join(file_directory, r"data_sheets\potentials.json")
-set_bonus_filename = os.path.join(file_directory, r"data_sheets\set_bonus.json")
-
-f = open(potential_filename)
-
-potential_data = json.load(f)
-
-f.close()
-
-g = open(set_bonus_filename)
-
-set_bonus_data = json.load(g)
-
-g.close()
+from data import potential_data, set_bonus_data
 
 
 def equipment_stat(equip):

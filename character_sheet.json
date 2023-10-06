@@ -719,13 +719,13 @@
                 "all_stat%": 0
             },
             "flame_stats": {
-                "str": 4,
+                "str": 0,
                 "dex": 0,
                 "int": 0,
                 "luk": 4,
                 "hp": 0,
                 "mp": 0,
-                "attack": 0,
+                "attack": 5,
                 "magic_attack": 0,
                 "ignore_enemy_defense": 0,
                 "boss_damage": 0,
@@ -1588,5 +1588,24 @@
         "status_resistance": 0,
         "exp": 0,
         "critical_rate": 0
+    },
+    "hyper_stats": {
+        "str": 4,
+        "dex": 0,
+        "int": 0,
+        "luk": 0,
+        "hp": 0,
+        "mp": 0,
+        "df_tf_pp_mana": 0,
+        "critical_rate": 0,
+        "critical_damage": 13,
+        "ignore_enemy_defense": 13,
+        "damage": 12,
+        "boss_damage": 13,
+        "normal_monster_damage": 0,
+        "status_resistance": 0,
+        "attack_power": 6,
+        "exp": 0,
+        "arcane_force": 0
     }
 }

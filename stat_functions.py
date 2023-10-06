@@ -31,3 +31,7 @@ def stat_adder(stat_object, dict_object):
     stat_object["final_dex"] = stat_getter(stat_object, "final_dex") + stat_getter(dict_object, "final_dex")
     stat_object["final_int"] = stat_getter(stat_object, "final_int") + stat_getter(dict_object, "final_int")
     stat_object["final_luk"] = stat_getter(stat_object, "final_luk") + stat_getter(dict_object, "final_luk")
+
+    # for elem in stat_object:
+    #     if stat_object[elem] == 0:
+    #         stat_object.pop(elem)

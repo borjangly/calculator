@@ -1,33 +1,15 @@
 # Some calcs involving familiars
-import os
-import json
 import stat_functions
-
-# Create potential dict
-file_directory = os.path.dirname(__file__)
-badge_filename = os.path.join(file_directory, r"data_sheets\familiar_badges.json")
-potential_filename = os.path.join(file_directory, r"data_sheets\familiar_potentials.json")
-
-f = open(potential_filename)
-
-potential_data = json.load(f)
-
-f.close()
-
-g = open(badge_filename)
-
-badge_data = json.load(g)
-
-g.close()
+from data import familiar_badge_data, familiar_potential_data
 
 
 def badge_stats(familiar_badges):
     stat_list = list()
 
     for badge in familiar_badges:
-        for i in badge_data[badge]:
+        for i in familiar_badge_data[badge]:
             # Recreating a dict to insert, don't know how to do this nicely (to be improved)
-            k = {i: badge_data[badge][i]}
+            k = {i: familiar_badge_data[badge][i]}
             stat_list.append(k)
 
     # badge max stats
@@ -63,8 +45,8 @@ def potential_stats(familiars):
     stat_object = {}
     for familiar in familiars:
         for potential_line in familiars[familiar]["potential"]:
-            if familiars[familiar]["potential"][potential_line] in potential_data:
-                x = potential_data[familiars[familiar]["potential"][potential_line]]
+            if familiars[familiar]["potential"][potential_line] in familiar_potential_data:
+                x = familiar_potential_data[familiars[familiar]["potential"][potential_line]]
 
                 for i in x:
                     stat_object[i] = stat_functions.stat_getter(stat_object, i) + x[i]
