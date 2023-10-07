@@ -63,14 +63,20 @@ def main(filepath):
     ring_2 = equips.Equipment(data['equipment']['ring_2'], "ring_2")
     ring_3 = equips.Equipment(data['equipment']['ring_3'], "ring_3")
     ring_4 = equips.Equipment(data['equipment']['ring_4'], "ring_4")
+    pendant_1 = equips.Equipment(data['equipment']['pendant_1'], "pendant_1")
+    pendant_2 = equips.Equipment(data['equipment']['pendant_2'], "pendant_2")
     hat = equips.Equipment(data['equipment']['hat'], "hat")
     top = equips.Equipment(data['equipment']['top'], "top")
     pants = equips.Equipment(data['equipment']['pants'], "pants")
     weapon = equips.Equipment(data['equipment']['weapon'], "weapon")
 
-    x = equip_stats.EquipStats([ring_1, ring_2, ring_3, ring_4, hat, top, pants, weapon])
+    x = equip_stats.EquipStats([ring_1, ring_2, ring_3, ring_4, hat, top, pants, weapon, pendant_1, pendant_2])
 
-    print(x.set_bonus())
+    print(ring_4.total_stat())
+
+    print(x.count_set())
+
+    print(x.set_total)
 
 
 # Press the green button in the gutter to run the script.

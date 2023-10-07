@@ -4,10 +4,10 @@ from data import potential_data, set_bonus_data
 
 
 class Equipment:
-    def __init__(self, equipment_data, type):
-        self.name = equipment_data.get("name"),
-        self.type = type
-        self.set = equipment_data.get("set"),
+    def __init__(self, equipment_data, equip_type):
+        self.name = equipment_data.get("name")
+        self.equip_type = equip_type
+        self.set = equipment_data.get("set")
         self.lucky_item = equipment_data.get("lucky_item")
         self.base_stats = equipment_data.get("base_stats")
         self.flame_stats = equipment_data.get("flame_stats")
@@ -20,9 +20,10 @@ class Equipment:
     @staticmethod
     def potential_translator(potential_object):
         translated_potentials = {}
-        for potential_line in potential_object:
-            if potential_object[potential_line] in potential_data:
-                stat_functions.stat_adder(translated_potentials, potential_data[potential_object[potential_line]])
+        if potential_object is not None:
+            for potential_line in potential_object:
+                if potential_object[potential_line] in potential_data:
+                    stat_functions.stat_adder(translated_potentials, potential_data[potential_object[potential_line]])
 
         return translated_potentials
 

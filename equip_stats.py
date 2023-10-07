@@ -6,6 +6,7 @@ from data import potential_data, set_bonus_data
 class EquipStats:
     def __init__(self, equipment_list):
         self.equipment_list = equipment_list
+        self.set_total = self.set_bonus(self.count_set())
 
     def count_set(self):
 
@@ -15,8 +16,8 @@ class EquipStats:
             if getattr(obj, "set") is not None:
                 set_list.append(obj.set)
 
-            if getattr(obj, "lucky_item") is not None:
-                set_obj = {"equip_set": set_list.append(obj.set), "type": set_list.append(obj.type)}
+            if getattr(obj, "lucky_item") is True:
+                set_obj = {"equip_set": obj.set, "type": obj.equip_type}
                 lucky_list.append(set_obj)
 
         counts = {}
