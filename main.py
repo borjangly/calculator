@@ -10,6 +10,8 @@ import equipment
 import familiars
 import legion
 import stat_functions
+import equips
+import equip_stats
 
 def main(filepath):
     # Opening JSON file
@@ -44,20 +46,31 @@ def main(filepath):
     # print(legion.legion_level(data["legion_characters"]))
     # print(legion.legion_level_bonus(data["legion_characters"]))
 
-    new_symbol = symbols.Symbol(data["class"], data['symbols']['arcane_river'], data['symbols']['grandis'])
-    stat_object = {}
+    # new_symbol = symbols.Symbol(data["class"], data['symbols']['arcane_river'], data['symbols']['grandis'])
+    # stat_object = {}
+    #
+    # stat_functions.stat_adder(stat_object, equipment.equipment_total_stats(data['equipment']))
+    # stat_functions.stat_adder(stat_object, familiars.badge_stats(data["familiar_badges"]))
+    # stat_functions.stat_adder(stat_object, familiars.potential_stats(data["familiars"]))
+    # stat_functions.stat_adder(stat_object, legion.legion_level_bonus(data["legion_characters"]))
+    # stat_functions.stat_adder(stat_object, data["legion_grid"])
+    # stat_functions.stat_adder(stat_object, new_symbol.total_arcane_symbol_stat())
+    # stat_functions.stat_adder(stat_object, new_symbol.total_grandis_symbol_stat())
 
-    stat_functions.stat_adder(stat_object, equipment.equipment_total_stats(data['equipment']))
-    stat_functions.stat_adder(stat_object, familiars.badge_stats(data["familiar_badges"]))
-    stat_functions.stat_adder(stat_object, familiars.potential_stats(data["familiars"]))
-    stat_functions.stat_adder(stat_object, legion.legion_level_bonus(data["legion_characters"]))
-    stat_functions.stat_adder(stat_object, data["legion_grid"])
-    stat_functions.stat_adder(stat_object, new_symbol.total_arcane_symbol_stat())
-    stat_functions.stat_adder(stat_object, new_symbol.total_grandis_symbol_stat())
+    # print(calcs.stats(data["level"], stat_object))
 
-    print(stat_object)
+    ring_1 = equips.Equipment(data['equipment']['ring_1'], "ring_1")
+    ring_2 = equips.Equipment(data['equipment']['ring_2'], "ring_2")
+    ring_3 = equips.Equipment(data['equipment']['ring_3'], "ring_3")
+    ring_4 = equips.Equipment(data['equipment']['ring_4'], "ring_4")
+    hat = equips.Equipment(data['equipment']['hat'], "hat")
+    top = equips.Equipment(data['equipment']['top'], "top")
+    pants = equips.Equipment(data['equipment']['pants'], "pants")
+    weapon = equips.Equipment(data['equipment']['weapon'], "weapon")
 
-    print(calcs.stats(data["level"], stat_object))
+    x = equip_stats.EquipStats([ring_1, ring_2, ring_3, ring_4, hat, top, pants, weapon])
+
+    print(x.set_bonus())
 
 
 # Press the green button in the gutter to run the script.

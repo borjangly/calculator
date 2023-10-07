@@ -77,32 +77,6 @@
             "skill_level": 1
         }
     },
-    "equipmenttypestemp": [
-        "hat",
-        "top",
-        "bottom",
-        "shoulder",
-        "gloves",
-        "cape",
-        "shoes",
-        "ring_1",
-        "ring_2",
-        "ring_3",
-        "ring_4",
-        "eye_accessory",
-        "face_accessory",
-        "pendant_1",
-        "pendant_2",
-        "belt",
-        "pocket",
-        "android",
-        "heart",
-        "badge",
-        "medal",
-        "weapon",
-        "secondary",
-        "emblem"
-    ],
     "equipment": {
         "hat": {
             "name": "Royal Wanderer Hat",
