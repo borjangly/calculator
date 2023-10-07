@@ -1,6 +1,6 @@
 {
     "name": "HoppingFog",
-    "class": "Buccanneer",
+    "class": "buccaneer",
     "level": 281,
     "base_attack": 3000,
     "final_attack": 14,
@@ -77,32 +77,6 @@
             "skill_level": 1
         }
     },
-    "equipmenttypestemp": [
-        "hat",
-        "top",
-        "bottom",
-        "shoulder",
-        "gloves",
-        "cape",
-        "shoes",
-        "ring_1",
-        "ring_2",
-        "ring_3",
-        "ring_4",
-        "eye_accessory",
-        "face_accessory",
-        "pendant_1",
-        "pendant_2",
-        "belt",
-        "pocket",
-        "android",
-        "heart",
-        "badge",
-        "medal",
-        "weapon",
-        "secondary",
-        "emblem"
-    ],
     "equipment": {
         "hat": {
             "name": "Royal Wanderer Hat",
@@ -364,13 +338,14 @@
                 "hp": 255,
                 "mp": 255,
                 "attack": 223,
-                "magic_attack": 85,
+                "magic_attack": 0,
                 "ignore_enemy_defense": 0,
                 "boss_damage": 0,
                 "all_stat%": 0
             },
             "soul_stats": {
-                "attack%": 3
+                "attack%": 3,
+                "attack": 0
             },
             "potential": {
                 "line_1": "Boss Monster Damage: +40%",
@@ -718,13 +693,13 @@
                 "all_stat%": 0
             },
             "flame_stats": {
-                "str": 4,
+                "str": 0,
                 "dex": 0,
                 "int": 0,
                 "luk": 4,
                 "hp": 0,
                 "mp": 0,
-                "attack": 0,
+                "attack": 5,
                 "magic_attack": 0,
                 "ignore_enemy_defense": 0,
                 "boss_damage": 0,
@@ -1487,13 +1462,13 @@
         }
     },
     "familiar_badges": [
-        "Cursed Badge",
+        "Apocalypse Badge",
+        "Lion Badge",
+        "Depths Badge",
+        "Mineral Badge",
         "Labyrinth Badge",
         "Ocean Badge",
         "Swamp Badge",
-        "Apocalypse Badge",
-        "Mineral Badge",
-        "Lion Badge",
         "Sandy Badge"
     ],
     "familiars": {
@@ -1569,5 +1544,42 @@
         {"class": "fire_poison", "level": 210, "active": false},
         {"class": "blaze_wizard", "level": 210, "active": false},
         {"class": "illium", "level": 200, "active": false}
-    ]
+    ],
+    "legion_grid": {
+        "str": 75,
+        "dex": 5,
+        "int": 5,
+        "luk": 0,
+        "hp": 0,
+        "mp": 0,
+        "attack": 15,
+        "magic_attack": 0,
+        "boss_damage": 40,
+        "ignore_enemy_defense": 40,
+        "critical_damage": 20,
+        "buff_duration": 5,
+        "normal_monster_damage": 0,
+        "status_resistance": 0,
+        "exp": 0,
+        "critical_rate": 0
+    },
+    "hyper_stats": {
+        "str": 4,
+        "dex": 0,
+        "int": 0,
+        "luk": 0,
+        "hp": 0,
+        "mp": 0,
+        "df_tf_pp_mana": 0,
+        "critical_rate": 0,
+        "critical_damage": 13,
+        "ignore_enemy_defense": 13,
+        "damage": 12,
+        "boss_damage": 13,
+        "normal_monster_damage": 0,
+        "status_resistance": 0,
+        "attack_power": 6,
+        "exp": 0,
+        "arcane_force": 0
+    }
 }

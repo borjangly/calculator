@@ -1,17 +1,6 @@
 # Some calcs involving legion
-import os
-import json
-import equipment
-
-# Create potential dict
-file_directory = os.path.dirname(__file__)
-legion_filename = os.path.join(file_directory, "legion_characters.json")
-
-f = open(legion_filename)
-
-legion_data = json.load(f)
-
-f.close()
+import stat_functions
+from data import legion_data
 
 
 def legion_level(legion):
@@ -35,28 +24,28 @@ def legion_level_bonus(legion):
     for character in legion:
         if character["class"] == "zero":
             if character["level"] >= 250 and character["active"]:
-                equipment.stat_adder(stat_object, legion_data[character["class"]][4])
+                stat_functions.stat_adder(stat_object, legion_data[character["class"]][4])
             elif 200 <= character["level"] < 250 and character["active"]:
-                equipment.stat_adder(stat_object, legion_data[character["class"]][3])
+                stat_functions.stat_adder(stat_object, legion_data[character["class"]][3])
             elif 140 <= character["level"] < 200 and character["active"]:
-                equipment.stat_adder(stat_object, legion_data[character["class"]][2])
+                stat_functions.stat_adder(stat_object, legion_data[character["class"]][2])
             elif 100 <= character["level"] < 140 and character["active"]:
-                equipment.stat_adder(stat_object, legion_data[character["class"]][1])
+                stat_functions.stat_adder(stat_object, legion_data[character["class"]][1])
             elif 60 <= character["level"] < 100 and character["active"]:
-                equipment.stat_adder(stat_object, legion_data[character["class"]][0])
+                stat_functions.stat_adder(stat_object, legion_data[character["class"]][0])
             else:
                 pass
         else:
             if character["level"] >= 250 and character["active"]:
-                equipment.stat_adder(stat_object, legion_data[character["class"]][4])
+                stat_functions.stat_adder(stat_object, legion_data[character["class"]][4])
             elif 200 <= character["level"] < 250 and character["active"]:
-                equipment.stat_adder(stat_object, legion_data[character["class"]][3])
+                stat_functions.stat_adder(stat_object, legion_data[character["class"]][3])
             elif 180 <= character["level"] < 200 and character["active"]:
-                equipment.stat_adder(stat_object, legion_data[character["class"]][2])
+                stat_functions.stat_adder(stat_object, legion_data[character["class"]][2])
             elif 160 <= character["level"] < 180 and character["active"]:
-                equipment.stat_adder(stat_object, legion_data[character["class"]][1])
+                stat_functions.stat_adder(stat_object, legion_data[character["class"]][1])
             elif 130 <= character["level"] < 160 and character["active"]:
-                equipment.stat_adder(stat_object, legion_data[character["class"]][0])
+                stat_functions.stat_adder(stat_object, legion_data[character["class"]][0])
             else:
                 pass
 

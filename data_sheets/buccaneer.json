@@ -1,4 +1,7 @@
 {
+    "job": "pirate",
+    "primary_stat": "str",
+    "secondary_stat": "dex",
     "first_job": {
         "shadow_heart": {
             "critical_damage": 5,
