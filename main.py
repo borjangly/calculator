@@ -12,6 +12,7 @@ import legion
 import stat_functions
 import equips
 import equip_stats
+import hyper_stats
 
 def main(filepath):
     # Opening JSON file
@@ -41,6 +42,8 @@ def main(filepath):
     # print(equipment.equipment_stat(data['equipment']['top']))
     # print(equipment.equipment_stat(data['equipment']['pants']))
     # print(equipment.equipment_total_stats(data['equipment']))
+    # print(equipment.count_set(data['equipment']))
+    # print(equipment.set_bonus(equipment.count_set(data['equipment'])))
     # print(familiars.badge_stats(data["familiar_badges"]))
     # print(familiars.potential_stats(data["familiars"]))
     # print(legion.legion_level(data["legion_characters"]))
@@ -65,18 +68,69 @@ def main(filepath):
     ring_4 = equips.Equipment(data['equipment']['ring_4'], "ring_4")
     pendant_1 = equips.Equipment(data['equipment']['pendant_1'], "pendant_1")
     pendant_2 = equips.Equipment(data['equipment']['pendant_2'], "pendant_2")
+    earrings = equips.Equipment(data['equipment']['earrings'], "earrings")
+    belt = equips.Equipment(data['equipment']['belt'], "belt")
+    face_accessory = equips.Equipment(data['equipment']['face_accessory'], "face_accessory")
+    eye_accessory = equips.Equipment(data['equipment']['eye_accessory'], "eye_accessory")
+    pocket = equips.Equipment(data['equipment']['pocket'], "pocket")
     hat = equips.Equipment(data['equipment']['hat'], "hat")
     top = equips.Equipment(data['equipment']['top'], "top")
     pants = equips.Equipment(data['equipment']['pants'], "pants")
+    cape = equips.Equipment(data['equipment']['cape'], "cape")
+    shoulder = equips.Equipment(data['equipment']['shoulder'], "shoulder")
+    gloves = equips.Equipment(data['equipment']['gloves'], "gloves")
+    shoes = equips.Equipment(data['equipment']['shoes'], "shoes")
     weapon = equips.Equipment(data['equipment']['weapon'], "weapon")
+    secondary = equips.Equipment(data['equipment']['secondary'], "secondary")
+    emblem = equips.Equipment(data['equipment']['emblem'], "emblem")
+    medal = equips.Equipment(data['equipment']['medal'], "medal")
+    badge = equips.Equipment(data['equipment']['badge'], "badge")
+    heart = equips.Equipment(data['equipment']['heart'], "heart")
+    totem_1 = equips.Equipment(data['equipment']['totem_1'], "totem_1")
+    totem_2 = equips.Equipment(data['equipment']['totem_2'], "totem_2")
+    totem_3 = equips.Equipment(data['equipment']['totem_3'], "totem_3")
 
-    x = equip_stats.EquipStats([ring_1, ring_2, ring_3, ring_4, hat, top, pants, weapon, pendant_1, pendant_2])
+    the_list = [
+        ring_1,
+        ring_2,
+        ring_3,
+        ring_4,
+        pendant_1,
+        pendant_2,
+        earrings,
+        belt,
+        face_accessory,
+        eye_accessory,
+        pocket,
+        hat,
+        top,
+        pants,
+        cape,
+        shoulder,
+        gloves,
+        shoes,
+        weapon,
+        secondary,
+        emblem,
+        medal,
+        badge,
+        heart,
+        totem_1,
+        totem_2,
+        totem_3
+    ]
 
-    print(ring_4.total_stat())
+    # [ring_1, ring_2, ring_3, ring_4, hat, top, pants, weapon, pendant_1, pendant_2]
+    x = equip_stats.EquipStats(the_list)
 
-    print(x.count_set())
+    # print(x.set_total)
+    # print(x.count_set())
+    #
+    # print(x.equipment_total_stats())
 
-    print(x.set_total)
+    h = hyper_stats.HyperStats(data["hyper_stats"])
+
+    print(h.total_hyper_stats())
 
 
 # Press the green button in the gutter to run the script.

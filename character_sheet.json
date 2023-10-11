@@ -1578,7 +1578,7 @@
         "boss_damage": 13,
         "normal_monster_damage": 0,
         "status_resistance": 0,
-        "attack_power": 6,
+        "attack_and_magic_attack": 6,
         "exp": 0,
         "arcane_force": 0
     }

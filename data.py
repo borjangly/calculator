@@ -43,3 +43,10 @@ f = open(familiar_potential_filename)
 familiar_potential_data = json.load(f)
 f.close()
 
+# Hyper stats
+hyper_stat_filename = os.path.join(file_directory, r"data_sheets\hyper_stats.json")
+
+f = open(hyper_stat_filename)
+hyper_stat_data = json.load(f)
+f.close()
+
