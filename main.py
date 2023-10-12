@@ -16,23 +16,14 @@ import hyper_stats
 import monster_life
 import link_skills
 import guild_skills
+import class_skills
 
-def main(filepath):
-    # Opening JSON file
-    f = open(filepath)
+from data import character_sheet
 
-    # returns JSON object as
-    # a dictionary
-    data = json.load(f)
 
-    # Iterating through the json
-    # list
-    # for i in data:
-    #     print('{}: {}'.format(i, data[i]))
+def main():
 
-    # Closing file
-    f.close()
-
+    data = character_sheet
     # print(level.ability_points(data['level']))
     # print(level.hyper_stats(data['level']))
     # print(calcs.attack_increase(data['base_attack'], data['attack%'], data['final_attack']))
@@ -152,6 +143,10 @@ def main(filepath):
 
     print(gg.total_guild_skill_stats())
 
+    cs = class_skills.ClassSkills(data["skill_config"])
+
+    print(cs.class_skill_stats())
+
     stat_functions.stat_adder(
         aa,
         h.total_hyper_stats(),
@@ -165,14 +160,16 @@ def main(filepath):
         familiars.badge_stats(data["familiar_badges"]),
         familiars.potential_stats(data["familiars"]),
         gg.total_guild_skill_stats(),
+        cs.class_skill_stats()
     )
 
     print(aa)
 
     print(calcs.stats(data["level"], aa))
 
+
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    main(r'C:\repos\calculator\character_sheet.json')
+    main()
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/

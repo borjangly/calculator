@@ -8,6 +8,13 @@ import json
 # Define general variables for use
 file_directory = os.path.dirname(__file__)
 
+# Character sheet
+character_filename = os.path.join(file_directory, r"character_sheet.json")
+
+f = open(character_filename)
+character_sheet = json.load(f)
+f.close()
+
 # Legion
 legion_filename = os.path.join(file_directory, r"data_sheets\legion_characters.json")
 
@@ -69,4 +76,12 @@ guild_skill_filename = os.path.join(file_directory, r"data_sheets\guild_skills.j
 
 f = open(guild_skill_filename)
 guild_skill_data = json.load(f)
+f.close()
+
+# Character skills
+character_class = character_sheet["class"]
+character_skill_filename = os.path.join(file_directory, r"data_sheets\{}.json".format(character_class))
+
+f = open(character_skill_filename)
+character_skill_data = json.load(f)
 f.close()

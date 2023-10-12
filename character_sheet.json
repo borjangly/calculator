@@ -2,13 +2,6 @@
     "name": "HoppingFog",
     "class": "buccaneer",
     "level": 281,
-    "base_attack": 3000,
-    "final_attack": 14,
-    "attack%": 108,
-    "base_stat": 5000,
-    "secondary_stat": 1000,
-    "stat%": 682,
-    "final_stat": 20400,
     "symbols": {
         "arcane_river": {
             "vanishing_journey": 20,
@@ -26,6 +19,11 @@
             "arteria": 0,
             "carcion": 0
         }
+    },
+    "skill_config": {
+        "decent_combat_orders": true,
+        "combat_orders": false,
+        "passives_1": false
     },
     "link_skills": [
         {"skill": "pirate_blessing", "level": 6},
