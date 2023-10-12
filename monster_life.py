@@ -1,6 +1,7 @@
 import stat_functions
 from data import monster_life_data
 
+
 # does this need to be in a class? no
 # am i gonna put it one anyway? is my name jon
 class MonsterLife:

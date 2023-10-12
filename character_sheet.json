@@ -27,56 +27,21 @@
             "carcion": 0
         }
     },
-    "link_skills": {
-        "skill_1": {
-            "skill_name": "Fury Unleashed",
-            "skill_level": 3
-        },
-        "skill_2": {
-            "skill_name": "",
-            "skill_level": 1
-        },
-        "skill_3": {
-            "skill_name": "",
-            "skill_level": 1
-        },
-        "skill_4": {
-            "skill_name": "",
-            "skill_level": 1
-        },
-        "skill_5": {
-            "skill_name": "",
-            "skill_level": 1
-        },
-        "skill_6": {
-            "skill_name": "",
-            "skill_level": 1
-        },
-        "skill_7": {
-            "skill_name": "",
-            "skill_level": 1
-        },
-        "skill_8": {
-            "skill_name": "",
-            "skill_level": 1
-        },
-        "skill_9": {
-            "skill_name": "",
-            "skill_level": 1
-        },
-        "skill_10": {
-            "skill_name": "",
-            "skill_level": 1
-        },
-        "skill_11": {
-            "skill_name": "",
-            "skill_level": 1
-        },
-        "skill_12": {
-            "skill_name": "",
-            "skill_level": 1
-        }
-    },
+    "link_skills": [
+        {"skill": "pirate_blessing", "level": 6},
+        {"skill": "fury_unleashed", "level": 3},
+        {"skill": "wild_rage", "level": 3},
+        {"skill": "judgment", "level": 2},
+        {"skill": "focus_spirit", "level": 3},
+        {"skill": "light_wash", "level": 3},
+        {"skill": "thiefs_cunning", "level": 6},
+        {"skill": "empirical_knowledge", "level": 6},
+        {"skill": "unfair_advantage", "level": 2},
+        {"skill": "terms_and_conditions", "level": 3},
+        {"skill": "solus", "level": 3},
+        {"skill": "elementalism", "level": 2},
+        {"skill": "time_to_prepare", "level": 2}
+    ],
     "equipment": {
         "hat": {
             "name": "Royal Wanderer Hat",
@@ -1473,16 +1438,16 @@
     ],
     "familiars": {
         "familiar_1": {
-            "name": "Deo",
+            "name": "Lil Luminous - Equilibrium",
             "potential": {
                 "line_1": "Boss Damage: +45%",
                 "line_2": "DEF: +5%"
             }
         },
         "familiar_2": {
-            "name": "Crushing Glare",
+            "name": "Deo",
             "potential": {
-                "line_1": "Boss Damage: +40%",
+                "line_1": "Attacks ignore 50% Monster DEF",
                 "line_2": "Increases Speed and Jump by a large amount"
             }
         },
@@ -1616,6 +1581,17 @@
         "conditional_monsters": [
             "lil_lania",
             "lil_moonbeam"
+        ]
+    },
+    "guild_skills": {
+        "passive": [
+            "guild_on_fire_1",
+            "guild_on_fire_2",
+            "guild_on_fire_3",
+            "well_rounded"
+        ],
+        "active": [
+            {"skill": "boss_slayer", "level": 0}
         ]
     }
 }

@@ -1,20 +1,12 @@
 {
     "passive": {
-        "guild_on_fire_1": [
-            {"attack": 6, "magic_attack": 6}
-        ],
-        "guild_on_fire_2": [
-            {"attack": 4, "magic_attack": 4}
-        ],
-        "guild_on_fire_3": [
-            {"attack": 5, "magic_attack": 5}
-        ],
-        "well_rounded": [
-            {"str": 40, "dex": 40, "int": 40, "luk": 40, "hp": 2000}
-        ]
+        "guild_on_fire_1": {"attack": 6, "magic_attack": 6},
+        "guild_on_fire_2": {"attack": 4, "magic_attack": 4},
+        "guild_on_fire_3": {"attack": 5, "magic_attack": 5},
+        "well_rounded": {"str": 40, "dex": 40, "int": 40, "luk": 40, "hp": 2000}
     },
     "active": {
-        "boss_slayers": [
+        "boss_slayer": [
             {"boss_damage": 2},
             {"boss_damage": 4},
             {"boss_damage": 6},

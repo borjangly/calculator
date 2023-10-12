@@ -14,6 +14,8 @@ import equips
 import equip_stats
 import hyper_stats
 import monster_life
+import link_skills
+import guild_skills
 
 def main(filepath):
     # Opening JSON file
@@ -50,7 +52,7 @@ def main(filepath):
     # print(legion.legion_level(data["legion_characters"]))
     # print(legion.legion_level_bonus(data["legion_characters"]))
 
-    # new_symbol = symbols.Symbol(data["class"], data['symbols']['arcane_river'], data['symbols']['grandis'])
+    new_symbol = symbols.Symbol(data["class"], data['symbols']['arcane_river'], data['symbols']['grandis'])
     # stat_object = {}
     #
     # stat_functions.stat_adder(stat_object, equipment.equipment_total_stats(data['equipment']))
@@ -133,13 +135,41 @@ def main(filepath):
 
     mm = monster_life.MonsterLife(data["monster_life"])
 
-    print(mm.normal_monster_stats({}))
-    print(mm.special_monster_stats({}))
-    print(mm.conditional_monster_stats({}))
-    print(mm.total_stat())
+    # print(mm.normal_monster_stats({}))
+    # print(mm.special_monster_stats({}))
+    # print(mm.conditional_monster_stats({}))
+    # print(mm.total_stat())
+    #
+    # print(h.total_hyper_stats())
 
-    print(h.total_hyper_stats())
+    aa = {}
 
+    my_link = link_skills.LinkSkills(data["link_skills"])
+
+    print(my_link.total_link_skill_stats())
+
+    gg = guild_skills.GuildSkills(data["guild_skills"])
+
+    print(gg.total_guild_skill_stats())
+
+    stat_functions.stat_adder(
+        aa,
+        h.total_hyper_stats(),
+        x.equipment_total_stats(),
+        mm.total_stat(),
+        my_link.total_link_skill_stats(),
+        new_symbol.total_arcane_symbol_stat(),
+        new_symbol.total_grandis_symbol_stat(),
+        data["legion_grid"],
+        legion.legion_level_bonus(data["legion_characters"]),
+        familiars.badge_stats(data["familiar_badges"]),
+        familiars.potential_stats(data["familiars"]),
+        gg.total_guild_skill_stats(),
+    )
+
+    print(aa)
+
+    print(calcs.stats(data["level"], aa))
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':

@@ -56,3 +56,17 @@ monster_life_filename = os.path.join(file_directory, r"data_sheets\monster_life.
 f = open(monster_life_filename)
 monster_life_data = json.load(f)
 f.close()
+
+# Link skills
+link_skill_filename = os.path.join(file_directory, r"data_sheets\link_skills.json")
+
+f = open(link_skill_filename)
+link_skill_data = json.load(f)
+f.close()
+
+# Guild skills
+guild_skill_filename = os.path.join(file_directory, r"data_sheets\guild_skills.json")
+
+f = open(guild_skill_filename)
+guild_skill_data = json.load(f)
+f.close()
