@@ -1581,5 +1581,41 @@
         "attack_and_magic_attack": 6,
         "exp": 0,
         "arcane_force": 0
+    },
+    "monster_life": {
+        "normal_monsters": [
+            "erda_ss",
+            "canid_ss",
+            "bovine_ss",
+            "toy_ss",
+            "soldier_s"
+        ],
+        "special_monsters": [
+            "seruf",
+            "thieving_moon_bunny",
+            "beryl",
+            "oberon",
+            "papulatus_clock",
+            "frankenroid",
+            "lil_luminous_light",
+            "lil_phantom",
+            "lil_shade",
+            "lil_cygnus",
+            "lil_luminous_equilibrium",
+            "lil_von_leon",
+            "lapis",
+            "meta_beryl",
+            "black_mages_shadow",
+            "mir",
+            "full_grown_mir",
+            "lil_hilla",
+            "lil_luminous_dark",
+            "lil_arkarium",
+            "scarecrow"
+        ],
+        "conditional_monsters": [
+            "lil_lania",
+            "lil_moonbeam"
+        ]
     }
 }

@@ -13,6 +13,7 @@ import stat_functions
 import equips
 import equip_stats
 import hyper_stats
+import monster_life
 
 def main(filepath):
     # Opening JSON file
@@ -129,6 +130,13 @@ def main(filepath):
     # print(x.equipment_total_stats())
 
     h = hyper_stats.HyperStats(data["hyper_stats"])
+
+    mm = monster_life.MonsterLife(data["monster_life"])
+
+    print(mm.normal_monster_stats({}))
+    print(mm.special_monster_stats({}))
+    print(mm.conditional_monster_stats({}))
+    print(mm.total_stat())
 
     print(h.total_hyper_stats())
 

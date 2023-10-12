@@ -50,3 +50,9 @@ f = open(hyper_stat_filename)
 hyper_stat_data = json.load(f)
 f.close()
 
+# Hyper stats
+monster_life_filename = os.path.join(file_directory, r"data_sheets\monster_life.json")
+
+f = open(monster_life_filename)
+monster_life_data = json.load(f)
+f.close()
