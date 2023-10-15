@@ -75,4 +75,6 @@ class HyperStats:
         else:
             stat_functions.stat_adder(stat_object, hyper_stat_data["attack_and_magic_attack"][self.attack_and_magic_attack - 1])
 
+        print("Hyper Stats: {}".format(stat_functions.prettify_shit(stat_object)))
+
         return stat_object

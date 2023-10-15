@@ -15,4 +15,6 @@ class LinkSkills:
                 skill_value = link_skill_data[link["skill"]][link["level"] - 1]
                 stat_functions.stat_adder(stat_object, skill_value)
 
+        print("Link Skill stats: {}".format(stat_functions.prettify_shit(stat_functions.prettify_shit(stat_object))))
+
         return stat_object

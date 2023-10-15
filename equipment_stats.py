@@ -52,6 +52,6 @@ class EquipStats:
 
         stat_functions.stat_adder(stat_object, self.set_total)
 
-        print("Equipment stats: {}".format(stat_object))
+        print("Equipment stats: {}".format(stat_functions.prettify_shit(stat_object)))
 
         return stat_object

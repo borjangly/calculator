@@ -70,4 +70,6 @@ class ClassSkills:
             self.fourth_job_stats(),
             self.hyper_skill_stats())
 
+        print("Class Skill stats: {}".format(stat_functions.prettify_shit(stat_object)))
+
         return stat_object

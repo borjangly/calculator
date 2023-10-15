@@ -85,3 +85,17 @@ character_skill_filename = os.path.join(file_directory, r"data_sheets\{}.json".f
 f = open(character_skill_filename)
 character_skill_data = json.load(f)
 f.close()
+
+# Beginner skills
+beginner_skill_filename = os.path.join(file_directory, r"data_sheets\beginner_skills.json")
+
+f = open(beginner_skill_filename)
+beginner_skill_data = json.load(f)
+f.close()
+
+# Common V skills
+common_v_skill_filename = os.path.join(file_directory, r"data_sheets\common_v_skills.json")
+
+f = open(common_v_skill_filename)
+common_v_skill_data = json.load(f)
+f.close()

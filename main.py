@@ -6,17 +6,19 @@ import json
 import level
 import calcs
 import symbols
-import equipment
 import familiars
 import legion
 import stat_functions
-import equips
-import equip_stats
+import equipment
+import equipment_stats
 import hyper_stats
 import monster_life
 import link_skills
 import guild_skills
 import class_skills
+import beginner_skills
+import common_v_skills
+import extra_buffs
 
 from data import character_sheet
 
@@ -24,65 +26,37 @@ from data import character_sheet
 def main():
 
     data = character_sheet
-    # print(level.ability_points(data['level']))
-    # print(level.hyper_stats(data['level']))
-    # print(calcs.attack_increase(data['base_attack'], data['attack%'], data['final_attack']))
-    # print(calcs.attack_increase2(data['base_attack'], data['attack%'], data['final_attack']))
 
-    # print(symbols.total_arcane_symbol_stat(data['symbols']['arcane_river']))
-    # print(symbols.total_grandis_symbol_stat(data['symbols']['grandis']))
+    s = symbols.Symbol(data["class"], data['symbols']['arcane_river'], data['symbols']['grandis'])
 
-    # print(equipment.equipment_stat(data['equipment']['hat']))
-    # print(equipment.equipment_stat(data['equipment']['top']))
-    # print(equipment.equipment_stat(data['equipment']['pants']))
-    # print(equipment.equipment_total_stats(data['equipment']))
-    # print(equipment.count_set(data['equipment']))
-    # print(equipment.set_bonus(equipment.count_set(data['equipment'])))
-    # print(familiars.badge_stats(data["familiar_badges"]))
-    # print(familiars.potential_stats(data["familiars"]))
-    # print(legion.legion_level(data["legion_characters"]))
-    # print(legion.legion_level_bonus(data["legion_characters"]))
-
-    new_symbol = symbols.Symbol(data["class"], data['symbols']['arcane_river'], data['symbols']['grandis'])
-    # stat_object = {}
-    #
-    # stat_functions.stat_adder(stat_object, equipment.equipment_total_stats(data['equipment']))
-    # stat_functions.stat_adder(stat_object, familiars.badge_stats(data["familiar_badges"]))
-    # stat_functions.stat_adder(stat_object, familiars.potential_stats(data["familiars"]))
-    # stat_functions.stat_adder(stat_object, legion.legion_level_bonus(data["legion_characters"]))
-    # stat_functions.stat_adder(stat_object, data["legion_grid"])
-    # stat_functions.stat_adder(stat_object, new_symbol.total_arcane_symbol_stat())
-    # stat_functions.stat_adder(stat_object, new_symbol.total_grandis_symbol_stat())
-
-    # print(calcs.stats(data["level"], stat_object))
-
-    ring_1 = equips.Equipment(data['equipment']['ring_1'], "ring_1")
-    ring_2 = equips.Equipment(data['equipment']['ring_2'], "ring_2")
-    ring_3 = equips.Equipment(data['equipment']['ring_3'], "ring_3")
-    ring_4 = equips.Equipment(data['equipment']['ring_4'], "ring_4")
-    pendant_1 = equips.Equipment(data['equipment']['pendant_1'], "pendant_1")
-    pendant_2 = equips.Equipment(data['equipment']['pendant_2'], "pendant_2")
-    earrings = equips.Equipment(data['equipment']['earrings'], "earrings")
-    belt = equips.Equipment(data['equipment']['belt'], "belt")
-    face_accessory = equips.Equipment(data['equipment']['face_accessory'], "face_accessory")
-    eye_accessory = equips.Equipment(data['equipment']['eye_accessory'], "eye_accessory")
-    pocket = equips.Equipment(data['equipment']['pocket'], "pocket")
-    hat = equips.Equipment(data['equipment']['hat'], "hat")
-    top = equips.Equipment(data['equipment']['top'], "top")
-    pants = equips.Equipment(data['equipment']['pants'], "pants")
-    cape = equips.Equipment(data['equipment']['cape'], "cape")
-    shoulder = equips.Equipment(data['equipment']['shoulder'], "shoulder")
-    gloves = equips.Equipment(data['equipment']['gloves'], "gloves")
-    shoes = equips.Equipment(data['equipment']['shoes'], "shoes")
-    weapon = equips.Equipment(data['equipment']['weapon'], "weapon")
-    secondary = equips.Equipment(data['equipment']['secondary'], "secondary")
-    emblem = equips.Equipment(data['equipment']['emblem'], "emblem")
-    medal = equips.Equipment(data['equipment']['medal'], "medal")
-    badge = equips.Equipment(data['equipment']['badge'], "badge")
-    heart = equips.Equipment(data['equipment']['heart'], "heart")
-    totem_1 = equips.Equipment(data['equipment']['totem_1'], "totem_1")
-    totem_2 = equips.Equipment(data['equipment']['totem_2'], "totem_2")
-    totem_3 = equips.Equipment(data['equipment']['totem_3'], "totem_3")
+    ring_1 = equipment.Equipment(data['equipment']['ring_1'], "ring_1")
+    ring_2 = equipment.Equipment(data['equipment']['ring_2'], "ring_2")
+    ring_3 = equipment.Equipment(data['equipment']['ring_3'], "ring_3")
+    ring_4 = equipment.Equipment(data['equipment']['ring_4'], "ring_4")
+    pendant_1 = equipment.Equipment(data['equipment']['pendant_1'], "pendant_1")
+    pendant_2 = equipment.Equipment(data['equipment']['pendant_2'], "pendant_2")
+    earrings = equipment.Equipment(data['equipment']['earrings'], "earrings")
+    belt = equipment.Equipment(data['equipment']['belt'], "belt")
+    face_accessory = equipment.Equipment(data['equipment']['face_accessory'], "face_accessory")
+    eye_accessory = equipment.Equipment(data['equipment']['eye_accessory'], "eye_accessory")
+    pocket = equipment.Equipment(data['equipment']['pocket'], "pocket")
+    hat = equipment.Equipment(data['equipment']['hat'], "hat")
+    top = equipment.Equipment(data['equipment']['top'], "top")
+    pants = equipment.Equipment(data['equipment']['pants'], "pants")
+    cape = equipment.Equipment(data['equipment']['cape'], "cape")
+    shoulder = equipment.Equipment(data['equipment']['shoulder'], "shoulder")
+    gloves = equipment.Equipment(data['equipment']['gloves'], "gloves")
+    shoes = equipment.Equipment(data['equipment']['shoes'], "shoes")
+    weapon = equipment.Equipment(data['equipment']['weapon'], "weapon")
+    secondary = equipment.Equipment(data['equipment']['secondary'], "secondary")
+    emblem = equipment.Equipment(data['equipment']['emblem'], "emblem")
+    medal = equipment.Equipment(data['equipment']['medal'], "medal")
+    badge = equipment.Equipment(data['equipment']['badge'], "badge")
+    heart = equipment.Equipment(data['equipment']['heart'], "heart")
+    totem_1 = equipment.Equipment(data['equipment']['totem_1'], "totem_1")
+    totem_2 = equipment.Equipment(data['equipment']['totem_2'], "totem_2")
+    totem_3 = equipment.Equipment(data['equipment']['totem_3'], "totem_3")
+    title = equipment.Equipment(data['equipment']['title'], "title")
 
     the_list = [
         ring_1,
@@ -111,56 +85,55 @@ def main():
         heart,
         totem_1,
         totem_2,
-        totem_3
+        totem_3,
+        title
     ]
 
-    # [ring_1, ring_2, ring_3, ring_4, hat, top, pants, weapon, pendant_1, pendant_2]
-    x = equip_stats.EquipStats(the_list)
-
-    # print(x.set_total)
-    # print(x.count_set())
-    #
-    # print(x.equipment_total_stats())
+    e = equipment_stats.EquipStats(the_list)
 
     h = hyper_stats.HyperStats(data["hyper_stats"])
 
     mm = monster_life.MonsterLife(data["monster_life"])
 
-    # print(mm.normal_monster_stats({}))
-    # print(mm.special_monster_stats({}))
-    # print(mm.conditional_monster_stats({}))
-    # print(mm.total_stat())
-    #
-    # print(h.total_hyper_stats())
+    ls = link_skills.LinkSkills(data["link_skills"])
+    # print(ls.total_link_skill_stats())
+
+    gg = guild_skills.GuildSkills(data["guild_skills"])
+    # print(gg.total_guild_skill_stats())
+
+    cs = class_skills.ClassSkills(data["skill_config"])
+    # print(cs.class_skill_stats())
+
+    bs = beginner_skills.BeginnerSkills(data["beginner_skills"])
+    # print(bs.beginner_skill_stats())
+
+    v = common_v_skills.CommonVSkills(data["common_v_skills"])
+    # print(v.common_v_skill_stats())
+
+    eb = extra_buffs.ExtraBuffs(data["extra_buffs"])
+    # print(eb.total_extra_stats())
 
     aa = {}
 
-    my_link = link_skills.LinkSkills(data["link_skills"])
-
-    print(my_link.total_link_skill_stats())
-
-    gg = guild_skills.GuildSkills(data["guild_skills"])
-
-    print(gg.total_guild_skill_stats())
-
-    cs = class_skills.ClassSkills(data["skill_config"])
-
-    print(cs.class_skill_stats())
+    print("Legion Grid stats: {}".format(data["legion_grid"]))
 
     stat_functions.stat_adder(
         aa,
         h.total_hyper_stats(),
-        x.equipment_total_stats(),
+        e.equipment_total_stats(),
         mm.total_stat(),
-        my_link.total_link_skill_stats(),
-        new_symbol.total_arcane_symbol_stat(),
-        new_symbol.total_grandis_symbol_stat(),
+        ls.total_link_skill_stats(),
+        s.total_arcane_symbol_stat(),
+        s.total_grandis_symbol_stat(),
         data["legion_grid"],
         legion.legion_level_bonus(data["legion_characters"]),
         familiars.badge_stats(data["familiar_badges"]),
         familiars.potential_stats(data["familiars"]),
         gg.total_guild_skill_stats(),
-        cs.class_skill_stats()
+        cs.class_skill_stats(),
+        bs.beginner_skill_stats(),
+        v.common_v_skill_stats(),
+        eb.total_extra_stats()
     )
 
     print(aa)

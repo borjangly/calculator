@@ -3,101 +3,86 @@ import stat_functions
 from data import potential_data, set_bonus_data
 
 
-def equipment_stat(equip):
-    stat_object = {}
+class Equipment:
+    def __init__(self, equipment_data, equip_type):
+        self.name = equipment_data.get("name")
+        self.equip_type = equip_type
+        self.set = equipment_data.get("set")
+        self.lucky_item = equipment_data.get("lucky_item")
+        self.base_stats = equipment_data.get("base_stats")
+        self.flame_stats = equipment_data.get("flame_stats")
+        self.scroll_stats = equipment_data.get("scroll_stats")
+        self.starforce_stats = equipment_data.get("starforce_stats")
+        self.soul_stats = equipment_data.get("soul_stats")
+        self.potential_stats = self.potential_translator(equipment_data.get("potential"))
+        self.bonus_potential_stats = self.potential_translator(equipment_data.get("bonus_potential"))
 
-    if "base_stats" in equip:
-        stat_functions.stat_adder(stat_object, equip["base_stats"])
-
-    if "flame_stats" in equip:
-        stat_functions.stat_adder(stat_object, equip["flame_stats"])
-
-    if "scroll_stats" in equip:
-        stat_functions.stat_adder(stat_object, equip["scroll_stats"])
-
-    if "starforce_stats" in equip:
-        stat_functions.stat_adder(stat_object, equip["starforce_stats"])
-
-    if "soul_stats" in equip:
-        stat_functions.stat_adder(stat_object, equip["soul_stats"])
-
-    if "potential" in equip:
+    @staticmethod
+    def potential_translator(potential_object):
         translated_potentials = {}
-        for potential_line in equip["potential"]:
-            if equip["potential"][potential_line] in potential_data:
-                translated_potentials[potential_line] = potential_data[equip["potential"][potential_line]]
+        if potential_object is not None:
+            for potential_line in potential_object:
+                if potential_object[potential_line] in potential_data:
+                    stat_functions.stat_adder(translated_potentials, potential_data[potential_object[potential_line]])
 
-        for line in translated_potentials:
-            stat_functions.stat_adder(stat_object, translated_potentials[line])
+        return translated_potentials
 
-    if "bonus_potential" in equip:
-        translated_potentials = {}
-        for potential_line in equip["bonus_potential"]:
-            if equip["bonus_potential"][potential_line] in potential_data:
-                translated_potentials[potential_line] = potential_data[equip["bonus_potential"][potential_line]]
+    def total_stat(self, *args):
+        stat_object = {}
 
-        for line in translated_potentials:
-            stat_functions.stat_adder(stat_object, translated_potentials[line])
+        if len(args) != 0:
+            iteration_list = args
+        else:
+            iteration_list = ["base_stats", "flame_stats", "scroll_stats", "starforce_stats", "soul_stats", "potential_stats", "bonus_potential_stats"]
 
-    # print("{}: {}".format(equip["name"], stat_object))
+        for category in iteration_list:
+            if getattr(self, category) is not None:
+                category_object = getattr(self, category)
+                stat_functions.stat_adder(stat_object, category_object)
+            else:
+                pass
 
-    return stat_object
+        return stat_object
 
+    # Descriptor functions
+    def base(self):
+        if self.base_stats is not None and len(self.base_stats) > 0:
+            return self.equipment_data["base_stats"]
+        else:
+            return "No base stats found"
 
-# Calculates all stats from gear
-def equipment_total_stats(equipment_list):
-    stat_object = {}
+    def flames(self):
+        if self.flame_stats is not None and len(self.flame_stats) > 0:
+            return self.equipment_data["flame_stats"]
+        else:
+            return "No flame stats found"
 
-    for equip in equipment_list:
-        aggregated_equip_stats = equipment_stat(equipment_list[equip])
+    def scrolling(self):
+        if self.scroll_stats is not None and len(self.scroll_stats) > 0:
+            return self.equipment_data["scroll_stats"]
+        else:
+            return "No scroll stats found"
 
-        stat_functions.stat_adder(stat_object, aggregated_equip_stats)
+    def starforce(self):
+        if self.starforce_stats is not None and len(self.starforce_stats) > 0:
+            return self.equipment_data["starforce_stats"]
+        else:
+            return "No starforce stats found"
 
-    stat_functions.stat_adder(stat_object, set_bonus(count_set(equipment_list)))
+    def soul(self):
+        if self.soul_stats is not None and len(self.soul_stats) > 0:
+            return self.equipment_data["soul_stats"]
+        else:
+            return "No soul stats found"
 
-    print("Equipment stats: {}".format(stat_object))
+    def potential(self):
+        if self.potential_stats is not None and len(self.potential_stats) > 0:
+            return self.equipment_data["potential_stats"]
+        else:
+            return "No potentials found"
 
-    return stat_object
-
-####################
-# Helper Functions #
-####################
-
-
-# Set bonus counter
-def count_set(equipment_list):
-
-    set_list = []
-    lucky_list = []
-    for i in equipment_list:
-        set_list.append(stat_functions.stat_getter(equipment_list[i], "set"))
-
-        if stat_functions.stat_getter(equipment_list[i], "lucky_item"):
-            j = {"equip_set": stat_functions.stat_getter(equipment_list[i], "set"), "type": i}
-            lucky_list.append(j)
-
-    counts = {}
-    for i in set_list:
-        if i != 0 and i is not None:
-            counts[i] = counts.get(i, 0) + 1
-
-    # Lucky items
-    for m in lucky_list:
-        for n in counts:
-            if m["type"] in set_bonus_data[n]["set_equipment"] and m["equip_set"] != n and counts[n] > 2:
-                counts[n] += 1
-
-    # print(counts)
-
-    return counts
-
-
-# set bonus retrieve
-def set_bonus(set_list):
-    stat_object = {}
-
-    for i in set_list:
-        set_value = min(set_list[i], len(set_bonus_data[i]["set_bonus"]))
-        stat_functions.stat_adder(stat_object, set_bonus_data[i]["set_bonus"][set_value - 1])
-
-    return stat_object
+    def bonus_potential(self):
+        if self.bonus_potential is not None and len(self.bonus_potential_stats) > 0:
+            return self.equipment_data["bonus_potential"]
+        else:
+            return "No bonus potentials found"

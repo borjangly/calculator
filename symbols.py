@@ -43,7 +43,7 @@ class Symbol:
         for symbol in self.arcane_symbols:
             stat_functions.stat_adder(stat_object, self.arcane_symbol_stat(self.arcane_symbols[symbol]))
 
-        print("Arcane Symbol stats: {}".format(stat_object))
+        print("Arcane Symbol stats: {}".format(stat_functions.prettify_shit(stat_object)))
 
         return stat_object
 
@@ -53,6 +53,6 @@ class Symbol:
         for symbol in self.grandis_symbols:
             stat_functions.stat_adder(stat_object, self.grandis_symbol_stat(self.grandis_symbols[symbol]))
 
-        print("Grandis Symbol stats: {}".format(stat_object))
+        print("Grandis Symbol stats: {}".format(stat_functions.prettify_shit(stat_object)))
 
         return stat_object

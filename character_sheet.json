@@ -21,10 +21,22 @@
         }
     },
     "skill_config": {
-        "decent_combat_orders": true,
+        "decent_combat_orders": false,
         "combat_orders": false,
         "passives_1": false
     },
+    "beginner_skills": [
+        {"skill": "will_of_the_alliance", "level": 1},
+        {"skill": "blessing_of_the_fairy", "level": 20},
+        {"skill": "empresss_blessing", "level": 30},
+        {"skill": "echo_of_hero", "level": 1}
+    ],
+    "common_v_skills": [
+        {"skill": "blink", "level": 30},
+        {"skill": "rope_lift", "level": 24},
+        {"skill": "decent_sharp_eyes", "level": 22},
+        {"skill": "loaded_dice", "level": 30}
+    ],
     "link_skills": [
         {"skill": "pirate_blessing", "level": 6},
         {"skill": "fury_unleashed", "level": 3},
@@ -1422,6 +1434,22 @@
                 "boss_damage": 0,
                 "all_stat%": 0
             }
+        },
+        "title": {
+            "name": "Pink Bean x Yeti",
+            "base_stats": {
+                "str": 20,
+                "dex": 20,
+                "int": 20,
+                "luk": 20,
+                "hp": 0,
+                "mp": 0,
+                "attack": 10,
+                "magic_attack": 10,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 10,
+                "all_stat%": 0
+            }
         }
     },
     "familiar_badges": [
@@ -1591,5 +1619,18 @@
         "active": [
             {"skill": "boss_slayer", "level": 0}
         ]
+    },
+    "extra_buffs": {
+        "night_troupe": {
+            "all_stat": 20,
+            "attack": 10,
+            "magic_attack": 10,
+            "ignore_enemy_defense": 12,
+            "critical_rate": 10,
+            "critical_damage": 10
+        },
+        "trait_im_too_lazy_to_add_now": {
+            "ignore_enemy_defense": 10
+        }
     }
 }

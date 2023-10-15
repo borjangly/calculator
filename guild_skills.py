@@ -29,4 +29,6 @@ class GuildSkills:
         self.passive_stats(stat_object)
         self.active_stats(stat_object)
 
+        print("Guild Skill stats: {}".format(stat_functions.prettify_shit(stat_object)))
+
         return stat_object

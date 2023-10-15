@@ -49,4 +49,6 @@ def legion_level_bonus(legion):
             else:
                 pass
 
+    print("Legion Character stats: {}".format(stat_functions.prettify_shit(stat_object)))
+
     return stat_object

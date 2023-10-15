@@ -36,4 +36,6 @@ class MonsterLife:
         self.special_monster_stats(stat_object)
         self.conditional_monster_stats(stat_object)
 
+        print("Monster Life stats: {}".format(stat_functions.prettify_shit(stat_object)))
+
         return stat_object
