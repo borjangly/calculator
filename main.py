@@ -25,12 +25,12 @@ from data import character_sheet, job_sheet
 
 
 def main():
-
     # Just assigning variables to make life easier
     primary_stat = job_sheet["primary_stat"]
     secondary_stat = job_sheet["secondary_stat"]
 
-    s = symbols.Symbol(character_sheet["class"], character_sheet['symbols']['arcane_river'], character_sheet['symbols']['grandis'], primary_stat)
+    s = symbols.Symbol(character_sheet["class"], character_sheet['symbols']['arcane_river'],
+                       character_sheet['symbols']['grandis'], primary_stat)
 
     ring_1 = equipment.Equipment(character_sheet['equipment']['ring_1'], "ring_1")
     ring_2 = equipment.Equipment(character_sheet['equipment']['ring_2'], "ring_2")
@@ -118,14 +118,14 @@ def main():
     eb = extra_buffs.ExtraBuffs(character_sheet["extra_buffs"])
     # print(eb.total_extra_stats())
 
-    aa = {}
+    aggregated_stats = {}
 
     print("Legion Grid stats: {}".format(character_sheet["legion_grid"]))
     # Inner ability WIP
     print("Inner Ability stats: {}".format(character_sheet["inner_ability"]))
 
     stat_functions.stat_adder(
-        aa,
+        aggregated_stats,
         h.total_hyper_stats(),
         e.equipment_total_stats(),
         mm.total_stat(),
@@ -144,9 +144,12 @@ def main():
         eb.total_extra_stats()
     )
 
-    print(aa)
+    print(aggregated_stats)
 
-    print(calcs.stats(character_sheet["level"], aa, primary_stat))
+    total_stats = {"str": (calcs.stats(character_sheet["level"], aggregated_stats, "str", primary_stat)),
+                   "dex": (calcs.stats(character_sheet["level"], aggregated_stats, "dex", primary_stat)),
+                   "int": (calcs.stats(character_sheet["level"], aggregated_stats, "int", primary_stat)),
+                   "luk": (calcs.stats(character_sheet["level"], aggregated_stats, "luk", primary_stat))}
 
 
 # Press the green button in the gutter to run the script.
