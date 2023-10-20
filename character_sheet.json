@@ -14,14 +14,19 @@
         "grandis": {
             "cernium": 11,
             "hotel_arcus": 10,
-            "odium": 7,
+            "odium": 8,
             "shangri_la": 0,
             "arteria": 0,
             "carcion": 0
         }
     },
+    "inner_ability": {
+        "boss_damage": 20,
+        "damage": 7,
+        "buff_duration": 34
+    },
     "skill_config": {
-        "decent_combat_orders": false,
+        "decent_combat_orders": true,
         "combat_orders": false,
         "passives_1": false
     },
@@ -35,7 +40,8 @@
         {"skill": "blink", "level": 30},
         {"skill": "rope_lift", "level": 24},
         {"skill": "decent_sharp_eyes", "level": 22},
-        {"skill": "loaded_dice", "level": 30}
+        {"skill": "loaded_dice", "level": 30},
+        {"skill": "decent_advanced_blessing", "level": 14}
     ],
     "link_skills": [
         {"skill": "pirate_blessing", "level": 6},
@@ -1365,6 +1371,25 @@
                 "line_3": "INT per 9 Character Levels: +1"
             }
         },
+        "android": {
+            "name": "Alolaroid",
+            "lucky_item": false,
+            "level": "10",
+            "stars": 0,
+            "base_stats": {
+                "str": 0,
+                "dex": 0,
+                "int": 0,
+                "luk": 0,
+                "hp": 0,
+                "mp": 0,
+                "attack": 5,
+                "magic_attack": 5,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 0
+            }
+        },
         "totem_1": {
             "name": "Frenzy Totem",
             "lucky_item": false,
@@ -1620,14 +1645,55 @@
             {"skill": "boss_slayer", "level": 0}
         ]
     },
+    "pets": {
+        "pet_1": {
+            "name": "Dawn",
+            "set": "Lil Glowy Butterfly Set",
+            "equip": {
+                "name": "",
+                "base_stats": {
+                    "attack": 0
+                },
+                "scroll_stats": {
+                    "attack": 0
+                }
+            }
+        },
+        "pet_2": {
+            "name": "Lil Ramanana",
+            "set": "Chu Chu Baby Set",
+            "equip": {
+                "name": "",
+                "base_stats": {
+                    "attack": 0
+                },
+                "scroll_stats": {
+                    "attack": 0
+                }
+            }
+        },
+        "pet_3": {
+            "name": "Lil Wolfruit",
+            "set": "Chu Chu Baby Set",
+            "equip": {
+                "name": "",
+                "base_stats": {
+                    "attack": 0
+                },
+                "scroll_stats": {
+                    "attack": 0
+                }
+            }
+        }
+    },
     "extra_buffs": {
         "night_troupe": {
-            "all_stat": 20,
-            "attack": 10,
-            "magic_attack": 10,
-            "ignore_enemy_defense": 12,
-            "critical_rate": 10,
-            "critical_damage": 10
+            "all_stat": 30,
+            "attack": 15,
+            "magic_attack": 15,
+            "ignore_enemy_defense": 18,
+            "critical_rate": 15,
+            "critical_damage": 15
         },
         "trait_im_too_lazy_to_add_now": {
             "ignore_enemy_defense": 10

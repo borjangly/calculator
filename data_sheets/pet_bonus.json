@@ -1,0 +1,12 @@
+{
+    "lil_glowy_butterfly_garden": [
+        {"attack": 8, "magic_attack": 8},
+        {"attack": 18, "magic_attack": 18},
+        {"attack": 30, "magic_attack": 30}
+    ],
+    "dream_luna": [
+        {"attack": 7, "magic_attack": 7},
+        {"attack": 16, "magic_attack": 16},
+        {"attack": 27, "magic_attack": 27}
+    ]
+}

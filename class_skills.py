@@ -1,22 +1,22 @@
 import stat_functions
-from data import character_skill_data
+from data import character_skill_data, config
 
 
 class ClassSkills:
-    def __init__(self, config):
-        self.config = config
+    def __init__(self):
         self.bonus_level = self.bonus_level_calculator()
 
-    def bonus_level_calculator(self):
+    @staticmethod
+    def bonus_level_calculator():
         bonus_level = 0
-        if "decent_combat_orders" in self.config:
-            if self.config["decent_combat_orders"]:
+        if "decent_combat_orders" in config:
+            if config["decent_combat_orders"]:
                 bonus_level += 1
-        if "combat_orders" in self.config:
-            if self.config["combat_orders"]:
+        if "combat_orders" in config:
+            if config["combat_orders"]:
                 bonus_level += 2
-        if "passives_1" in self.config:
-            if self.config["passives_1"]:
+        if "passives_1" in config:
+            if config["passives_1"]:
                 bonus_level += 1
 
         return min(bonus_level, 2)

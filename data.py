@@ -15,6 +15,20 @@ f = open(character_filename)
 character_sheet = json.load(f)
 f.close()
 
+# Class/job information
+job_filename = os.path.join(file_directory, r"data_sheets\{}.json".format(character_sheet["class"]))
+
+f = open(job_filename)
+job_sheet = json.load(f)
+f.close()
+
+# config information
+config_filename = os.path.join(file_directory, r"config.json")
+
+f = open(config_filename)
+config = json.load(f)
+f.close()
+
 # Legion
 legion_filename = os.path.join(file_directory, r"data_sheets\legion_characters.json")
 
