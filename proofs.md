@@ -84,11 +84,12 @@ Thus the attack to stat ratio is $1:2.947$
 
 ## General Damage Formula
 
-$$SkillOutput = SkillDamage\% \times WeaponMultiplier \times StatValue \times \dfrac{TotalAttack}{100} \times (1 + BossDamage\% + Damage\%) \times (1 + 0.35 + CritDamage\%)$$
+$$Output = SkillDamage\% \times WeaponMultiplier \times StatValue \times \dfrac{TotalAttack}{100} \times (1 + BossDamage\% + Damage\%) \\
+\times (1 + 0.35 + CritDamage\%) \times (1 - \dfrac{MonsterDEF\%}{100} \times (1 - \dfrac{IgnoreEnemyDefense\%}{100}))$$
 
 $SkillDamage\%$ and $WeaponMultiplier$ are constants. Simplifying all constants into $C$ gives us
 
-$$SkillOutput = C \times StatValue \times TotalAttack \times (1 + BossDamage\% + Damage\%) \times (1 + 0.35 + CritDamage\%)$$
+$$Output = C \times StatValue \times TotalAttack \times (1 + BossDamage\% + Damage\%) \times (1 + 0.35 + CritDamage\%) \\ \times (1 - \dfrac{MonsterDEF\%}{100} \times (1 - \dfrac{IgnoreEnemyDefense\%}{100}))$$
 
 ### Stat Value
 

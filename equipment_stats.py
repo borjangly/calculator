@@ -43,3 +43,15 @@ class EquipStats:
             stat_functions.stat_adder(stat_object, set_bonus_data[i]["set_bonus"][set_value - 1])
 
         return stat_object
+
+    def equipment_total_stats(self):
+        stat_object = {}
+
+        for equip in self.equipment_list:
+            stat_functions.stat_adder(stat_object, equip.total_stat())
+
+        stat_functions.stat_adder(stat_object, self.set_total)
+
+        print("Equipment stats: {}".format(stat_functions.prettify_shit(stat_object)))
+
+        return stat_object

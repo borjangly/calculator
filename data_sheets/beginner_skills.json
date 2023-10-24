@@ -31,7 +31,7 @@
         {"attack": 19, "magic_attack": 19},
         {"attack": 20, "magic_attack": 20}
     ],
-    "empress's_blessing": [
+    "empresss_blessing": [
         {"attack": 1, "magic_attack": 1},
         {"attack": 2, "magic_attack": 2},
         {"attack": 3, "magic_attack": 3},
@@ -62,5 +62,8 @@
         {"attack": 28, "magic_attack": 28},
         {"attack": 29, "magic_attack": 29},
         {"attack": 30, "magic_attack": 30}
+    ],
+    "echo_of_hero": [
+        {"attack%": 4}
     ]
 }

@@ -38,6 +38,8 @@ def badge_stats(familiar_badges):
     stat_object["damage"] = min(stat_functions.stat_getter(stat_object, "damage"), 3)
     stat_object["critical_rate"] = min(stat_functions.stat_getter(stat_object, "critical_rate"), 3)
 
+    print("Familiar badge stats: {}".format(stat_functions.prettify_shit(stat_object)))
+
     return stat_object
 
 
@@ -53,5 +55,7 @@ def potential_stats(familiars):
 
     # review max stats
     stat_object["boss_damage"] = min(stat_functions.stat_getter(stat_object, "boss_damage"), 120)
+
+    print("Familiar potential stats: {}".format(stat_functions.prettify_shit(stat_object)))
 
     return stat_object

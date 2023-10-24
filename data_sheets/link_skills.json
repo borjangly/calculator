@@ -1,10 +1,133 @@
 {
-    "demon_slayer": {
-        "skill_name": "Fury Unleashed",
-        "skill_values": [
-            {"level": 1, "stat": "boss_damage", "value": 10},
-            {"level": 2, "stat": "boss_damage", "value": 15},
-            {"level": 3, "stat": "boss_damage", "value": 20}
-        ]
-    }
+    "fury_unleashed": [
+        {"boss_damage": 10},
+        {"boss_damage": 15},
+        {"boss_damage": 20}
+    ],
+    "wild_rage": [
+        {"damage":  5},
+        {"damage":  10},
+        {"damage":  15}
+    ],
+    "empirical_knowledge": [
+        {"damage": 3, "ignore_enemy_defense": 3},
+        {"damage": 3, "ignore_enemy_defense": 3},
+        {"damage": 6, "ignore_enemy_defense": 6},
+        {"damage": 6, "ignore_enemy_defense": 6},
+        {"damage": 9, "ignore_enemy_defense": 9},
+        {"damage": 9, "ignore_enemy_defense": 9}
+    ],
+    "adventurers_curiosity": [
+        {"critical_rate": 3},
+        {"critical_rate": 4},
+        {"critical_rate": 6},
+        {"critical_rate": 7},
+        {"critical_rate": 9},
+        {"critical_rate": 10}
+    ],
+    "pirate_blessing": [
+        {"all_stat": 20, "hp": 350, "mp": 350},
+        {"all_stat": 30, "hp": 525, "mp": 525},
+        {"all_stat": 40, "hp": 700, "mp": 700},
+        {"all_stat": 50, "hp": 875, "mp": 875},
+        {"all_stat": 60, "hp": 1050, "mp": 1225},
+        {"all_stat": 70, "hp": 1225, "mp": 1225}
+    ],
+    "thiefs_cunning": [
+        {"damage": 1.5},
+        {"damage": 3},
+        {"damage": 4.5},
+        {"damage": 6},
+        {"damage": 7.5},
+        {"damage": 9}
+    ],
+    "solus": [
+        {"damage": 6},
+        {"damage": 11},
+        {"damage": 16}
+    ],
+    "noble_fire": [
+        {"damage": 1, "boss_damage": 2},
+        {"damage": 2, "boss_damage": 4}
+    ],
+    "tide_of_battle": [
+        {"damage": 6},
+        {"damage": 12}
+    ],
+    "innate_gift": [
+        {"damage": 3},
+        {"damage": 5}
+    ],
+    "keen_edge": [
+        {"all_stat": 15, "attack": 10, "magic_attack": 10},
+        {"all_stat": 25, "attack": 15, "magic_attack": 15}
+    ],
+    "elementalism": [
+        {"damage": 5},
+        {"damage": 10}
+    ],
+    "light_wash": [
+        {"ignore_enemy_defense": 10},
+        {"ignore_enemy_defense": 15},
+        {"ignore_enemy_defense": 20}
+    ],
+    "phantom_instinct": [
+        {"critical_rate": 10},
+        {"critical_rate": 15},
+        {"critical_rate": 20}
+    ],
+    "judgment": [
+        {"critical_damage": 2},
+        {"critical_damage": 4}
+    ],
+    "unfair_advantage": [
+        {"damage": 6},
+        {"damage": 12}
+    ],
+    "time_to_prepare": [
+        {"damage": 4.5},
+        {"damage": 8.5}
+    ],
+    "iron_will": [
+        {"hp%": 10},
+        {"hp%": 15},
+        {"hp%": 20}
+    ],
+    "hybrid_logic": [
+        {"all_stat%": 5},
+        {"all_stat%": 10}
+    ],
+    "rhinnes_blessing": [
+        {"ignore_enemy_defense": 2},
+        {"ignore_enemy_defense": 4},
+        {"ignore_enemy_defense": 6},
+        {"ignore_enemy_defense": 8},
+        {"ignore_enemy_defense": 10}
+    ],
+    "cygnus_blessing": [
+        {"attack": 7, "magic_attack": 7},
+        {"attack": 9, "magic_attack": 9},
+        {"attack": 11, "magic_attack": 11},
+        {"attack": 13, "magic_attack": 13},
+        {"attack": 15, "magic_attack": 15},
+        {"attack": 17, "magic_attack": 17},
+        {"attack": 19, "magic_attack": 19},
+        {"attack": 21, "magic_attack": 21},
+        {"attack": 23, "magic_attack": 23},
+        {"attack": 25, "magic_attack": 25}
+    ],
+    "focus_spirit": [
+        {"boss_damage": 4, "critical_rate": 4, "hp%": 3, "mp%": 3},
+        {"boss_damage": 7, "critical_rate": 7, "hp%": 4, "mp%": 5},
+        {"boss_damage": 10, "critical_rate": 10, "hp%": 4, "mp%": 5}
+    ],
+    "natures_friend": [
+        {"damage": 3},
+        {"damage": 5}
+    ],
+    "bravado": [
+        {"ignore_enemy_defense": 5},
+        {"ignore_enemy_defense": 10}
+    ]
+
 }

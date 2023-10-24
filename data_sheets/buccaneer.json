@@ -35,34 +35,51 @@
         }
     },
     "fourth_job": {
-        "decent_combat_orders": {
-            "crossbones": {
+        "crossbones": [
+            {
                 "attack%": 15,
-                "final_damage": 13
+                "final_damage": 13,
+                "status_resistance": 30
             },
-            "aggressive_stance": {
-                "damage": 27
+            {
+                "attack%": 15,
+                "final_damage": 13,
+                "status_resistance": 31
             },
-            "typhoon_crush": {
-                "attack": 32,
-                "ignore_enemy_defense": 44,
-                "final_damage": 10
+            {
+                "attack%": 15,
+                "final_damage": 13,
+                "status_resistance": 32
             }
-        },
-        "no_decent_combat_orders": {
-            "crossbones": {
-                "attack%": 15,
-                "final_damage": 13
-            },
-            "aggressive_stance": {
+        ],
+        "aggressive_stance": [
+            {
                 "damage": 25
             },
-            "typhoon_crush": {
+            {
+                "damage": 27
+            },
+            {
+                "damage": 29
+            }
+        ],
+        "typhoon_crush": [
+            {
                 "attack": 30,
                 "ignore_enemy_defense": 40,
                 "final_damage": 10
+            },
+            {
+                "attack": 32,
+                "ignore_enemy_defense": 44,
+                "final_damage": 10
+            },
+            {
+                "attack": 34,
+                "ignore_enemy_defense": 48,
+                "final_damage": 11
             }
-        }
+        ]
     },
     "hyper_skills": {
         "serpent_spirit": {
@@ -70,11 +87,6 @@
         },
         "stimulating_conversation": {
             "boss_damage": 20
-        }
-    },
-    "fifth_job": {
-        "blink": {
-            "attack": 30
         }
     }
 }

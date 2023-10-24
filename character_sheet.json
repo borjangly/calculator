@@ -1,14 +1,7 @@
 {
     "name": "HoppingFog",
     "class": "buccaneer",
-    "level": 281,
-    "base_attack": 3000,
-    "final_attack": 14,
-    "attack%": 108,
-    "base_stat": 5000,
-    "secondary_stat": 1000,
-    "stat%": 682,
-    "final_stat": 20400,
+    "level": 282,
     "symbols": {
         "arcane_river": {
             "vanishing_journey": 20,
@@ -21,62 +14,50 @@
         "grandis": {
             "cernium": 11,
             "hotel_arcus": 10,
-            "odium": 7,
+            "odium": 8,
             "shangri_la": 0,
             "arteria": 0,
             "carcion": 0
         }
     },
-    "link_skills": {
-        "skill_1": {
-            "skill_name": "Fury Unleashed",
-            "skill_level": 3
-        },
-        "skill_2": {
-            "skill_name": "",
-            "skill_level": 1
-        },
-        "skill_3": {
-            "skill_name": "",
-            "skill_level": 1
-        },
-        "skill_4": {
-            "skill_name": "",
-            "skill_level": 1
-        },
-        "skill_5": {
-            "skill_name": "",
-            "skill_level": 1
-        },
-        "skill_6": {
-            "skill_name": "",
-            "skill_level": 1
-        },
-        "skill_7": {
-            "skill_name": "",
-            "skill_level": 1
-        },
-        "skill_8": {
-            "skill_name": "",
-            "skill_level": 1
-        },
-        "skill_9": {
-            "skill_name": "",
-            "skill_level": 1
-        },
-        "skill_10": {
-            "skill_name": "",
-            "skill_level": 1
-        },
-        "skill_11": {
-            "skill_name": "",
-            "skill_level": 1
-        },
-        "skill_12": {
-            "skill_name": "",
-            "skill_level": 1
-        }
+    "inner_ability": {
+        "boss_damage": 20,
+        "damage": 7,
+        "buff_duration": 34
     },
+    "skill_config": {
+        "decent_combat_orders": true,
+        "combat_orders": false,
+        "passives_1": false
+    },
+    "beginner_skills": [
+        {"skill": "will_of_the_alliance", "level": 1},
+        {"skill": "blessing_of_the_fairy", "level": 20},
+        {"skill": "empresss_blessing", "level": 30},
+        {"skill": "echo_of_hero", "level": 1}
+    ],
+    "common_v_skills": [
+        {"skill": "blink", "level": 30},
+        {"skill": "rope_lift", "level": 25},
+        {"skill": "decent_sharp_eyes", "level": 22},
+        {"skill": "loaded_dice", "level": 30},
+        {"skill": "decent_advanced_blessing", "level": 14}
+    ],
+    "link_skills": [
+        {"skill": "pirate_blessing", "level": 6},
+        {"skill": "fury_unleashed", "level": 3},
+        {"skill": "wild_rage", "level": 3},
+        {"skill": "judgment", "level": 2},
+        {"skill": "focus_spirit", "level": 3},
+        {"skill": "light_wash", "level": 3},
+        {"skill": "thiefs_cunning", "level": 6},
+        {"skill": "empirical_knowledge", "level": 6},
+        {"skill": "unfair_advantage", "level": 2},
+        {"skill": "terms_and_conditions", "level": 3},
+        {"skill": "solus", "level": 3},
+        {"skill": "elementalism", "level": 2},
+        {"skill": "time_to_prepare", "level": 2}
+    ],
     "equipment": {
         "hat": {
             "name": "Royal Wanderer Hat",
@@ -1390,6 +1371,25 @@
                 "line_3": "INT per 9 Character Levels: +1"
             }
         },
+        "android": {
+            "name": "Alolaroid",
+            "lucky_item": false,
+            "level": "10",
+            "stars": 0,
+            "base_stats": {
+                "str": 0,
+                "dex": 0,
+                "int": 0,
+                "luk": 0,
+                "hp": 0,
+                "mp": 0,
+                "attack": 5,
+                "magic_attack": 5,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 0
+            }
+        },
         "totem_1": {
             "name": "Frenzy Totem",
             "lucky_item": false,
@@ -1459,6 +1459,22 @@
                 "boss_damage": 0,
                 "all_stat%": 0
             }
+        },
+        "title": {
+            "name": "Pink Bean x Yeti",
+            "base_stats": {
+                "str": 20,
+                "dex": 20,
+                "int": 20,
+                "luk": 20,
+                "hp": 0,
+                "mp": 0,
+                "attack": 10,
+                "magic_attack": 10,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 10,
+                "all_stat%": 0
+            }
         }
     },
     "familiar_badges": [
@@ -1473,16 +1489,16 @@
     ],
     "familiars": {
         "familiar_1": {
-            "name": "Deo",
+            "name": "Lil Luminous - Equilibrium",
             "potential": {
                 "line_1": "Boss Damage: +45%",
                 "line_2": "DEF: +5%"
             }
         },
         "familiar_2": {
-            "name": "Crushing Glare",
+            "name": "Deo",
             "potential": {
-                "line_1": "Boss Damage: +40%",
+                "line_1": "Attacks ignore 50% Monster DEF",
                 "line_2": "Increases Speed and Jump by a large amount"
             }
         },
@@ -1578,8 +1594,112 @@
         "boss_damage": 13,
         "normal_monster_damage": 0,
         "status_resistance": 0,
-        "attack_power": 6,
+        "attack_and_magic_attack": 7,
         "exp": 0,
         "arcane_force": 0
+    },
+    "monster_life": {
+        "normal_monsters": [
+            "erda_ss",
+            "canid_ss",
+            "bovine_ss",
+            "toy_ss",
+            "soldier_s"
+        ],
+        "special_monsters": [
+            "seruf",
+            "thieving_moon_bunny",
+            "beryl",
+            "oberon",
+            "papulatus_clock",
+            "frankenroid",
+            "lil_luminous_light",
+            "lil_phantom",
+            "lil_shade",
+            "lil_cygnus",
+            "lil_luminous_equilibrium",
+            "lil_von_leon",
+            "lapis",
+            "meta_beryl",
+            "black_mages_shadow",
+            "mir",
+            "full_grown_mir",
+            "lil_hilla",
+            "lil_luminous_dark",
+            "lil_arkarium",
+            "scarecrow"
+        ],
+        "conditional_monsters": [
+            "lil_lania",
+            "lil_moonbeam"
+        ]
+    },
+    "guild_skills": {
+        "passive": [
+            "guild_on_fire_1",
+            "guild_on_fire_2",
+            "guild_on_fire_3",
+            "well_rounded"
+        ],
+        "active": [
+            {"skill": "boss_slayer", "level": 0}
+        ]
+    },
+    "pets": {
+        "pet_1": {
+            "name": "Dawn",
+            "set": "Lil Glowy Butterfly Set",
+            "equip": {
+                "name": "Butterfly Twinkles",
+                "base_stats": {
+                    "attack": 10,
+                    "magic_attack": 10
+                },
+                "scroll_stats": {
+                    "attack": 35
+                }
+            }
+        },
+        "pet_2": {
+            "name": "Lil Ramanana",
+            "set": "Chu Chu Baby Set",
+            "equip": {
+                "name": "Lil Ramanana's Hairpin",
+                "base_stats": {
+                    "attack": 5,
+                    "magic_attack": 5
+                },
+                "scroll_stats": {
+                    "attack": 0
+                }
+            }
+        },
+        "pet_3": {
+            "name": "Lil Wolfruit",
+            "set": "Chu Chu Baby Set",
+            "equip": {
+                "name": "Lil Wolfruit's Hairpin",
+                "base_stats": {
+                    "attack": 5,
+                    "magic_attack": 5
+                },
+                "scroll_stats": {
+                    "attack": 20
+                }
+            }
+        }
+    },
+    "extra_buffs": {
+        "night_troupe": {
+            "all_stat": 30,
+            "attack": 15,
+            "magic_attack": 15,
+            "ignore_enemy_defense": 18,
+            "critical_rate": 15,
+            "critical_damage": 15
+        },
+        "trait_im_too_lazy_to_add_now": {
+            "ignore_enemy_defense": 10
+        }
     }
 }
