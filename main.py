@@ -20,6 +20,7 @@ import class_skills
 import beginner_skills
 import common_v_skills
 import extra_buffs
+import pet
 
 from data import character_sheet, job_sheet
 
@@ -61,6 +62,66 @@ def main():
     totem_2 = equipment.Equipment(character_sheet['equipment']['totem_2'], "totem_2")
     totem_3 = equipment.Equipment(character_sheet['equipment']['totem_3'], "totem_3")
     title = equipment.Equipment(character_sheet['equipment']['title'], "title")
+
+    new_emblem = equipment.Equipment(
+        {
+            "name": "Mitra's Rage (Pirate)",
+            "set": "Pitched Boss Set",
+            "level": "200",
+            "stars": 0,
+            "base_stats": {
+                "str": 40,
+                "dex": 40,
+                "int": 0,
+                "luk": 0,
+                "hp": 0,
+                "mp": 0,
+                "attack": 5,
+                "magic_attack": 5,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 0
+            },
+            "potential": {
+                "line_1": "Ignore Monster DEF: +40%",
+                "line_2": "ATT: +9%",
+                "line_3": "ATT: +9%"
+            },
+            "bonus_potential": {
+                "line_1": "ATT: +12%",
+                "line_2": "15% chance to recover 85 MP when attacking.",
+                "line_3": "15% chance to recover 85 MP when attacking."
+            }
+        },
+        "emblem"
+    )
+
+    new_heart = equipment.Equipment(
+        {
+            "name": "Black Heart",
+            "set": "Pitched Boss Set",
+            "level": "120",
+            "stars": 0,
+            "base_stats": {
+                "str": 50,
+                "dex": 50,
+                "int": 50,
+                "luk": 50,
+                "hp": 100,
+                "mp": 0,
+                "attack": 72,
+                "magic_attack": 77,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 0
+            },
+            "potential": {
+                "line_1": "Boss Monster Damage: +30%",
+                "line_2": "Ignore Monster DEF: +30%"
+            }
+        },
+        "heart"
+    )
 
     the_list = [
         ring_1,
@@ -115,6 +176,9 @@ def main():
     v = common_v_skills.CommonVSkills(character_sheet["common_v_skills"])
     # print(v.common_v_skill_stats())
 
+    p = pet.Pet(character_sheet["pets"])
+    # print(p.pet_total_stats())
+
     eb = extra_buffs.ExtraBuffs(character_sheet["extra_buffs"])
     # print(eb.total_extra_stats())
 
@@ -141,7 +205,8 @@ def main():
         cs.class_skill_stats(),
         bs.beginner_skill_stats(),
         v.common_v_skill_stats(),
-        eb.total_extra_stats()
+        eb.total_extra_stats(),
+        p.pet_total_stats()
     )
 
     print(aggregated_stats)
@@ -149,8 +214,28 @@ def main():
     total_stats = {"str": (calcs.stats(character_sheet["level"], aggregated_stats, "str", primary_stat)),
                    "dex": (calcs.stats(character_sheet["level"], aggregated_stats, "dex", primary_stat)),
                    "int": (calcs.stats(character_sheet["level"], aggregated_stats, "int", primary_stat)),
-                   "luk": (calcs.stats(character_sheet["level"], aggregated_stats, "luk", primary_stat))}
+                   "luk": (calcs.stats(character_sheet["level"], aggregated_stats, "luk", primary_stat)),
+                   "attack": calcs.total_attack(aggregated_stats),
+                   "ignore_enemy_defense": aggregated_stats["ignore_enemy_defense"],
+                   "damage": aggregated_stats["damage"],
+                   "boss_damage": aggregated_stats["boss_damage"],
+                   "critical_damage": aggregated_stats["critical_damage"]}
 
+    print(total_stats)
+
+    print("Combat Power: {}".format(calcs.combat_power(total_stats, 300)))
+
+    # 300 pdr
+    # 49060860334.534645 with current stuff
+    # 49265809088.017555 with mitra's
+    # 50266007317.65077 with black heart
+    # 51371114909.58992 with mitra's and black heart
+
+    # 380 pdr
+    # 48580329913.01379 with current stuff
+    # 48833114334.196465 with mitra's
+    # 49959995386.34487 with black heart
+    # 50984620537.16459 with mitra's and black heart
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':

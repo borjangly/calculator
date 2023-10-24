@@ -113,3 +113,10 @@ common_v_skill_filename = os.path.join(file_directory, r"data_sheets\common_v_sk
 f = open(common_v_skill_filename)
 common_v_skill_data = json.load(f)
 f.close()
+
+# Pet bonuses
+pet_bonus_filename = os.path.join(file_directory, r"data_sheets\pet_bonus.json")
+
+f = open(pet_bonus_filename)
+pet_bonus_data = json.load(f)
+f.close()

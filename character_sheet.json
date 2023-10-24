@@ -1,7 +1,7 @@
 {
     "name": "HoppingFog",
     "class": "buccaneer",
-    "level": 281,
+    "level": 282,
     "symbols": {
         "arcane_river": {
             "vanishing_journey": 20,
@@ -38,7 +38,7 @@
     ],
     "common_v_skills": [
         {"skill": "blink", "level": 30},
-        {"skill": "rope_lift", "level": 24},
+        {"skill": "rope_lift", "level": 25},
         {"skill": "decent_sharp_eyes", "level": 22},
         {"skill": "loaded_dice", "level": 30},
         {"skill": "decent_advanced_blessing", "level": 14}
@@ -1594,7 +1594,7 @@
         "boss_damage": 13,
         "normal_monster_damage": 0,
         "status_resistance": 0,
-        "attack_and_magic_attack": 6,
+        "attack_and_magic_attack": 7,
         "exp": 0,
         "arcane_force": 0
     },
@@ -1650,12 +1650,13 @@
             "name": "Dawn",
             "set": "Lil Glowy Butterfly Set",
             "equip": {
-                "name": "",
+                "name": "Butterfly Twinkles",
                 "base_stats": {
-                    "attack": 0
+                    "attack": 10,
+                    "magic_attack": 10
                 },
                 "scroll_stats": {
-                    "attack": 0
+                    "attack": 35
                 }
             }
         },
@@ -1663,9 +1664,10 @@
             "name": "Lil Ramanana",
             "set": "Chu Chu Baby Set",
             "equip": {
-                "name": "",
+                "name": "Lil Ramanana's Hairpin",
                 "base_stats": {
-                    "attack": 0
+                    "attack": 5,
+                    "magic_attack": 5
                 },
                 "scroll_stats": {
                     "attack": 0
@@ -1676,12 +1678,13 @@
             "name": "Lil Wolfruit",
             "set": "Chu Chu Baby Set",
             "equip": {
-                "name": "",
+                "name": "Lil Wolfruit's Hairpin",
                 "base_stats": {
-                    "attack": 0
+                    "attack": 5,
+                    "magic_attack": 5
                 },
                 "scroll_stats": {
-                    "attack": 0
+                    "attack": 20
                 }
             }
         }

@@ -50,5 +50,39 @@ def stats(character_level, stat_object, stat, primary_stat):
     return total_stat
 
 
+def total_attack(stat_object):
+    attack_value = stat_object["attack"] * (1 + stat_object["attack%"] / 100) + stat_object["final_attack"]
+
+    print("Total Attack: {}".format(math.floor(attack_value)))
+
+    return math.floor(attack_value)
+
+
+def magic_attack(stat_object):
+    total_magic_attack = stat_object["magic_attack"] * (1 + stat_object["magic_attack%"] / 100) + stat_object["final_magic_attack"]
+
+    print("Total Magic Attack: {}".format(math.floor(total_magic_attack)))
+
+    return math.floor(total_magic_attack)
+
+
 def stat_value(base_stat, secondary_stat):
     return base_stat * 4 + secondary_stat
+
+
+def combat_power(stat_object, boss_defense):
+    total_stat_value = stat_value(stat_object["str"], stat_object["dex"])
+    total_attack_value = stat_object["attack"]
+    total_damage_value = 1 + (stat_object["boss_damage"] + stat_object["damage"])/100
+    total_ied_value = 1 - (boss_defense/100 * (1 - stat_object["ignore_enemy_defense"]/100))
+    total_crit_damage_value = 1 + 0.35 + stat_object["critical_damage"]/100
+
+    print(total_stat_value)
+    print(total_attack_value)
+    print(total_damage_value)
+    print(total_ied_value)
+    print(total_crit_damage_value)
+
+    combat_power_value = total_stat_value * total_attack_value * total_damage_value * total_ied_value * total_crit_damage_value
+
+    return combat_power_value
