@@ -17,6 +17,9 @@
     "STR: +6%": {
         "str%": 6
     },
+    "STR: +5%": {
+        "str%": 5
+    },
     "STR: +20": {
         "str": 20
     },
@@ -107,6 +110,9 @@
     "LUK: +6%": {
         "luk%": 6
     },
+    "LUK: +3%": {
+        "luk%": 3
+    },
     "LUK: +20": {
         "luk": 20
     },
@@ -136,6 +142,9 @@
     },
     "All Stats: +5%": {
         "all_stat%": 5
+    },
+    "All Stats: +3%": {
+        "all_stat%": 3
     },
     "Critical Damage: +8%": {
         "critical_damage": 8

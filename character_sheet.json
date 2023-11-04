@@ -1156,7 +1156,7 @@
                 "all_stat%": 6
             },
             "scroll_stats": {
-                "attack": 27
+                "attack": 36
             },
             "starforce_stats": {
                 "str": 145,
@@ -1690,14 +1690,6 @@
         }
     },
     "extra_buffs": {
-        "night_troupe": {
-            "all_stat": 30,
-            "attack": 15,
-            "magic_attack": 15,
-            "ignore_enemy_defense": 18,
-            "critical_rate": 15,
-            "critical_damage": 15
-        },
         "trait_im_too_lazy_to_add_now": {
             "ignore_enemy_defense": 10
         }

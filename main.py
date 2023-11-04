@@ -83,14 +83,14 @@ def main():
                 "all_stat%": 0
             },
             "potential": {
-                "line_1": "Ignore Monster DEF: +40%",
-                "line_2": "ATT: +9%",
-                "line_3": "ATT: +9%"
+                "line_1": "ATT: +13%",
+                "line_2": "ATT: +10%",
+                "line_3": "Ignore Monster DEF: +30%"
             },
             "bonus_potential": {
-                "line_1": "ATT: +12%",
-                "line_2": "15% chance to recover 85 MP when attacking.",
-                "line_3": "15% chance to recover 85 MP when attacking."
+                "line_1": "ATT: +13%",
+                "line_2": "ATT: +10%",
+                "line_3": "Max HP: 8%."
             }
         },
         "emblem"
@@ -123,6 +123,65 @@ def main():
         "heart"
     )
 
+    new_eye_accessory = equipment.Equipment(
+        {
+            "name": "Magic Eyepatch",
+            "set": "Pitched Boss Set",
+            "level": "160",
+            "stars": 0,
+            "base_stats": {
+                "str": 15,
+                "dex": 15,
+                "int": 15,
+                "luk": 15,
+                "hp": 0,
+                "mp": 0,
+                "attack": 3,
+                "magic_attack": 3,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 0
+            },
+            "flame_stats": {
+                "str": 70,
+                "dex": 0,
+                "int": 25,
+                "luk": 45,
+                "hp": 0,
+                "mp": 0,
+                "attack": 0,
+                "magic_attack": 0,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 6
+            },
+            "scroll_stats": {
+                "str": 6,
+                "dex": 4,
+                "int": 1,
+                "luk": 1,
+                "hp": 20,
+                "mp": 0,
+                "attack": 12,
+                "magic_attack": 3,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 0
+            },
+            "potential": {
+                "line_1": "STR: +13%",
+                "line_2": "STR: +13%",
+                "line_3": "STR: +10%"
+            },
+            "bonus_potential": {
+                "line_1": "STR: +5%",
+                "line_2": "All Stats: +3%",
+                "line_3": "LUK: +3%"
+            }
+        },
+        "eye_accessory"
+    )
+
     the_list = [
         ring_1,
         ring_2,
@@ -133,7 +192,7 @@ def main():
         earrings,
         belt,
         face_accessory,
-        eye_accessory,
+        new_eye_accessory,
         pocket,
         hat,
         top,
@@ -144,7 +203,7 @@ def main():
         shoes,
         weapon,
         secondary,
-        emblem,
+        new_emblem,
         medal,
         badge,
         heart,
@@ -225,17 +284,10 @@ def main():
 
     print("Combat Power: {}".format(calcs.combat_power(total_stats, 300)))
 
-    # 300 pdr
-    # 49060860334.534645 with current stuff
-    # 49265809088.017555 with mitra's
-    # 50266007317.65077 with black heart
-    # 51371114909.58992 with mitra's and black heart
+    # current 300pdr - 45767314472.35895
+    # seren e 300pdr - 47368804279.1308
 
-    # 380 pdr
-    # 48580329913.01379 with current stuff
-    # 48833114334.196465 with mitra's
-    # 49959995386.34487 with black heart
-    # 50984620537.16459 with mitra's and black heart
+    # + m eye 300pdr - 47989351866.25873
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
