@@ -1,7 +1,7 @@
 {
     "name": "HoppingFog",
     "class": "buccaneer",
-    "level": 282,
+    "level": 285,
     "symbols": {
         "arcane_river": {
             "vanishing_journey": 20,
@@ -13,17 +13,17 @@
         },
         "grandis": {
             "cernium": 11,
-            "hotel_arcus": 10,
+            "hotel_arcus": 11,
             "odium": 8,
-            "shangri_la": 0,
+            "shangri_la": 4,
             "arteria": 0,
             "carcion": 0
         }
     },
     "inner_ability": {
-        "boss_damage": 20,
-        "damage": 7,
-        "buff_duration": 34
+        "boss_damage": 15,
+        "damage": 8,
+        "buff_duration": 38
     },
     "skill_config": {
         "decent_combat_orders": true,
@@ -38,7 +38,7 @@
     ],
     "common_v_skills": [
         {"skill": "blink", "level": 30},
-        {"skill": "rope_lift", "level": 25},
+        {"skill": "rope_lift", "level": 26},
         {"skill": "decent_sharp_eyes", "level": 22},
         {"skill": "loaded_dice", "level": 30},
         {"skill": "decent_advanced_blessing", "level": 14}
@@ -370,33 +370,32 @@
             }
         },
         "emblem": {
-            "name": "Gold Maple Leaf Emblem",
-            "set": null,
-            "lucky_item": false,
-            "level": "100",
+            "name": "Mitra's Rage (Pirate)",
+            "set": "Pitched Boss Set",
+            "level": "200",
             "stars": 0,
             "base_stats": {
-                "str": 10,
-                "dex": 10,
-                "int": 10,
-                "luk": 10,
+                "str": 40,
+                "dex": 40,
+                "int": 0,
+                "luk": 0,
                 "hp": 0,
                 "mp": 0,
-                "attack": 2,
-                "magic_attack": 2,
+                "attack": 5,
+                "magic_attack": 5,
                 "ignore_enemy_defense": 0,
                 "boss_damage": 0,
                 "all_stat%": 0
             },
             "potential": {
-                "line_1": "ATT: +12%",
-                "line_2": "ATT: +9%",
-                "line_3": "ATT: +9%"
+                "line_1": "ATT: +13%",
+                "line_2": "ATT: +10%",
+                "line_3": "Ignore Enemy Defense: 30%"
             },
             "bonus_potential": {
-                "line_1": "ATT: +12%",
-                "line_2": "STR: +9%",
-                "line_3": "15% chance to recover 85 MP when attacking."
+                "line_1": "ATT: +13%",
+                "line_2": "ATT: +10%",
+                "line_3": "Max HP: 8%."
             }
         },
         "ring_1": {
@@ -929,72 +928,58 @@
             }
         },
         "eye_accessory": {
-            "name": "Sweetwater Monocle",
-            "set": null,
-            "lucky_item": false,
+            "name": "Magic Eyepatch",
+            "set": "Pitched Boss Set",
             "level": "160",
-            "stars": 17,
+            "stars": 0,
             "base_stats": {
-                "str": 10,
-                "dex": 10,
-                "int": 10,
-                "luk": 10,
-                "hp": 240,
-                "mp": 240,
-                "attack": 0,
-                "magic_attack": 0,
+                "str": 15,
+                "dex": 15,
+                "int": 15,
+                "luk": 15,
+                "hp": 0,
+                "mp": 0,
+                "attack": 3,
+                "magic_attack": 3,
                 "ignore_enemy_defense": 0,
                 "boss_damage": 0,
                 "all_stat%": 0
             },
             "flame_stats": {
-                "str": 70,
+                "str": 74,
                 "dex": 0,
-                "int": 25,
-                "luk": 50,
+                "int": 0,
+                "luk": 20,
                 "hp": 0,
                 "mp": 0,
                 "attack": 0,
                 "magic_attack": 0,
                 "ignore_enemy_defense": 0,
                 "boss_damage": 0,
-                "all_stat%": 5
+                "all_stat%": 6
             },
             "scroll_stats": {
-                "str": -1,
-                "dex": 9,
-                "int": 4,
-                "luk": -1,
-                "hp": 0,
+                "str": 12,
+                "dex": 4,
+                "int": 1,
+                "luk": 2,
+                "hp": 30,
                 "mp": 0,
-                "attack": 36,
-                "magic_attack": 8,
-                "ignore_enemy_defense": 0,
-                "boss_damage": 0,
-                "all_stat%": 0
-            },
-            "starforce_stats": {
-                "str": 66,
-                "dex": 66,
-                "int": 66,
-                "luk": 66,
-                "hp": 0,
-                "mp": 0,
-                "attack": 21,
-                "magic_attack": 21,
+                "attack": 18,
+                "magic_attack": 5,
                 "ignore_enemy_defense": 0,
                 "boss_damage": 0,
                 "all_stat%": 0
             },
             "potential": {
-                "line_1": "STR: +10%",
-                "line_2": "STR: +10%",
-                "line_3": "All Stats: +7%"
+                "line_1": "STR: +13%",
+                "line_2": "STR: +13%",
+                "line_3": "STR: +10%"
             },
             "bonus_potential": {
-                "line_1": "STR: +8%",
-                "line_2": "Max MP: +8%",
-                "line_3": "STR: +18"
+                "line_1": "All Stats: +5%",
+                "line_2": "STR: +5%",
+                "line_3": "INT: +15"
             }
         },
         "pocket": {
@@ -1604,7 +1589,7 @@
             "canid_ss",
             "bovine_ss",
             "toy_ss",
-            "soldier_s"
+            "soldier_ss"
         ],
         "special_monsters": [
             "seruf",

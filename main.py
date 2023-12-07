@@ -63,125 +63,6 @@ def main():
     totem_3 = equipment.Equipment(character_sheet['equipment']['totem_3'], "totem_3")
     title = equipment.Equipment(character_sheet['equipment']['title'], "title")
 
-    new_emblem = equipment.Equipment(
-        {
-            "name": "Mitra's Rage (Pirate)",
-            "set": "Pitched Boss Set",
-            "level": "200",
-            "stars": 0,
-            "base_stats": {
-                "str": 40,
-                "dex": 40,
-                "int": 0,
-                "luk": 0,
-                "hp": 0,
-                "mp": 0,
-                "attack": 5,
-                "magic_attack": 5,
-                "ignore_enemy_defense": 0,
-                "boss_damage": 0,
-                "all_stat%": 0
-            },
-            "potential": {
-                "line_1": "ATT: +13%",
-                "line_2": "ATT: +10%",
-                "line_3": "Ignore Monster DEF: +30%"
-            },
-            "bonus_potential": {
-                "line_1": "ATT: +13%",
-                "line_2": "ATT: +10%",
-                "line_3": "Max HP: 8%."
-            }
-        },
-        "emblem"
-    )
-
-    new_heart = equipment.Equipment(
-        {
-            "name": "Black Heart",
-            "set": "Pitched Boss Set",
-            "level": "120",
-            "stars": 0,
-            "base_stats": {
-                "str": 50,
-                "dex": 50,
-                "int": 50,
-                "luk": 50,
-                "hp": 100,
-                "mp": 0,
-                "attack": 72,
-                "magic_attack": 77,
-                "ignore_enemy_defense": 0,
-                "boss_damage": 0,
-                "all_stat%": 0
-            },
-            "potential": {
-                "line_1": "Boss Monster Damage: +30%",
-                "line_2": "Ignore Monster DEF: +30%"
-            }
-        },
-        "heart"
-    )
-
-    new_eye_accessory = equipment.Equipment(
-        {
-            "name": "Magic Eyepatch",
-            "set": "Pitched Boss Set",
-            "level": "160",
-            "stars": 0,
-            "base_stats": {
-                "str": 15,
-                "dex": 15,
-                "int": 15,
-                "luk": 15,
-                "hp": 0,
-                "mp": 0,
-                "attack": 3,
-                "magic_attack": 3,
-                "ignore_enemy_defense": 0,
-                "boss_damage": 0,
-                "all_stat%": 0
-            },
-            "flame_stats": {
-                "str": 70,
-                "dex": 0,
-                "int": 25,
-                "luk": 45,
-                "hp": 0,
-                "mp": 0,
-                "attack": 0,
-                "magic_attack": 0,
-                "ignore_enemy_defense": 0,
-                "boss_damage": 0,
-                "all_stat%": 6
-            },
-            "scroll_stats": {
-                "str": 6,
-                "dex": 4,
-                "int": 1,
-                "luk": 1,
-                "hp": 20,
-                "mp": 0,
-                "attack": 12,
-                "magic_attack": 3,
-                "ignore_enemy_defense": 0,
-                "boss_damage": 0,
-                "all_stat%": 0
-            },
-            "potential": {
-                "line_1": "STR: +13%",
-                "line_2": "STR: +13%",
-                "line_3": "STR: +10%"
-            },
-            "bonus_potential": {
-                "line_1": "STR: +5%",
-                "line_2": "All Stats: +3%",
-                "line_3": "LUK: +3%"
-            }
-        },
-        "eye_accessory"
-    )
-
     the_list = [
         ring_1,
         ring_2,
@@ -192,7 +73,7 @@ def main():
         earrings,
         belt,
         face_accessory,
-        new_eye_accessory,
+        eye_accessory,
         pocket,
         hat,
         top,
@@ -203,7 +84,7 @@ def main():
         shoes,
         weapon,
         secondary,
-        new_emblem,
+        emblem,
         medal,
         badge,
         heart,
@@ -288,6 +169,7 @@ def main():
     # seren e 300pdr - 47368804279.1308
 
     # + m eye 300pdr - 47989351866.25873
+    # if seren 33%   - 49455912975.8718
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
