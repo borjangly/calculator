@@ -38,10 +38,12 @@
     ],
     "common_v_skills": [
         {"skill": "blink", "level": 30},
-        {"skill": "rope_lift", "level": 26},
-        {"skill": "decent_sharp_eyes", "level": 22},
+        {"skill": "rope_lift", "level": 30},
         {"skill": "loaded_dice", "level": 30},
-        {"skill": "decent_advanced_blessing", "level": 14}
+        {"skill": "decent_sharp_eyes", "level": 29},
+        {"skill": "decent_advanced_blessing", "level": 24},
+        {"skill": "decent_hyper_body", "level": 6},
+        {"skill": "decent_speed_infusion", "level": 2}
     ],
     "link_skills": [
         {"skill": "pirate_blessing", "level": 6},
@@ -92,11 +94,11 @@
                 "all_stat%": 4
             },
             "scroll_stats": {
-                "str": 91,
+                "str": 130,
                 "dex": 0,
                 "int": 0,
                 "luk": 0,
-                "hp": 1560,
+                "hp": 2210,
                 "mp": 0,
                 "attack": 1,
                 "magic_attack": 0,
@@ -161,11 +163,11 @@
                 "all_stat%": 5
             },
             "scroll_stats": {
-                "str": 63,
+                "str": 90,
                 "dex": 0,
                 "int": 0,
                 "luk": 0,
-                "hp": 1080,
+                "hp": 1530,
                 "mp": 0,
                 "attack": 1,
                 "magic_attack": 0,
@@ -230,11 +232,11 @@
                 "all_stat%": 4
             },
             "scroll_stats": {
-                "str": 63,
+                "str": 90,
                 "dex": 0,
                 "int": 0,
                 "luk": 0,
-                "hp": 1080,
+                "hp": 1530,
                 "mp": 0,
                 "attack": 1,
                 "magic_attack": 0,
@@ -390,7 +392,7 @@
             "potential": {
                 "line_1": "ATT: +13%",
                 "line_2": "ATT: +10%",
-                "line_3": "Ignore Enemy Defense: 30%"
+                "line_3": "Ignore Monster DEF: +30%"
             },
             "bonus_potential": {
                 "line_1": "ATT: +13%",
@@ -971,6 +973,19 @@
                 "boss_damage": 0,
                 "all_stat%": 0
             },
+            "starforce_stats": {
+                "str": 131,
+                "dex": 131,
+                "int": 131,
+                "luk": 131,
+                "hp": 0,
+                "mp": 0,
+                "attack": 92,
+                "magic_attack": 92,
+                "ignore_enemy_defense": 0,
+                "boss_damage": 0,
+                "all_stat%": 0
+            },
             "potential": {
                 "line_1": "STR: +13%",
                 "line_2": "STR: +13%",
@@ -1199,11 +1214,11 @@
                 "all_stat%": 6
             },
             "scroll_stats": {
-                "str": 63,
+                "str": 90,
                 "dex": 0,
                 "int": 0,
                 "luk": 0,
-                "hp": 1080,
+                "hp": 1530,
                 "mp": 0,
                 "attack": 1,
                 "magic_attack": 0,
@@ -1267,11 +1282,11 @@
                 "all_stat%": 0
             },
             "scroll_stats": {
-                "str": 63,
+                "str": 90,
                 "dex": 0,
                 "int": 0,
                 "luk": 0,
-                "hp": 1080,
+                "hp": 1530,
                 "mp": 0,
                 "attack": 1,
                 "magic_attack": 0,
@@ -1497,19 +1512,19 @@
     },
     "legion_characters": [
         {"class": "buccaneer", "level": 281, "active": true},
-        {"class": "paladin", "level": 263, "active": true},
-        {"class": "thunder_breaker", "level": 252, "active": true},
-        {"class": "ark", "level": 250, "active": true},
+        {"class": "paladin", "level": 264, "active": true},
+        {"class": "thunder_breaker", "level": 253, "active": true},
+        {"class": "ark", "level": 252, "active": true},
         {"class": "shade", "level": 250, "active": true},
-        {"class": "kanna", "level": 241, "active": true},
-        {"class": "adele", "level": 225, "active": true},
+        {"class": "kanna", "level": 250, "active": true},
+        {"class": "adele", "level": 230, "active": true},
         {"class": "lara", "level": 222, "active": true},
         {"class": "hoyoung", "level": 220, "active": true},
         {"class": "dawn_warrior", "level": 216, "active": true},
-        {"class": "mechanic", "level": 214, "active": true},
+        {"class": "mechanic", "level": 220, "active": true},
         {"class": "kanna", "level": 212, "active": false},
-        {"class": "pathfinder", "level": 212, "active": true},
-        {"class": "wind_archer", "level": 211, "active": true},
+        {"class": "pathfinder", "level": 220, "active": true},
+        {"class": "wind_archer", "level": 215, "active": true},
         {"class": "mercedes", "level": 210, "active": true},
         {"class": "aran", "level": 210, "active": true},
         {"class": "zero", "level": 210, "active": true},
@@ -1530,26 +1545,26 @@
         {"class": "corsair", "level": 210, "active": true},
         {"class": "cannon_master", "level": 210, "active": true},
         {"class": "kaiser", "level": 210, "active": true},
-        {"class": "cadena", "level": 210, "active": false},
+        {"class": "cadena", "level": 210, "active": true},
         {"class": "hero", "level": 210, "active": true},
         {"class": "kain", "level": 210, "active": true},
         {"class": "blaster", "level": 210, "active": true},
         {"class": "wild_hunter", "level": 210, "active": true},
         {"class": "battle_mage", "level": 210, "active": false},
-        {"class": "night_walker", "level": 210, "active": true},
+        {"class": "night_walker", "level": 210, "active": false},
         {"class": "mihile", "level": 210, "active": true},
-        {"class": "shadower", "level": 210, "active": true},
+        {"class": "shadower", "level": 201, "active": false},
         {"class": "dual_blade", "level": 210, "active": false},
         {"class": "ice_lightning", "level": 210, "active": false},
         {"class": "kinesis", "level": 210, "active": false},
         {"class": "fire_poison", "level": 210, "active": false},
         {"class": "blaze_wizard", "level": 210, "active": false},
-        {"class": "illium", "level": 200, "active": false}
+        {"class": "illium", "level": 203, "active": false}
     ],
     "legion_grid": {
         "str": 75,
         "dex": 5,
-        "int": 5,
+        "int": 0,
         "luk": 0,
         "hp": 0,
         "mp": 0,
@@ -1558,14 +1573,14 @@
         "boss_damage": 40,
         "ignore_enemy_defense": 40,
         "critical_damage": 20,
-        "buff_duration": 5,
+        "buff_duration": 7,
         "normal_monster_damage": 0,
         "status_resistance": 0,
         "exp": 0,
         "critical_rate": 0
     },
     "hyper_stats": {
-        "str": 4,
+        "str": 0,
         "dex": 0,
         "int": 0,
         "luk": 0,
@@ -1574,12 +1589,12 @@
         "df_tf_pp_mana": 0,
         "critical_rate": 0,
         "critical_damage": 13,
-        "ignore_enemy_defense": 13,
+        "ignore_enemy_defense": 12,
         "damage": 12,
-        "boss_damage": 13,
+        "boss_damage": 15,
         "normal_monster_damage": 0,
         "status_resistance": 0,
-        "attack_and_magic_attack": 7,
+        "attack_and_magic_attack": 3,
         "exp": 0,
         "arcane_force": 0
     },
@@ -1677,6 +1692,15 @@
     "extra_buffs": {
         "trait_im_too_lazy_to_add_now": {
             "ignore_enemy_defense": 10
+        },
+        "identisk": {
+            "boss_damage": 30
+        },
+        "hexa_stat": {
+            "attack": 80,
+            "critical_damage": 2.8,
+            "boss_damage": 0,
+            "final_str": 300
         }
     }
 }
