@@ -163,13 +163,22 @@ def main():
 
     print(total_stats)
 
-    print("Combat Power: {}".format(calcs.combat_power(total_stats, 300)))
+    total_combat_power = calcs.combat_power(total_stats, 380)
+
+    print("Combat Power: {}".format(total_combat_power))
 
     # current 300pdr - 45767314472.35895
     # seren e 300pdr - 47368804279.1308
 
     # + m eye 300pdr - 47989351866.25873
     # if seren 33%   - 49455912975.8718
+
+    original_combat_power = 56699695900.13269
+    # 55864711894.19977 real
+
+    fd_gain = total_combat_power/original_combat_power
+
+    print(fd_gain)
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':

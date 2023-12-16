@@ -211,5 +211,17 @@
     },
     "Ignore Monster DEF: +20%": {
         "ignore_enemy_defense": 20
+    },
+    "Damage: +13%": {
+        "damage": 13
+    },
+    "Damage: +12%": {
+        "damage": 12
+    },
+    "Damage: +10%": {
+        "damage": 10
+    },
+    "Damage: +9%": {
+        "damage": 9
     }
 }

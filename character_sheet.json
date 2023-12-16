@@ -361,9 +361,9 @@
                 "all_stat%": 0
             },
             "potential": {
-                "line_1": "Boss Monster Damage: +40%",
+                "line_1": "ATT: +12%",
                 "line_2": "Boss Monster Damage: +30%",
-                "line_3": "Ignore Monster DEF: +30%"
+                "line_3": "Boss Monster Damage: +30%"
             },
             "bonus_potential": {
                 "line_1": "INT: +12%",
@@ -392,7 +392,7 @@
             "potential": {
                 "line_1": "ATT: +13%",
                 "line_2": "ATT: +10%",
-                "line_3": "Ignore Monster DEF: +30%"
+                "line_3": "Damage: +10%"
             },
             "bonus_potential": {
                 "line_1": "ATT: +13%",
@@ -1693,8 +1693,11 @@
         "trait_im_too_lazy_to_add_now": {
             "ignore_enemy_defense": 10
         },
-        "identisk": {
-            "boss_damage": 30
+        "identisk_gift": {
+            "boss_damage": 30,
+            "all_stat": 30,
+            "attack": 20,
+            "magic_attack": 20
         },
         "hexa_stat": {
             "attack": 80,
