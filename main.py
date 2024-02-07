@@ -173,7 +173,7 @@ def main():
     # + m eye 300pdr - 47989351866.25873
     # if seren 33%   - 49455912975.8718
 
-    original_combat_power = 56699695900.13269
+    original_combat_power = 59974026167.01901
     # 55864711894.19977 real
 
     fd_gain = total_combat_power/original_combat_power

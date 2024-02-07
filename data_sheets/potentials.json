@@ -152,6 +152,12 @@
     "Critical Damage: +8%": {
         "critical_damage": 8
     },
+    "Critical Damage: +3%": {
+        "critical_damage": 3
+    },
+    "Critical Damage: +1%": {
+        "critical_damage": 1
+    },
     "ATT: +13%": {
         "attack%": 13
     },
