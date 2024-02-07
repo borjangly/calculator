@@ -1,7 +1,7 @@
 {
     "name": "HoppingFog",
     "class": "buccaneer",
-    "level": 282,
+    "level": 287,
     "symbols": {
         "arcane_river": {
             "vanishing_journey": 20,
@@ -13,17 +13,17 @@
         },
         "grandis": {
             "cernium": 11,
-            "hotel_arcus": 10,
-            "odium": 8,
-            "shangri_la": 0,
-            "arteria": 0,
-            "carcion": 0
+            "hotel_arcus": 11,
+            "odium": 9,
+            "shangri_la": 7,
+            "arteria": 5,
+            "carcion": 4
         }
     },
     "inner_ability": {
-        "boss_damage": 20,
-        "damage": 7,
-        "buff_duration": 34
+        "boss_damage": 0,
+        "damage": 8,
+        "buff_duration": 38
     },
     "skill_config": {
         "decent_combat_orders": true,
@@ -38,10 +38,13 @@
     ],
     "common_v_skills": [
         {"skill": "blink", "level": 30},
-        {"skill": "rope_lift", "level": 25},
-        {"skill": "decent_sharp_eyes", "level": 22},
+        {"skill": "rope_lift", "level": 30},
         {"skill": "loaded_dice", "level": 30},
-        {"skill": "decent_advanced_blessing", "level": 14}
+        {"skill": "decent_sharp_eyes", "level": 29},
+        {"skill": "decent_advanced_blessing", "level": 24},
+        {"skill": "decent_hyper_body", "level": 6},
+        {"skill": "decent_speed_infusion", "level": 2},
+        {"skill": "decent_mystic_door", "level": 6}
     ],
     "link_skills": [
         {"skill": "pirate_blessing", "level": 6},
@@ -92,11 +95,11 @@
                 "all_stat%": 4
             },
             "scroll_stats": {
-                "str": 91,
+                "str": 130,
                 "dex": 0,
                 "int": 0,
                 "luk": 0,
-                "hp": 1560,
+                "hp": 2210,
                 "mp": 0,
                 "attack": 1,
                 "magic_attack": 0,
@@ -123,9 +126,9 @@
                 "line_3": "STR: +9%"
             },
             "bonus_potential": {
-                "line_1": "STR: +8%",
-                "line_2": "DEX: +18",
-                "line_3": "DEX: +6%"
+                "line_1": "STR per 9 Character Levels: +2",
+                "line_2": "Max HP: +8%",
+                "line_3": "STR per 9 Character Levels: +1"
             }
         },
         "top": {
@@ -161,11 +164,11 @@
                 "all_stat%": 5
             },
             "scroll_stats": {
-                "str": 63,
+                "str": 90,
                 "dex": 0,
                 "int": 0,
                 "luk": 0,
-                "hp": 1080,
+                "hp": 1530,
                 "mp": 0,
                 "attack": 1,
                 "magic_attack": 0,
@@ -230,11 +233,11 @@
                 "all_stat%": 4
             },
             "scroll_stats": {
-                "str": 63,
+                "str": 90,
                 "dex": 0,
                 "int": 0,
                 "luk": 0,
-                "hp": 1080,
+                "hp": 1530,
                 "mp": 0,
                 "attack": 1,
                 "magic_attack": 0,
@@ -359,9 +362,9 @@
                 "all_stat%": 0
             },
             "potential": {
-                "line_1": "Boss Monster Damage: +40%",
+                "line_1": "ATT: +12%",
                 "line_2": "Boss Monster Damage: +30%",
-                "line_3": "Ignore Monster DEF: +30%"
+                "line_3": "Boss Monster Damage: +30%"
             },
             "bonus_potential": {
                 "line_1": "INT: +12%",
@@ -370,33 +373,32 @@
             }
         },
         "emblem": {
-            "name": "Gold Maple Leaf Emblem",
-            "set": null,
-            "lucky_item": false,
-            "level": "100",
+            "name": "Mitra's Rage (Pirate)",
+            "set": "Pitched Boss Set",
+            "level": "200",
             "stars": 0,
             "base_stats": {
-                "str": 10,
-                "dex": 10,
-                "int": 10,
-                "luk": 10,
+                "str": 40,
+                "dex": 40,
+                "int": 0,
+                "luk": 0,
                 "hp": 0,
                 "mp": 0,
-                "attack": 2,
-                "magic_attack": 2,
+                "attack": 5,
+                "magic_attack": 5,
                 "ignore_enemy_defense": 0,
                 "boss_damage": 0,
                 "all_stat%": 0
             },
             "potential": {
-                "line_1": "ATT: +12%",
-                "line_2": "ATT: +9%",
-                "line_3": "ATT: +9%"
+                "line_1": "ATT: +13%",
+                "line_2": "ATT: +10%",
+                "line_3": "ATT: +10%"
             },
             "bonus_potential": {
-                "line_1": "ATT: +12%",
-                "line_2": "STR: +9%",
-                "line_3": "15% chance to recover 85 MP when attacking."
+                "line_1": "ATT: +13%",
+                "line_2": "ATT: +10%",
+                "line_3": "Max HP: 8%."
             }
         },
         "ring_1": {
@@ -420,14 +422,14 @@
             },
             "flame_stats": {},
             "scroll_stats": {
-                "str": 6,
-                "dex": 0,
-                "int": 6,
+                "str": 1,
+                "dex": 2,
+                "int": 2,
                 "luk": 1,
-                "hp": 10,
-                "mp": 20,
-                "attack": 18,
-                "magic_attack": 2,
+                "hp": 20,
+                "mp": 10,
+                "attack": 6,
+                "magic_attack": 1,
                 "ignore_enemy_defense": 0,
                 "boss_damage": 0,
                 "all_stat%": 0
@@ -447,13 +449,13 @@
             },
             "potential": {
                 "line_1": "STR: +13%",
-                "line_2": "All Stats: +7%",
+                "line_2": "STR: +10%",
                 "line_3": "STR: +10%"
             },
             "bonus_potential": {
-                "line_1": "STR: +8%",
-                "line_2": "LUK per 9 Character Levels: +1",
-                "line_3": "STR: +18"
+                "line_1": "All Stats: +6%",
+                "line_2": "STR: +6%",
+                "line_3": "ATT: +14"
             }
         },
         "ring_2": {
@@ -929,72 +931,71 @@
             }
         },
         "eye_accessory": {
-            "name": "Sweetwater Monocle",
-            "set": null,
-            "lucky_item": false,
+            "name": "Magic Eyepatch",
+            "set": "Pitched Boss Set",
             "level": "160",
-            "stars": 17,
+            "stars": 0,
             "base_stats": {
-                "str": 10,
-                "dex": 10,
-                "int": 10,
-                "luk": 10,
-                "hp": 240,
-                "mp": 240,
-                "attack": 0,
-                "magic_attack": 0,
+                "str": 15,
+                "dex": 15,
+                "int": 15,
+                "luk": 15,
+                "hp": 0,
+                "mp": 0,
+                "attack": 3,
+                "magic_attack": 3,
                 "ignore_enemy_defense": 0,
                 "boss_damage": 0,
                 "all_stat%": 0
             },
             "flame_stats": {
-                "str": 70,
+                "str": 79,
                 "dex": 0,
                 "int": 25,
-                "luk": 50,
+                "luk": 0,
                 "hp": 0,
                 "mp": 0,
                 "attack": 0,
                 "magic_attack": 0,
                 "ignore_enemy_defense": 0,
                 "boss_damage": 0,
-                "all_stat%": 5
+                "all_stat%": 6
             },
             "scroll_stats": {
-                "str": -1,
-                "dex": 9,
-                "int": 4,
-                "luk": -1,
-                "hp": 0,
+                "str": 12,
+                "dex": 5,
+                "int": 2,
+                "luk": 3,
+                "hp": 40,
                 "mp": 0,
-                "attack": 36,
-                "magic_attack": 8,
+                "attack": 24,
+                "magic_attack": 6,
                 "ignore_enemy_defense": 0,
                 "boss_damage": 0,
                 "all_stat%": 0
             },
             "starforce_stats": {
-                "str": 66,
-                "dex": 66,
-                "int": 66,
-                "luk": 66,
+                "str": 131,
+                "dex": 131,
+                "int": 131,
+                "luk": 131,
                 "hp": 0,
                 "mp": 0,
-                "attack": 21,
-                "magic_attack": 21,
+                "attack": 92,
+                "magic_attack": 92,
                 "ignore_enemy_defense": 0,
                 "boss_damage": 0,
                 "all_stat%": 0
             },
             "potential": {
-                "line_1": "STR: +10%",
-                "line_2": "STR: +10%",
-                "line_3": "All Stats: +7%"
+                "line_1": "STR: +13%",
+                "line_2": "STR: +13%",
+                "line_3": "STR: +10%"
             },
             "bonus_potential": {
                 "line_1": "STR: +8%",
-                "line_2": "Max MP: +8%",
-                "line_3": "STR: +18"
+                "line_2": "All Stats: +5%",
+                "line_3": "LUK: +20"
             }
         },
         "pocket": {
@@ -1156,7 +1157,7 @@
                 "all_stat%": 6
             },
             "scroll_stats": {
-                "attack": 27
+                "attack": 36
             },
             "starforce_stats": {
                 "str": 145,
@@ -1173,7 +1174,7 @@
             "potential": {
                 "line_1": "Critical Damage: +8%",
                 "line_2": "Critical Damage: +8%",
-                "line_3": "Max MP: +9%"
+                "line_3": "Critical Damage: +8%"
             },
             "bonus_potential": {
                 "line_1": "All Stats: +6%",
@@ -1214,11 +1215,11 @@
                 "all_stat%": 6
             },
             "scroll_stats": {
-                "str": 63,
+                "str": 90,
                 "dex": 0,
                 "int": 0,
                 "luk": 0,
-                "hp": 1080,
+                "hp": 1530,
                 "mp": 0,
                 "attack": 1,
                 "magic_attack": 0,
@@ -1282,11 +1283,11 @@
                 "all_stat%": 0
             },
             "scroll_stats": {
-                "str": 63,
+                "str": 90,
                 "dex": 0,
                 "int": 0,
                 "luk": 0,
-                "hp": 1080,
+                "hp": 1530,
                 "mp": 0,
                 "attack": 1,
                 "magic_attack": 0,
@@ -1363,12 +1364,12 @@
             "potential": {
                 "line_1": "STR: +12%",
                 "line_2": "STR: +12%",
-                "line_3": "Max HP: +9%"
+                "line_3": "STR: +9%"
             },
             "bonus_potential": {
-                "line_1": "STR: +8%",
-                "line_2": "LUK: +18",
-                "line_3": "INT per 9 Character Levels: +1"
+                "line_1": "STR per 9 Character Levels: +2",
+                "line_2": "ATT: +14",
+                "line_3": "Max MP: +8%"
             }
         },
         "android": {
@@ -1512,22 +1513,22 @@
     },
     "legion_characters": [
         {"class": "buccaneer", "level": 281, "active": true},
-        {"class": "paladin", "level": 263, "active": true},
-        {"class": "thunder_breaker", "level": 252, "active": true},
-        {"class": "ark", "level": 250, "active": true},
+        {"class": "paladin", "level": 269, "active": true},
+        {"class": "thunder_breaker", "level": 256, "active": true},
+        {"class": "ark", "level": 253, "active": true},
         {"class": "shade", "level": 250, "active": true},
-        {"class": "kanna", "level": 241, "active": true},
-        {"class": "adele", "level": 225, "active": true},
+        {"class": "kanna", "level": 250, "active": true},
+        {"class": "adele", "level": 230, "active": true},
         {"class": "lara", "level": 222, "active": true},
-        {"class": "hoyoung", "level": 220, "active": true},
+        {"class": "hoyoung", "level": 221, "active": true},
         {"class": "dawn_warrior", "level": 216, "active": true},
-        {"class": "mechanic", "level": 214, "active": true},
+        {"class": "mechanic", "level": 231, "active": true},
         {"class": "kanna", "level": 212, "active": false},
-        {"class": "pathfinder", "level": 212, "active": true},
-        {"class": "wind_archer", "level": 211, "active": true},
+        {"class": "pathfinder", "level": 220, "active": true},
+        {"class": "wind_archer", "level": 220, "active": true},
         {"class": "mercedes", "level": 210, "active": true},
         {"class": "aran", "level": 210, "active": true},
-        {"class": "zero", "level": 210, "active": true},
+        {"class": "zero", "level": 215, "active": true},
         {"class": "phantom", "level": 210, "active": true},
         {"class": "demon_slayer", "level": 210, "active": true},
         {"class": "evan", "level": 210, "active": true},
@@ -1546,25 +1547,27 @@
         {"class": "cannon_master", "level": 210, "active": true},
         {"class": "kaiser", "level": 210, "active": true},
         {"class": "cadena", "level": 210, "active": false},
-        {"class": "hero", "level": 210, "active": true},
+        {"class": "hero", "level": 220, "active": true},
         {"class": "kain", "level": 210, "active": true},
         {"class": "blaster", "level": 210, "active": true},
         {"class": "wild_hunter", "level": 210, "active": true},
         {"class": "battle_mage", "level": 210, "active": false},
-        {"class": "night_walker", "level": 210, "active": true},
+        {"class": "night_walker", "level": 210, "active": false},
         {"class": "mihile", "level": 210, "active": true},
-        {"class": "shadower", "level": 210, "active": true},
+        {"class": "shadower", "level": 201, "active": false},
         {"class": "dual_blade", "level": 210, "active": false},
         {"class": "ice_lightning", "level": 210, "active": false},
         {"class": "kinesis", "level": 210, "active": false},
         {"class": "fire_poison", "level": 210, "active": false},
         {"class": "blaze_wizard", "level": 210, "active": false},
-        {"class": "illium", "level": 200, "active": false}
+        {"class": "illium", "level": 203, "active": false},
+        {"class": "abyssal_expedition", "level": 250, "active": true},
+        {"class": "xenon", "level": 234, "active": true}
     ],
     "legion_grid": {
         "str": 75,
         "dex": 5,
-        "int": 5,
+        "int": 0,
         "luk": 0,
         "hp": 0,
         "mp": 0,
@@ -1573,14 +1576,14 @@
         "boss_damage": 40,
         "ignore_enemy_defense": 40,
         "critical_damage": 20,
-        "buff_duration": 5,
+        "buff_duration": 12,
         "normal_monster_damage": 0,
         "status_resistance": 0,
         "exp": 0,
         "critical_rate": 0
     },
     "hyper_stats": {
-        "str": 4,
+        "str": 1,
         "dex": 0,
         "int": 0,
         "luk": 0,
@@ -1589,12 +1592,12 @@
         "df_tf_pp_mana": 0,
         "critical_rate": 0,
         "critical_damage": 13,
-        "ignore_enemy_defense": 13,
+        "ignore_enemy_defense": 12,
         "damage": 12,
-        "boss_damage": 13,
+        "boss_damage": 15,
         "normal_monster_damage": 0,
         "status_resistance": 0,
-        "attack_and_magic_attack": 7,
+        "attack_and_magic_attack": 6,
         "exp": 0,
         "arcane_force": 0
     },
@@ -1604,7 +1607,7 @@
             "canid_ss",
             "bovine_ss",
             "toy_ss",
-            "soldier_s"
+            "soldier_ss"
         ],
         "special_monsters": [
             "seruf",
@@ -1661,45 +1664,47 @@
             }
         },
         "pet_2": {
-            "name": "Lil Ramanana",
-            "set": "Chu Chu Baby Set",
+            "name": "Mazurka",
+            "set": "Tick Tock Fairy Tale Time Set",
             "equip": {
-                "name": "Lil Ramanana's Hairpin",
+                "name": "Elemental Timemaster",
                 "base_stats": {
-                    "attack": 5,
-                    "magic_attack": 5
+                    "attack": 10,
+                    "magic_attack": 10
                 },
                 "scroll_stats": {
-                    "attack": 0
+                    "attack": 34
                 }
             }
         },
         "pet_3": {
-            "name": "Lil Wolfruit",
-            "set": "Chu Chu Baby Set",
+            "name": "Cantabile",
+            "set": "Tick Tock Fairy Tale Time Set",
             "equip": {
-                "name": "Lil Wolfruit's Hairpin",
+                "name": "Illusion Timemaster",
                 "base_stats": {
-                    "attack": 5,
-                    "magic_attack": 5
+                    "attack": 10,
+                    "magic_attack": 10
                 },
                 "scroll_stats": {
-                    "attack": 20
+                    "attack": 33
                 }
             }
         }
     },
     "extra_buffs": {
-        "night_troupe": {
-            "all_stat": 30,
-            "attack": 15,
-            "magic_attack": 15,
-            "ignore_enemy_defense": 18,
-            "critical_rate": 15,
-            "critical_damage": 15
-        },
         "trait_im_too_lazy_to_add_now": {
             "ignore_enemy_defense": 10
+        },
+        "hexa_stat": {
+            "attack": 80,
+            "critical_damage": 2.8,
+            "boss_damage": 0,
+            "final_str": 300
+        },
+        "bossing_buffs": {
+            "boss_damage": 0,
+            "ignore_enemy_defense": 0
         }
     }
 }

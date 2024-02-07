@@ -348,5 +348,12 @@
         {"critical_damage": 3},
         {"critical_damage": 5},
         {"critical_damage": 6}
+    ],
+    "abyssal_expedition": [
+        {"attack":  35, "magic_attack": 35},
+        {"attack":  35, "magic_attack": 35},
+        {"attack":  35, "magic_attack": 35},
+        {"attack":  35, "magic_attack": 35},
+        {"attack":  35, "magic_attack": 35}
     ]
 }

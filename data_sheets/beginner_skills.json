@@ -64,6 +64,6 @@
         {"attack": 30, "magic_attack": 30}
     ],
     "echo_of_hero": [
-        {"attack%": 4}
+        {"attack%": 4, "magic_attack%": 4}
     ]
 }

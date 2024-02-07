@@ -63,66 +63,6 @@ def main():
     totem_3 = equipment.Equipment(character_sheet['equipment']['totem_3'], "totem_3")
     title = equipment.Equipment(character_sheet['equipment']['title'], "title")
 
-    new_emblem = equipment.Equipment(
-        {
-            "name": "Mitra's Rage (Pirate)",
-            "set": "Pitched Boss Set",
-            "level": "200",
-            "stars": 0,
-            "base_stats": {
-                "str": 40,
-                "dex": 40,
-                "int": 0,
-                "luk": 0,
-                "hp": 0,
-                "mp": 0,
-                "attack": 5,
-                "magic_attack": 5,
-                "ignore_enemy_defense": 0,
-                "boss_damage": 0,
-                "all_stat%": 0
-            },
-            "potential": {
-                "line_1": "Ignore Monster DEF: +40%",
-                "line_2": "ATT: +9%",
-                "line_3": "ATT: +9%"
-            },
-            "bonus_potential": {
-                "line_1": "ATT: +12%",
-                "line_2": "15% chance to recover 85 MP when attacking.",
-                "line_3": "15% chance to recover 85 MP when attacking."
-            }
-        },
-        "emblem"
-    )
-
-    new_heart = equipment.Equipment(
-        {
-            "name": "Black Heart",
-            "set": "Pitched Boss Set",
-            "level": "120",
-            "stars": 0,
-            "base_stats": {
-                "str": 50,
-                "dex": 50,
-                "int": 50,
-                "luk": 50,
-                "hp": 100,
-                "mp": 0,
-                "attack": 72,
-                "magic_attack": 77,
-                "ignore_enemy_defense": 0,
-                "boss_damage": 0,
-                "all_stat%": 0
-            },
-            "potential": {
-                "line_1": "Boss Monster Damage: +30%",
-                "line_2": "Ignore Monster DEF: +30%"
-            }
-        },
-        "heart"
-    )
-
     the_list = [
         ring_1,
         ring_2,
@@ -223,19 +163,22 @@ def main():
 
     print(total_stats)
 
-    print("Combat Power: {}".format(calcs.combat_power(total_stats, 300)))
+    total_combat_power = calcs.combat_power(total_stats, 380)
 
-    # 300 pdr
-    # 49060860334.534645 with current stuff
-    # 49265809088.017555 with mitra's
-    # 50266007317.65077 with black heart
-    # 51371114909.58992 with mitra's and black heart
+    print("Combat Power: {}".format(total_combat_power))
 
-    # 380 pdr
-    # 48580329913.01379 with current stuff
-    # 48833114334.196465 with mitra's
-    # 49959995386.34487 with black heart
-    # 50984620537.16459 with mitra's and black heart
+    # current 300pdr - 45767314472.35895
+    # seren e 300pdr - 47368804279.1308
+
+    # + m eye 300pdr - 47989351866.25873
+    # if seren 33%   - 49455912975.8718
+
+    original_combat_power = 59974026167.01901
+    # 55864711894.19977 real
+
+    fd_gain = total_combat_power/original_combat_power
+
+    print(fd_gain)
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
