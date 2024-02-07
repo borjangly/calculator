@@ -148,7 +148,9 @@
         "papulatus_clock": {"all_stat": 5},
         "scarecrow": {"damage": 4},
         "seruf": {},
-        "thieving_moon_bunny": {"mesos": 4}
+        "thieving_moon_bunny": {"mesos": 4},
+        "pink_bean": {"damage": 2},
+        "the_book_ghost": {"damage": 1}
     },
     "conditional_monsters": {
         "lil_lania": {

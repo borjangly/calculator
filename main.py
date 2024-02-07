@@ -167,14 +167,8 @@ def main():
 
     print("Combat Power: {}".format(total_combat_power))
 
-    # current 300pdr - 45767314472.35895
-    # seren e 300pdr - 47368804279.1308
+    original_combat_power = 61887525814.93098
 
-    # + m eye 300pdr - 47989351866.25873
-    # if seren 33%   - 49455912975.8718
-
-    original_combat_power = 59974026167.01901
-    # 55864711894.19977 real
 
     fd_gain = total_combat_power/original_combat_power
 

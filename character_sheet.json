@@ -679,7 +679,7 @@
                 "str": 0,
                 "dex": 0,
                 "int": 0,
-                "luk": 4,
+                "luk": 0,
                 "hp": 0,
                 "mp": 0,
                 "attack": 5,
@@ -795,7 +795,7 @@
             }
         },
         "earrings": {
-            "name": "Superior Engraved Gollux Earrings",
+            "name": "Superior Gollux Earrings",
             "set": "Superior Gollux Set",
             "lucky_item": false,
             "level": "150",
@@ -1603,13 +1603,13 @@
     },
     "monster_life": {
         "normal_monsters": [
-            "erda_ss",
             "canid_ss",
             "bovine_ss",
             "toy_ss",
             "soldier_ss"
         ],
         "special_monsters": [
+            "the_book_ghost",
             "seruf",
             "thieving_moon_bunny",
             "beryl",
@@ -1617,7 +1617,7 @@
             "papulatus_clock",
             "frankenroid",
             "lil_luminous_light",
-            "lil_phantom",
+            "pink_bean",
             "lil_shade",
             "lil_cygnus",
             "lil_luminous_equilibrium",
