@@ -47,6 +47,7 @@ def main():
     hat = equipment.Equipment(character_sheet['equipment']['hat'], "hat")
     top = equipment.Equipment(character_sheet['equipment']['top'], "top")
     pants = equipment.Equipment(character_sheet['equipment']['pants'], "pants")
+    pants_2 = equipment.Equipment(character_sheet['equipment']['pants_2'], "pants_2")
     cape = equipment.Equipment(character_sheet['equipment']['cape'], "cape")
     shoulder = equipment.Equipment(character_sheet['equipment']['shoulder'], "shoulder")
     gloves = equipment.Equipment(character_sheet['equipment']['gloves'], "gloves")
@@ -61,7 +62,9 @@ def main():
     totem_1 = equipment.Equipment(character_sheet['equipment']['totem_1'], "totem_1")
     totem_2 = equipment.Equipment(character_sheet['equipment']['totem_2'], "totem_2")
     totem_3 = equipment.Equipment(character_sheet['equipment']['totem_3'], "totem_3")
+    totem_4 = equipment.Equipment(character_sheet['equipment']['totem_4'], "totem_4")
     title = equipment.Equipment(character_sheet['equipment']['title'], "title")
+    cash = equipment.Equipment(character_sheet['equipment']['cash'], "cash")
 
     the_list = [
         ring_1,
@@ -77,7 +80,7 @@ def main():
         pocket,
         hat,
         top,
-        pants,
+        pants_2,
         cape,
         shoulder,
         gloves,
@@ -92,7 +95,8 @@ def main():
         totem_1,
         totem_2,
         totem_3,
-        title
+        title,
+        cash
     ]
 
     e = equipment_stats.EquipStats(the_list)
@@ -132,7 +136,6 @@ def main():
         aggregated_stats,
         h.total_hyper_stats(),
         e.equipment_total_stats(),
-        mm.total_stat(),
         ls.total_link_skill_stats(),
         s.total_arcane_symbol_stat(),
         s.total_grandis_symbol_stat(),
@@ -167,12 +170,14 @@ def main():
 
     print("Combat Power: {}".format(total_combat_power))
 
-    original_combat_power = 61887525814.93098
-
-
+    # Latest update - Leveled up to 290
+    original_combat_power = 77607928730.14287
+    # Previous combat power - level 289
+    # 76903239069.9366
     fd_gain = total_combat_power/original_combat_power
 
     print(fd_gain)
+
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':

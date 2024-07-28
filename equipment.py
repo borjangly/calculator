@@ -42,6 +42,8 @@ class Equipment:
             else:
                 pass
 
+        # print("{} {}".format(self.name, stat_object))
+
         return stat_object
 
     # Descriptor functions

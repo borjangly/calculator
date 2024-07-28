@@ -156,5 +156,9 @@
     "Swamp Badge": {
         "all_stat%": 1,
         "attack": 2
+    },
+    "Holy Badge": {
+        "attack%": 1,
+        "critical_rate": 1
     }
 }

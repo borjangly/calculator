@@ -65,5 +65,9 @@
     ],
     "echo_of_hero": [
         {"attack%": 4, "magic_attack%": 4}
+    ],
+    "trace_of_jett": [
+        {"all_stat": 35, "attack": 35, "magic_attack": 35, "critical_damage": 6
+        }
     ]
 }
