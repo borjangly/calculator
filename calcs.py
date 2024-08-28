@@ -86,3 +86,8 @@ def combat_power(stat_object, boss_defense):
     combat_power_value = total_stat_value * total_attack_value * total_damage_value * total_ied_value * total_crit_damage_value
 
     return combat_power_value
+
+
+def stat_ratios(total_primary_stat_value, total_secondary_stat_value, total_attack_value, total_stat_percentage):
+
+    att_ratio = 1

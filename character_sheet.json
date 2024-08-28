@@ -15,9 +15,9 @@
             "cernium": 11,
             "hotel_arcus": 11,
             "odium": 11,
-            "shangri_la": 10,
-            "arteria": 9,
-            "carcion": 9
+            "shangri_la": 11,
+            "arteria": 10,
+            "carcion": 10
         }
     },
     "inner_ability": {
@@ -165,13 +165,13 @@
                 "all_stat%": 6
             },
             "scroll_stats": {
-                "str": 0,
+                "str": 81,
                 "dex": 1,
                 "int": 0,
-                "luk": 2,
-                "hp": 0,
+                "luk": 1,
+                "hp": 1360,
                 "mp": 0,
-                "attack": 1,
+                "attack": 7,
                 "magic_attack": 0,
                 "ignore_enemy_defense": 0,
                 "boss_damage": 0,
@@ -637,9 +637,9 @@
                 "line_3": "All Stats: +7%"
             },
             "bonus_potential": {
-                "line_1": "STR: +15",
-                "line_2": "STR: +5%",
-                "line_3": "INT: +3%"}
+                "line_1": "All Stats: +6%",
+                "line_2": "STR: +6%",
+                "line_3": "DEX: +6%"}
         },
         "ring_4": {
             "name": "Ring of Restraint",
@@ -1031,13 +1031,13 @@
                 "all_stat%": 6
             },
             "scroll_stats": {
-                "str": 12,
-                "dex": 5,
-                "int": 2,
-                "luk": 3,
-                "hp": 40,
+                "str": 14,
+                "dex": 6,
+                "int": 3,
+                "luk": 9,
+                "hp": 70,
                 "mp": 0,
-                "attack": 24,
+                "attack": 30,
                 "magic_attack": 6,
                 "ignore_enemy_defense": 0,
                 "boss_damage": 0,
@@ -1589,7 +1589,7 @@
         "Mineral Badge",
         "Labyrinth Badge",
         "Ocean Badge",
-        "Swamp Badge",
+        "Cloud Badge",
         "Sandy Badge"
     ],
     "familiars": {
@@ -1617,8 +1617,8 @@
     },
     "legion_characters": [
         {"class": "buccaneer", "level": 289, "active": true},
-        {"class": "paladin", "level": 274, "active": true},
-        {"class": "thunder_breaker", "level": 260, "active": true},
+        {"class": "paladin", "level": 275, "active": true},
+        {"class": "thunder_breaker", "level": 267, "active": true},
         {"class": "ark", "level": 256, "active": true},
         {"class": "shade", "level": 252, "active": true},
         {"class": "kanna", "level": 250, "active": true},
@@ -1641,11 +1641,11 @@
         {"class": "night_lord", "level": 210, "active": true},
         {"class": "hayato", "level": 210, "active": true},
         {"class": "crossbowman", "level": 210, "active": true},
-        {"class": "demon_avenger", "level": 210, "active": true},
+        {"class": "demon_avenger", "level": 260, "active": true},
         {"class": "jett", "level": 210, "active": false},
         {"class": "lynn", "level": 210, "active": true},
         {"class": "luminous", "level": 210, "active": true},
-        {"class": "angelic_buster", "level": 210, "active": true},
+        {"class": "angelic_buster", "level": 255, "active": true},
         {"class": "bowmaster", "level": 210, "active": true},
         {"class": "corsair", "level": 210, "active": true},
         {"class": "cannon_master", "level": 210, "active": true},
@@ -1658,7 +1658,7 @@
         {"class": "battle_mage", "level": 210, "active": false},
         {"class": "night_walker", "level": 210, "active": false},
         {"class": "mihile", "level": 210, "active": false},
-        {"class": "shadower", "level": 201, "active": false},
+        {"class": "shadower", "level": 201, "active": true},
         {"class": "dual_blade", "level": 210, "active": false},
         {"class": "ice_lightning", "level": 210, "active": false},
         {"class": "kinesis", "level": 210, "active": false},
@@ -1825,7 +1825,7 @@
         },
         "event_stats": {
             "all_stat": 0,
-            "attack": 15,
+            "attack": 0,
             "damage": 0,
             "boss_damage": 0,
             "critical_damage": 0,

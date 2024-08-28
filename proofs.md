@@ -1,5 +1,7 @@
 Reference: https://strategywiki.org/wiki/MapleStory/Formulas
 
+WORK IN PROGRESS
+
 ## Total Stat
 
 $$TotalStat = (AP \times (1 + AP\%) + BaseStat)\times(1+Stat\%) + FinalStat$$
@@ -55,9 +57,14 @@ $$p\_in =  1 + \dfrac{a}{BaseAttack}$$
 
 Match primary stat value % increase to $p\_in$
 
-$$p\_in = \dfrac{(TotalPrimaryStat + i(n))\times4 + TotalSecondaryStat}{TotalPrimaryStat*4 + TotalSecondaryStat}$$
+$$p\_in = \dfrac{(PrimaryStat * i(n) + FinalStat)\times4 + TotalSecondaryStat}{(PrimaryStat + FinalStat) *4 + TotalSecondaryStat}$$
 
-$$p\_in = 1 + \dfrac{4i(n)}{TotalPrimaryStat*4 + TotalSecondaryStat}$$
+$$p\_in = 1 + \dfrac{4i(n) \times PrimaryStat + 4FinalPrinaryStat + TotalSecondaryStat}{4TotalPrimaryStat + 4TotalFinalStat + TotalSecondaryStat}$$
+
+$$p\_in = 1 + \left(i(n) PrimaryStat + 4FinalPrinaryStat + TotalSecondaryStat \right)
+
+%{4TotalPrimaryStat + 4TotalFinalStat + TotalSecondaryStat}$$
+
 
 $$p\_in = 1 + \dfrac{i(n)}{TotalPrimaryStat + \dfrac{TotalSecondaryStat}{4}}$$
 

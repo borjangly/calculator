@@ -171,7 +171,7 @@ def main():
     print("Combat Power: {}".format(total_combat_power))
 
     # Latest update - Leveled up to 290
-    original_combat_power = 77607928730.14287
+    original_combat_power = 83269824872.13135
     # Previous combat power - level 289
     # 76903239069.9366
     fd_gain = total_combat_power/original_combat_power
