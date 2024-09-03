@@ -689,14 +689,14 @@
                 "all_stat%": 6
             },
             "scroll_stats": {
-                "str": 5,
-                "dex": 1,
+                "str": 6,
+                "dex": 3,
                 "int": 7,
-                "luk": 7,
+                "luk": 13,
                 "hp": 0,
                 "mp": 0,
-                "attack": 12,
-                "magic_attack": 2,
+                "attack": 18,
+                "magic_attack": 4,
                 "ignore_enemy_defense": 0,
                 "boss_damage": 0,
                 "all_stat%": 0
